@@ -1,185 +1,85 @@
-<template>
-  <div class="login-wrap">
-    <div class="ms-login">
-      <div class="ms-title">高考志愿推荐平台</div>
-      <el-form
-        :model="form"
-        :rules="rules"
-        ref="login"
-        label-width="0px"
-        class="ms-content"
-      >
-        <el-form-item prop="username">
-          <el-input v-model="form.username" placeholder="用户名">
-            <template #prepend>
-              <el-icon><Avatar /></el-icon>
-            </template>
-          </el-input>
-        </el-form-item>
-        <el-form-item prop="password">
-          <el-input
-            type="password"
-            placeholder="密码"
-            v-model="form.password"
-            @keyup.enter="clickLogin()"
-          >
-            <template #prepend>
-              <el-icon><Lock /></el-icon>
-            </template>
-          </el-input>
-        </el-form-item>
-        <div class="login-btn">
-          <el-button type="primary" @click="clickLogin()">登录</el-button>
-          <el-button type="primary" @click="clickRegister()">注册</el-button>
-        </div>
-        <!-- <p class="login-tips">Tips : 用户名和密码随便填。</p> -->
-      </el-form>
-    </div>
-  </div>
-  <register-dialog></register-dialog>
-</template>
-
-<script>
-import { useRouter } from "vue-router";
-import { reactive, ref } from "vue";
-import { ElMessage } from "element-plus";
-import { useStore } from "vuex";
-import request from "../utils/request.js";
-export default {
-  components: {},
-  setup() {
-    const router = useRouter();
-    const handleLogin = () => {
-      router.push({
-        name: "home",
-      });
-    };
-    const form = reactive({
-      username: "",
-      password: "",
-    });
-    const rules = {
-      username: [
-        {
-          required: true,
-          message: "请输入用户名",
-          trigger: "blur",
-        },
-      ],
-      password: [{ required: true, message: "请输入密码", trigger: "blur" }],
-    };
-    const login = ref(null);
-    const clickLogin = () => {
-      login.value.validate((valid) => {
-        if (valid) {
-          request
-            .post("/login", form)
-            //.get("http://localhost:8080/user", form)
-            .then((res) => {
-              // console.log(res);
-              // 存token setItem(key,value)
-              if (res.code == 200) {
-                //sessionStorage.setItem(token, res.data.token);
-                ElMessage.success("登录成功");
-                router.push("/home");
-                localStorage.setItem("ms_username", form.username);
-              } else {
-                ElMessage.error({
-                  message: "登录失败:" + res.message,
-                });
-              }
-            })
-            .catch((err) => {
-              ElMessage.error({
-                message: "服务器错误：" + err.statusText,
-              });
-            });
-        } else {
-          ElMessage.error("登录失败！");
-          return false;
-        }
-      });
-    };
-    const store = useStore();
-    const clickRegister = () => {
-      store.commit("showRegisterDialog");
-    };
-    return {
-      handleLogin,
-      form,
-      rules,
-      login,
-      clickLogin,
-      clickRegister,
-    };
-  },
-};
+<script setup>
+// import commonMenu from "./components/CommonMenu.vue";
+import RecommendView from '../views/RecommendView.vue';
 </script>
 
+<template>
+  <body>
+    <!-- login/register container -->
+    <div :class="['container', { active: isActive }]">
+      <!-- register -->
+      <div class="form-container sign-up-container">
+        <div class="form">
+          <h2>sign up</h2>
+          <input type="text" name="username" id="su_username" placeholder="Username..." />
+          <input type="email" name="emal" id="su_email" placeholder="Email..." />
+          <input type="password" name="password" id="su_password" placeholder="Password..." />
+          <button class="signUp" @click="signUp">sign up</button>
+        </div>
+      </div>
+      <!-- login -->
+      <div class="form-container sign-in-container">
+        <div class="form">
+          <h2>sign in</h2>
+          <input type="email" name="emal" id="si_email" placeholder="Email..." />
+          <input type="password" name="password" id="si_password" placeholder="Password..." />
+          <a href="#" @click="signUp" class="forget-password">forget your password</a>
+          <button class="signIn" @click="signIn">sign in</button>
+        </div>
+      </div>
+      <!-- overlay container -->
+      <div class="overlay_container">
+        <div class="overlay">
+          <!-- overlay left -->
+          <div class="overlay_panel overlay_left_container">
+            <h2>welcome back!</h2>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="signIn" @click="signIn" id="sign-in">sign in</button>
+          </div>
+          <!-- overlay right -->
+          <div class="overlay_panel overlay_right_container">
+            <h2>hello friend!</h2>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="signUp" @click="signUp" id="sign-up">sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</template>
 <style scoped>
-.login-wrap {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../assets/login-bg.jpg);
-  background-size: 100%;
-  animation: slide-bottom 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-.ms-title {
-  width: 100%;
-  line-height: 50px;
-  text-align: center;
-  font-size: 20px;
-  color: #000;
-  border-bottom: 1px solid #ddd;
-}
-.ms-login {
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  width: 350px;
-  margin: -190px 0 0 -175px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  animation: slide-bottom-up 0.5s cubic-bezier(0.64, 1.4, 0.49, 0.96) both;
-  animation-delay: 200ms;
-}
-.ms-content {
-  padding: 30px 30px;
-}
-.el-input {
-  width: 100%;
-}
-.login-btn {
-  text-align: center;
-  display: flex;
-}
-.login-btn button {
-  width: 100%;
-  height: 36px;
-  margin-bottom: 10px;
-}
-.login-tips {
-  font-size: 12px;
-  line-height: 30px;
-  color: #fff;
-}
-
-@keyframes slide-bottom {
-  0% {
-    transform: translateY(-500px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-@keyframes slide-bottom-up {
-  0% {
-    transform: translateY(-500px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+@import '../assets/css/login.css';
 </style>
+<script>
+export default {
+  setup(){
+    // const checkCredentials = () =>{
+      
+    // };
+    // return {
+    //   checkCredentials,
+    // };
+  },
+  data() {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    signUp() {
+      this.isActive = true
+    },
+    signIn() {
+      const si_email = document.getElementById("si_email").value;
+      const si_password = document.getElementById("si_password").value;
+      if(si_email==="root" && si_password==="root"){
+        this.$router.push(RecommendView);
+      }
+      else{
+        alert("你真是个傻逼");
+      }
+      this.isActive = false
+    }
+  }
+}
+</script>
