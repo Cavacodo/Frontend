@@ -1,6 +1,6 @@
 <script setup>
 // import commonMenu from "./components/CommonMenu.vue";
-import RecommendView from '../views/RecommendView.vue';
+// import RecommendView from '../views/RecommendView.vue';
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import RecommendView from '../views/RecommendView.vue';
       <!-- register -->
       <div class="form-container sign-up-container">
         <div class="form">
-          <h2>sign up</h2>
+          <h2>注册</h2>
           <input type="text" name="username" id="su_username" placeholder="Username..." />
           <input type="email" name="emal" id="su_email" placeholder="Email..." />
           <input type="password" name="password" id="su_password" placeholder="Password..." />
@@ -20,10 +20,10 @@ import RecommendView from '../views/RecommendView.vue';
       <!-- login -->
       <div class="form-container sign-in-container">
         <div class="form">
-          <h2>sign in</h2>
+          <h2>登陆</h2>
           <input type="email" name="emal" id="si_email" placeholder="Email..." />
           <input type="password" name="password" id="si_password" placeholder="Password..." />
-          <a href="#" @click="signUp" class="forget-password">forget your password</a>
+          <a href="#" @click="signUp" class="forget-password">老登是不是忘了密码？</a>
           <button class="signIn" @click="signIn">sign in</button>
         </div>
       </div>
@@ -32,15 +32,15 @@ import RecommendView from '../views/RecommendView.vue';
         <div class="overlay">
           <!-- overlay left -->
           <div class="overlay_panel overlay_left_container">
-            <h2>welcome back!</h2>
+            <h2>欢迎回来!</h2>
             <p>To keep connected with us please login with your personal info</p>
-            <button class="signIn" @click="signIn" id="sign-in">sign in</button>
+            <button class="signIn" @click="signInC" id="sign-in">sign in</button>
           </div>
           <!-- overlay right -->
           <div class="overlay_panel overlay_right_container">
-            <h2>hello friend!</h2>
+            <h2>欢迎！</h2>
             <p>Enter your personal details and start journey with us</p>
-            <button class="signUp" @click="signUp" id="sign-up">sign up</button>
+            <button class="signUp" @click="signUpC" id="sign-up">sign up</button>
           </div>
         </div>
       </div>
@@ -66,19 +66,26 @@ export default {
     }
   },
   methods: {
-    signUp() {
+    signUpC() {
       this.isActive = true
     },
+    signInC() {
+      this.isActive = false
+    },
+    signUp() {
+
+    },
     signIn() {
+
       const si_email = document.getElementById("si_email").value;
       const si_password = document.getElementById("si_password").value;
+      console.log(si_email);
       if(si_email==="root" && si_password==="root"){
-        this.$router.push(RecommendView);
+        window.location.href = 'http://localhost:8081';
       }
       else{
-        alert("你真是个傻逼");
+        alert("滚！😡");
       }
-      this.isActive = false
     }
   }
 }
