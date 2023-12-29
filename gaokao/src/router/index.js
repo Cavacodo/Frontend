@@ -7,6 +7,7 @@ import {
 
 const routes = [{
   path: '/',
+  redirect: '/home'
 },
 {
   path: '/login',
@@ -19,10 +20,6 @@ const routes = [{
 {
   path: '/home',
   component: () => import('../views/HomeView.vue'),
-},
-{
-  path: '',
-  redirect: '/home/school'
 },
 {
   path: '/school',
