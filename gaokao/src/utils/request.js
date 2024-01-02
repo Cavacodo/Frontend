@@ -1,51 +1,13 @@
-import axios from 'axios';
+//axiosInstance.js
+//导入axios
+import axios from 'axios'
 
-const service = axios.create({
-    // process.env.NODE_ENV === 'development' 来判断是否开发环境
-    // easy-mock服务挂了，暂时不使用了
-    // baseURL: 'https://www.easy-mock.com/mock/592501a391470c0ac1fab128',
-    // baseURL: '/api',
-    baseURL: process.env.VUE_APP_BASE_URL,
-    // baseURL: process.env.VUE_APP_URL,
-    timeout: 5000
-});
+//使用axios下面的create([config])方法创建axios实例，其中config参数为axios最基本的配置信息。
+const API = axios.create({
+	baseUrl:'http://localhost:8080', //请求后端数据的基本地址，自定义
+	timeout: 2000                   //请求超时设置，单位ms
+})
 
-//request 拦截器
-//自请求发送前进行处理
-service.interceptors.request.use(
-    config => {
-        config.headers['Content-Type'] = 'application/json;charset=utf-8';
-        return config;
-    },
-    error => {
-        console.log(error);
-        return Promise.reject();
-    }
-);
+//导出我们建立的axios实例模块，ES6 export用法
+export default API
 
-//response 拦截器
-//在接口响应后统一处理
-service.interceptors.response.use(
-    response => {
-        let res = response.data;
-        if (response.status === 200) {
-            //如果返回的是文件
-            if(response.config.responseType === 'blob') {
-                return res;
-            }
-            //兼容返回的字符串数据
-            if(typeof res === 'string') {
-                res = res?JSON.parse(res) : res;
-            }
-            return res;
-        } else {
-            Promise.reject();
-        }
-    },
-    error => {
-        console.log(error);
-        return Promise.reject();
-    }
-);
-
-export default service;

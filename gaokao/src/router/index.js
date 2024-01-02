@@ -71,6 +71,14 @@ const routes = [{
   meta: {
     title: '分数预测'
   }
+},
+{
+  path: '/TestMock',
+  name: 'testTry',
+  component: () => import('../views/TestMock.vue'),
+  meta:{
+    title: 'testTry'
+  }
 }
 ]
 
