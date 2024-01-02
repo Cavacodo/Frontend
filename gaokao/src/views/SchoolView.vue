@@ -50,11 +50,15 @@
         </div>
         <!--推荐院校-->
         <div>
-          <span>推荐院校</span>
-          <recommend-school-row v-for="(item,index) in recommendTableData"
-                                :key="index"
-                                :index="index"
-          />
+          <span style= "font-size: 20px;font-family: 'Microsoft YaHei'">推荐院校</span>
+          <div class="recommend-border">
+            <recommend-school-row v-for="(item,index) in recommendTableData"
+                                  :key="index"
+                                  :index="index"
+                                  :active=false
+            />
+          </div>
+
         </div>
       </el-aside>
 
@@ -157,6 +161,7 @@ const recommendTableData = [
   },
 
 ]
+// 推荐计时轮换
 
 const ads = [
   'https://img6.eol.cn/e_images/gk/2023/ddpy.jpg',
@@ -166,6 +171,13 @@ const ads = [
 </script>
 
 <style scoped>
+.recommend-border {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .form-box {
   margin: 40px auto;
 }
