@@ -1,102 +1,181 @@
 <script lang="ts" setup>
-import {ref} from "vue"
+import {ref, computed} from "vue"
+
 const props = defineProps({
-  index:String,
-  active:Boolean,
-  logo:String,
-  title:String,
+  index: Number,
+  active: Boolean,
+  logo: String,
+  title: String,
 })
+//鼠标悬浮更改样式
 var hover = ref(false)
-function handleMouseOver(){
+
+function handleMouseOver() {
   hover.value = true
 }
 
 function handleMouseOut() {
   hover.value = false
 }
+
+//计算css样式
+const indexCss = computed(() => {
+  let index = props.index
+  console.log(index)
+  console.log(typeof(index))
+  var css = "hot-school-"
+  switch (index) {
+    case 1: {
+      css += index
+      break
+    }
+    case 2: {
+      css += index
+      break
+    }
+    case 3: {
+      css += index
+      break
+    }
+    default :
+      css += "n"
+  }
+  console.log(css)
+  return css
+})
 </script>
 <template>
-  <div :class="[hover ? 'warp_active':active ? 'warp_active':'wrap']" @mouseover="handleMouseOver" @mouseout="handleMouseOut">
-    <el-image class = "index_icon"  :src="require('@/assets/img/number1.svg')" :fit="'cover'"/>
-    <el-image class = "logo_icon"  :src="'https://static-data.gaokao.cn/upload/logo/114.jpg'" :fit="'cover'"/>
-    <div class = "right">
-      <div class = "title">浙江大学</div>
-      <div class = "score">历年分数</div>
+  <div :class="[hover ? 'warp_active':active ? 'warp_active':'wrap']" @mouseover="handleMouseOver"
+       @mouseout="handleMouseOut">
+    <span :class="indexCss">{{ index }}</span>
+    <el-image class="logo_icon" :src="'https://static-data.gaokao.cn/upload/logo/114.jpg'" :fit="'cover'"/>
+    <div class="right">
+      <div class="title">浙江大学</div>
+      <div class="score">历年分数</div>
     </div>
 
   </div>
 </template>
 
 
-
-
 <style scoped>
 /* 常规的css */
-.wrap{
+.wrap {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.wrap .index_icon{
-  width: 20px;
-  height: 20px;
-  margin-right:15px;
-  display: inline-block;
-}
-.wrap .logo_icon{
+.wrap .logo_icon {
   width: 21px;
   height: 21px;
-  margin-right:15px;
+  margin-right: 15px;
   display: inline-block;
 }
-.wrap .right{
+
+.wrap .right {
   display: inline-block;
 }
-.wrap .right .title{
+
+.wrap .right .title {
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
   font-family: "Microsoft YaHei";
 
 }
-.wrap .right .score{
+
+.wrap .right .score {
   display: none;
 }
+
 /* 展开的css */
-.warp_active{
+.warp_active {
   cursor: pointer;
 }
-.warp_active{
+
+.warp_active {
   padding-bottom: 10px;
 }
-.warp_active .index_icon{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 20px;
-  height: 20px;
-  margin-right:10px;
-  display: inline-block;
-}
-.warp_active .logo_icon{
+
+.warp_active .logo_icon {
   width: 70px;
   height: 70px;
-  margin-right:15px;
+  margin-right: 15px;
   display: inline-block;
 }
-.warp_active .right{
+
+.warp_active .right {
   display: inline-block;
 }
-.warp_active .right .title{
+
+.warp_active .right .title {
   display: block;
   color: #ff4b2b;
   font-weight: bold;
   font-size: 18px;
   font-family: "Microsoft YaHei";
 }
-.warp_active .right .score{
+
+.warp_active .right .score {
   display: block;
   margin-top: 12px;
   font-size: 12px;
   color: #999999;
+}
+
+.hot-school-1 {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  margin-right: 15px;
+  background: red;
+  border-radius: 4px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 100
+}
+
+.hot-school-2 {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  margin-right: 15px;
+  background: #ff7f7f;
+  border-radius: 4px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 100
+}
+
+.hot-school-3 {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  margin-right: 15px;
+  background: #fcc;
+  border-radius: 4px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 100
+}
+
+.hot-school-n {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  margin-right: 15px;
+  background: #d8d8d8;
+  border-radius: 4px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 100
 }
 </style>

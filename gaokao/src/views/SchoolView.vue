@@ -54,7 +54,7 @@
           <div class="recommend-border">
             <recommend-school-row v-for="(item,index) in recommendTableData"
                                   :key="index"
-                                  :index="index"
+                                  :index="index+1"
                                   :active=false
             />
           </div>
@@ -156,6 +156,36 @@ const recommendTableData = [
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
   }, {
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
+    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+    title: '北京大学',
+  },{
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
   },
