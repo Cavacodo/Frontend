@@ -77,6 +77,7 @@
         :page-size="pageSize" :total="total" />
     </div>
   </div>
+
 </template>
 
 <script>
@@ -304,7 +305,7 @@ export default {
 
 
 /* .el-input {
-  width: 30%; 
+  width: 30%;
 } */
 
 .search-button {
