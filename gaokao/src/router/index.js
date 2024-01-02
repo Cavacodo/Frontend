@@ -56,6 +56,22 @@ const routes = [{
     title: '学校详情|高考推荐数据库'
   }
 },
+{
+  path: '/analyse',
+  name: 'collegeAnalysis',
+  component: () => import('../views/CollegeAnalysis.vue'),
+  meta: {
+    title: '院校分析'
+  },
+},
+{
+  path: '/predict',
+  name: 'scorePredict',
+  component: () => import('../views/ScorePrediction.vue'),
+  meta: {
+    title: '分数预测'
+  }
+}
 ]
 
 const router = createRouter({

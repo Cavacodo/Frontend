@@ -81,7 +81,7 @@ export default {
       const si_password = document.getElementById("si_password").value;
       console.log(si_email);
       if(si_email==="root" && si_password==="root"){
-        window.location.href = 'http://localhost:8081';
+        window.location.href = 'http://localhost:8080';
       }
       else{
         alert("滚！😡");
