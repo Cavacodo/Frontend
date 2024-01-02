@@ -35,7 +35,7 @@
         </el-form-item>
     </el-container>
     <div class="pic">
-        <img id='pics' src="https://p3.itc.cn/q_70/images03/20231228/3f754204387a4c59b39e9b1f11396a96.png">
+        <img id='pics' alt="现在是幻想时刻" src="https://p3.itc.cn/q_70/images03/20231228/3f754204387a4c59b39e9b1f11396a96.png">
     </div>
 </template>
 <style>
