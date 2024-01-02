@@ -19,13 +19,23 @@
             </el-select>
         </el-form-item>
     </el-container>
+    <el-container class="year">
+        <el-form-item label="选择年份">
+            <el-select v-model="value2" placeholder="请选择">
+                <el-option v-for="item in year" :key="item.value" :label="item.label" :value="item.value">
+                </el-option>
+                <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+                </el-option>
+            </el-select>
+        </el-form-item>
+    </el-container>
     <el-container class="button">
         <el-form-item>
             <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
         </el-form-item>
     </el-container>
     <div class="pic">
-        <img src="https://p3.itc.cn/q_70/images03/20231228/3f754204387a4c59b39e9b1f11396a96.png" >
+        <img id='pics' src="https://p3.itc.cn/q_70/images03/20231228/3f754204387a4c59b39e9b1f11396a96.png">
     </div>
 </template>
 <style>
@@ -52,17 +62,35 @@
     left: 50%;
     margin-top: 1%;
 }
-.pic
-{
+
+.pic {
     width: 400px;
     height: 300px;
     margin-left: 5%;
 }
 </style>
 <script>
+
 export default {
     data() {
         return {
+            year: [{
+                value: '1',
+                label: '2023'
+            },
+            {
+                value: '2',
+                label: '2022'
+            },
+            {
+                value: '3',
+                label: '2021'
+            },
+            {
+                value: '4',
+                label: '2020'
+            }
+            ],
             batch: [{
                 value: '1',
                 label: '提前批'
@@ -176,6 +204,17 @@ export default {
             value2: [],
             value3: []
         }
+    },
+    mounted() {
+        
+    },
+    methods: {
+        submitForm(){
+            const picURL = 'https://cimg.cnyes.cool/prod/news/4246948/xl/e1268acfc33ad4e776ca70c22ecb5213.jpg';
+            const picElement = document.getElementById('pics');
+            picElement.src = picURL;
+        }
     }
 }
+
 </script>
