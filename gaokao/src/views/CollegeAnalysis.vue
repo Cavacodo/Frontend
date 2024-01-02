@@ -1,0 +1,149 @@
+<template>
+    <el-select v-model="value" placeholder="请选择">
+    <el-option
+      v-for="item in province"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+  </el-select>
+  <el-select v-model="value" placeholder="请选择">
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+  </el-select>
+  <el-select v-model="value" placeholder="请选择">
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+  </el-select>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+        province: [{
+          value: '选项1',
+          label: '河北'
+        }, {
+          value: '选项2',
+          label: '山西'
+        }, {
+          value: '选项3',
+          label: '辽宁'
+        }, {
+          value: '选项4',
+          label: '吉林'
+        }, {
+          value: '选项5',
+          label: '黑龙江'
+        },{
+            value: '6',
+            label: '江苏'
+        },{
+            value: '7',
+            label: '浙江'
+        },{
+            value: '8',
+            label: '安徽'
+        },{
+            value: '9',
+            label: '福建'
+        },{
+            value: '10',
+            label: '江西',
+        },{
+            value: '11',
+            label: '山东'
+        },{
+            value: '12',
+            label: '河南'
+        },{
+            value: '13',
+            label: '湖北'
+        },{
+            value: '14',
+            label: '湖南'
+        },{
+            value: '15',
+            label: '广东'
+        },{
+            value: '16',
+            label: '海南'
+        },{
+            value: '17',
+            label: '四川'
+        },{
+            value: '18',
+            label: '贵州'
+        },{
+            value: '19',
+            label: '云南'
+        },{
+            value: '20',
+            label: '陕西'
+        },{
+            value: '21',
+            label: '甘肃'
+        },{
+            value: '22',
+            label: '青海'
+        },{
+            value: '24',
+            label: '内蒙古'
+        },{
+            value: '25',
+            label: '广西'
+        },{
+            value: '26',
+            label: '西藏'
+        },{
+            value: '27',
+            label: '宁夏'
+        },{
+            value: '28',
+            label: '新疆'
+        },{
+            value: '28',
+            label: '北京'
+        },{
+            value: '29',
+            label: '天津'
+        },{
+            value: '30',
+            label: '上海'
+        },{
+            value: '31',
+            label: '重庆'
+        }
+    ],
+        value1: [],
+        value2: []
+      }
+    }
+  }
+</script>
