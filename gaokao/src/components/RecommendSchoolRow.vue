@@ -3,7 +3,7 @@ import {ref, computed} from "vue"
 
 const props = defineProps({
   index: Number,
-  active: Boolean,
+  active: Boolean,//外部通过定时器指定是否激活，测试阶段统统为false
   logo: String,
   title: String,
 })
@@ -21,8 +21,6 @@ function handleMouseOut() {
 //计算css样式
 const indexCss = computed(() => {
   let index = props.index
-  console.log(index)
-  console.log(typeof(index))
   var css = "hot-school-"
   switch (index) {
     case 1: {
@@ -40,12 +38,30 @@ const indexCss = computed(() => {
     default :
       css += "n"
   }
+  return css
+})
+const divCss = computed(()=>{
+  var css = ''
+  let index = props.index
+  console.log(index)
+  switch (index) {
+    case 1: {
+      css += hover.value ? 'warp_active':props.active ? 'warp_active':'wrap'
+      css = css + " div_index_" + props.index
+      console.log("css 1" + css)
+      break
+    }
+    default :
+      css += hover.value ? 'warp_active':props.active ? 'warp_active':'wrap'
+      css = css + " div_index_" + "n"
+      console.log("css defalut" + css)
+  }
   console.log(css)
   return css
 })
 </script>
 <template>
-  <div :class="[hover ? 'warp_active':active ? 'warp_active':'wrap']" @mouseover="handleMouseOver"
+  <div :class="divCss" @mouseover="handleMouseOver"
        @mouseout="handleMouseOut">
     <span :class="indexCss">{{ index }}</span>
     <el-image class="logo_icon" :src="'https://static-data.gaokao.cn/upload/logo/114.jpg'" :fit="'cover'"/>
@@ -178,4 +194,20 @@ const indexCss = computed(() => {
   font-size: 12px;
   font-weight: 100
 }
+.div_index_1{
+  color: #000;
+  cursor: pointer;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.div_index_n{
+  color: #000;
+  cursor: pointer;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
 </style>

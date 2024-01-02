@@ -50,7 +50,10 @@
         </div>
         <!--推荐院校-->
         <div>
-          <span style= "font-size: 20px;font-family: 'Microsoft YaHei'">推荐院校</span>
+          <div class="recommend-header">
+            <span style="font-size: 20px;font-family: 'Microsoft YaHei'">推荐院校</span>
+          </div>
+
           <div class="recommend-border">
             <recommend-school-row v-for="(item,index) in recommendTableData"
                                   :key="index"
@@ -158,34 +161,34 @@ const recommendTableData = [
   }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
-  },{
+  }, {
     logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
     title: '北京大学',
   },
@@ -201,11 +204,18 @@ const ads = [
 </script>
 
 <style scoped>
+.recommend-header {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
 .recommend-border {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
+  border: 1px solid #eee;
 }
 
 .form-box {
