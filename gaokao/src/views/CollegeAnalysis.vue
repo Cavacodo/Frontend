@@ -1,35 +1,27 @@
 <template>
-    <el-select v-model="value" placeholder="请选择">
-    <el-option
+    <el-container class="province">
+        <el-form-item label="选择省份">
+        <el-select v-model="value1" placeholder="请选择">
+        <el-option
       v-for="item in province"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </el-option>
-    <el-option
+        </el-option>
+        <el-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value">
-    </el-option>
-  </el-select>
-  <el-select v-model="value" placeholder="请选择">
+        </el-option>
+        </el-select>
+    </el-form-item>
+</el-container>
+<el-container class="year">
+    <el-form-item label="选择年份">
+        <el-select v-model="value2" placeholder="请选择">
     <el-option
-      v-for="item in options"
-      :key="item.value"
-      :label="item.label"
-      :value="item.value">
-    </el-option>
-    <el-option
-      v-for="item in options"
-      :key="item.value"
-      :label="item.label"
-      :value="item.value">
-    </el-option>
-  </el-select>
-  <el-select v-model="value" placeholder="请选择">
-    <el-option
-      v-for="item in options"
+      v-for="item in year"
       :key="item.value"
       :label="item.label"
       :value="item.value">
@@ -41,11 +33,90 @@
       :value="item.value">
     </el-option>
   </el-select>
+    </el-form-item>
+</el-container>
+<el-container class="batch">
+  <el-form-item label="选择批次">
+    <el-select v-model="value3" placeholder="请选择">
+    <el-option
+      v-for="item in batch"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+    <el-option
+      v-for="item in options"
+      :key="item.value"
+      :label="item.label"
+      :value="item.value">
+    </el-option>
+  </el-select>
+  </el-form-item>
+</el-container>
+<el-container class="button">
+  <el-form-item>
+    <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
+  </el-form-item>
+    </el-container>
+  
 </template>
+<style>
+    .province
+    {
+        position: relative;
+        left: 40%;
+        margin-top: 5%;
+    }
+    .year
+    {
+        position: relative;
+        left: 40%;
+        margin-top: 1%;
+    }
+    .batch
+    {
+        position: relative;
+        left: 40%;
+        margin-top: 1%;
+    }
+    .button
+    {
+        position: relative;
+        left: 50%;
+        margin-top: 1%;
+    }
+</style>
 <script>
   export default {
     data() {
       return {
+        batch:[{
+            value: '1',
+            label: '提前批'
+        },
+        {
+            value: '2',
+            label: '本科批'
+        },
+        {
+            value: '3',
+            label: '专科批'
+        }
+    ],
+        year: [
+            {
+                value: '1',
+                label: '2023'
+        },{
+                value: '1',
+                label: '2022'
+        },
+        {
+                value: '1',
+                label: '2021'
+        }
+    ],
+    // value: '',
         province: [{
           value: '选项1',
           label: '河北'
@@ -142,7 +213,8 @@
         }
     ],
         value1: [],
-        value2: []
+        value2: [],
+        value3: []
       }
     }
   }
