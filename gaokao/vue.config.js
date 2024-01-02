@@ -31,10 +31,19 @@ module.exports = defineConfig({
       }
     }
   },
-  chainWebpack: config => {
-    // 移除 preload(预载) 插件
-    config.plugins.delete('preload')
-    // 移除 prefetch(预取) 插件
-    config.plugins.delete('prefetch')
+  configureWebpack: {
+    resolve: { extensions: [".ts", ".tsx", ".js", ".json"] },
+    module: {
+      rules: [
+        {
+          test: /\.tsx?$/,
+          loader: 'ts-loader',
+          exclude: /node_modules/,
+          options: {
+            appendTsSuffixTo: [/\.vue$/],
+          }
+        }
+      ]
+    }
   }
 })
