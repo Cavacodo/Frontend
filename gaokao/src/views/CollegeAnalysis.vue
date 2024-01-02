@@ -24,6 +24,9 @@
             <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
         </el-form-item>
     </el-container>
+    <div class="pic">
+        <img src="https://p3.itc.cn/q_70/images03/20231228/3f754204387a4c59b39e9b1f11396a96.png" >
+    </div>
 </template>
 <style>
 .province {
@@ -49,7 +52,12 @@
     left: 50%;
     margin-top: 1%;
 }
-
+.pic
+{
+    width: 400px;
+    height: 300px;
+    margin-left: 5%;
+}
 </style>
 <script>
 export default {
