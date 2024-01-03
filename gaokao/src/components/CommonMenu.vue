@@ -9,7 +9,6 @@
         background-color="#FFFFFF"
         router
       >
-        <!--:default-active="activeIndex"-->
         <el-menu-item v-for="item in menu" :index="item.path" :key="item.path">
           <template v-slot:title>
             <span>{{ item.lable }}</span>
@@ -149,17 +148,11 @@ export default {
         url: "/myProfile",
       }
     ];
-    //const router = useRouter();
-    const clickMenu = () => {
-      // router.push({
-      //   path: '/home/' + item.name,
-      // });
-    };
     const route = useRoute();
     const onRoutes = computed(() => {
+      console.log(route.path)
       return route.path;
     });
-    //const store = useStore();
     const userData = {
       name: localStorage.getItem("ms_username"),
       balance: 20,
@@ -178,7 +171,6 @@ export default {
     };
     return {
       menu,
-      clickMenu,
       userData,
       onRoutes,
       handleCommand,

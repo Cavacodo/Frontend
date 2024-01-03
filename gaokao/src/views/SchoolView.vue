@@ -6,13 +6,6 @@
         <div class="recommend-wrap">
           <div class="form-box">
             <el-form :model="form" label-width="80px" class="ms-content" label-position="left" hide-required-asterisk>
-              <el-form-item label="风险">
-                <el-radio-group v-model="form.schoolRisk" @change="handleSearch">
-                  <el-radio-button label="高风险"/>
-                  <el-radio-button label="中风险"/>
-                  <el-radio-button label="低风险"/>
-                </el-radio-group>
-              </el-form-item>
               <el-form-item label="学校省份">
                 <el-radio-group v-model="form.province" @change="handleSearch">
                   <el-radio class="province-radio" v-for="p in provinceList" width="90px" :key="p" :label="p" border/>
@@ -39,6 +32,7 @@
                       :url="item.url"
                       :titles="item.titles"
                       :tags="item.tags"
+                      @click="redirectDetail"
           />
         </div>
       </el-main>
@@ -71,38 +65,51 @@
   </div>
 </template>
 <script setup>
-import {onMounted, reactive,ref} from 'vue'
+import {onMounted, reactive, ref} from 'vue'
 import SchoolRow from "../components/SchoolRow.vue";
 import RecommendSchoolRow from "@/components/RecommendSchoolRow.vue";
 import axios from "axios";
+import router from "@/router";
+import {useRouter} from "vue-router";
 // 单选框数据
 const form = reactive({
-  kelei: '0',
-  userScore: 350,
-  userRank: 243965,
-  schoolRisk: '高风险',
   province: '全部',
   schoolClass: '全部',
+  page:ref(1),
+  size:ref(20),
+
 });
 const provinceList = ['全部', '北京', '天津', '河北', '山西', '内蒙古',
   '辽宁', '吉林', '黑龙江', '上海', '江苏', '浙江', '安徽', '福建', '江西',
   '山东', '河南', '湖北', '湖南', '广东', '广西', '海南', '重庆', '四川',
   '贵州', '云南', '西藏', '陕西', '甘肃', '青海', '宁夏', '新疆'];
+function handleSearch(){
+  console.log(form)
+}
+
 // 初始化
 // 表格数据
 const tableData = reactive([])
-onMounted(()=>{
-  axios.get('/mock/getTableData?test=a')
+function getTableData() {
+
+  axios.get(`/school/getByKey?province=${form.province}&characteristic=${form.schoolClass}&page=${form.page}&size=${form.size}`)
       .then(response => {
         // 请求成功后的处理
         tableData.value = response.data.dataList
-        tableData.value.forEach(item =>{
+        tableData.value.forEach(item => {
         })
       })
       .catch(error => {
         // 请求失败后的处理
         console.error(error);
       });
+}
+function redirectDetail(){
+  const router = useRouter()
+  router.push("/schoolDetail")
+}
+onMounted(() => {
+  getTableData()
 })
 // 推荐数据
 const recommendTableData = [

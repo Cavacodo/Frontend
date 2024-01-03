@@ -15,61 +15,131 @@ Mock.mock('/isValid','post',function(res){
         isTrue: isTruem
     }
 })
-Mock.mock(RegExp('/mock/getTableData' + '.*'), 'get', {
+Mock.mock(RegExp('/school/getByKey' + '.*'), 'get', {
     status:200,
     dataList:[
         {
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },{
+            id:1,
             url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
             titles: ["西安交通大学", "人气高校"],
             tags: ["985", "211", "综合院校"],
             extensions: []
         },
-        {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        }, {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        }, {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        }, {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        }, {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        }, {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        }, {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        }, {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        }, {
-            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-            titles: ["西安交通大学", "人气高校"],
-            tags: ["985", "211", "综合院校"],
-            extensions: []
-        },]
+    ]
 })
 Mock.mock('/getRecommendTableData', 'get', {
     status:200, //请求成功状态码

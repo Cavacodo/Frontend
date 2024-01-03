@@ -73,6 +73,14 @@ const routes = [{
         }
     },
     {
+        path: '/schoolDetail',
+        name: 'schoolDetail',
+        component: () => import('../views/SchoolDetail.vue'),
+        meta: {
+            title: '学校详情'
+        }
+    },
+    {
         path: '/TestMock',
         name: 'testTry',
         component: () => import('../views/TestMock.vue'),
