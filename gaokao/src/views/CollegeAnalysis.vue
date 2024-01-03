@@ -1,7 +1,7 @@
 <template>
     <el-container class="province">
         <el-form-item label="选择省份">
-            <el-select v-model="value1" placeholder="请选择">
+            <el-select v-model="value1" placeholder="请选择" id="province">
                 <el-option v-for="item in province" :key="item.value" :label="item.label" :value="item.value">
                 </el-option>
                 <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
@@ -11,7 +11,7 @@
     </el-container>
     <el-container class="batch">
         <el-form-item label="选择批次">
-            <el-select v-model="value3" placeholder="请选择">
+            <el-select v-model="value3" placeholder="请选择" id="batch">
                 <el-option v-for="item in batch" :key="item.value" :label="item.label" :value="item.value">
                 </el-option>
                 <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
@@ -21,7 +21,7 @@
     </el-container>
     <el-container class="year">
         <el-form-item label="选择年份">
-            <el-select v-model="value2" placeholder="请选择">
+            <el-select v-model="value2" placeholder="请选择" id="year">
                 <el-option v-for="item in year" :key="item.value" :label="item.label" :value="item.value">
                 </el-option>
                 <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
@@ -210,9 +210,21 @@ export default {
     },
     methods: {
         submitForm(){
-            const picURL = 'https://cimg.cnyes.cool/prod/news/4246948/xl/e1268acfc33ad4e776ca70c22ecb5213.jpg';
-            const picElement = document.getElementById('pics');
-            picElement.src = picURL;
+            // const picURL = 'https://cimg.cnyes.cool/prod/news/4246948/xl/e1268acfc33ad4e776ca70c22ecb5213.jpg';
+            // const picElement = document.getElementById('pics');
+            // picElement.src = picURL;
+
+            const province = document.getElementById('province').value;
+            const batch = document.getElementById('batch').value;
+            const year = document.getElementById('year').value;
+
+            const data = {
+                province: province,
+                batch: batch,
+                year: year
+            };
+            console.log(data);
+            
         }
     }
 }
