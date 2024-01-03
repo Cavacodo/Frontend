@@ -95,6 +95,14 @@ const routes = [{
       meta: {
         title: 'profile'
       }
+    },
+    {
+        path: '/protocol',
+        name: 'protocol',
+        component: () => import('../views/ProtocolView.vue'),
+        meta: {
+            title: 'protocol'
+        }
     }
 ]
 const router = createRouter({

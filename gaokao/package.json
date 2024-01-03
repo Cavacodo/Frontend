@@ -16,7 +16,7 @@
     "g": "^2.0.1",
     "serve": "^14.0.1",
     "vue": "^3.2.13",
-    "vue-router": "^4.1.1",
+    "vue-router": "^4.2.5",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
