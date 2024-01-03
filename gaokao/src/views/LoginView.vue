@@ -24,7 +24,7 @@
           <input type="email" name="emal" id="si_email" placeholder="Email..." />
           <input type="password" name="password" id="si_password" placeholder="Password..." />
           <a href="#" @click="signUp" class="forget-password">老登是不是忘了密码？</a>
-          <button class="signIn" @click="signIn">sign in</button>
+          <button class="signIn" @click="validation">sign in</button>
         </div>
       </div>
       <!-- overlay container -->
@@ -51,10 +51,11 @@
 @import '../assets/css/login.css';
 </style>
 <script>
+import axios from 'axios'
 export default {
-  setup(){
+  setup() {
     // const checkCredentials = () =>{
-      
+
     // };
     // return {
     //   checkCredentials,
@@ -66,6 +67,27 @@ export default {
     }
   },
   methods: {
+    validation() {
+      const account = document.getElementById('si_email')
+      const acval = account.value
+      const passwd = document.getElementById('si_password')
+      const passwdval = passwd.value
+      const res = {
+        account: acval,
+        passwd: passwdval
+      };
+      console.log(res)
+      let data = axios.post('/isValid', res).then(response => {
+        const isTrue = response.data.isTrue;
+        console.log(isTrue)
+        if (isTrue == true) {
+          window.location.href = 'http://localhost:8080';
+        } else {
+          alert('我测你们码')
+        }
+      });
+
+    },
     signUpC() {
       this.isActive = true
     },
@@ -80,10 +102,10 @@ export default {
       const si_email = document.getElementById("si_email").value;
       const si_password = document.getElementById("si_password").value;
       console.log(si_email);
-      if(si_email==="root" && si_password==="root"){
+      if (si_email === "root" && si_password === "root") {
         window.location.href = 'http://localhost:8080';
       }
-      else{
+      else {
         alert("滚！😡");
       }
     }
