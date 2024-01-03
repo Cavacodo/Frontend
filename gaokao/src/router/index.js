@@ -91,7 +91,7 @@ const routes = [{
     {
       path: '/myProfile',
       name: 'profile',
-      component: () => import('../views/myProfile.vue'),
+      component: () => import('../views/MyProfile.vue'),
       meta: {
         title: 'profile'
       }
