@@ -87,6 +87,14 @@ const routes = [{
         meta: {
             title: 'testTry'
         }
+    },
+    {
+      path: '/myProfile',
+      name: 'profile',
+      component: () => import('../views/myProfile.vue'),
+      meta: {
+        title: 'profile'
+      }
     }
 ]
 const router = createRouter({

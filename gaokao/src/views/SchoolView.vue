@@ -28,6 +28,8 @@
                 </el-radio-group>
               </el-form-item>
             </el-form>
+
+  
           </div>
         </div>
         <!--学校展示表格-->

@@ -142,6 +142,12 @@ export default {
         lable: "数据大屏",
         url: "/bigdata",
       },
+      {
+        path: "profile",
+        name: "profile",
+        label: "个人资料",
+        url: "/myProfile",
+      }
     ];
     //const router = useRouter();
     const clickMenu = () => {
@@ -167,7 +173,8 @@ export default {
     };
     const store = useStore();
     const clickSelect = () => {
-      store.commit("showSelectDialog");
+      router.push("/myProfile");
+      // store.commit("showSelectDialog");
     };
     return {
       menu,
@@ -177,6 +184,6 @@ export default {
       handleCommand,
       clickSelect,
     };
-  },
+  }
 };
 </script>
