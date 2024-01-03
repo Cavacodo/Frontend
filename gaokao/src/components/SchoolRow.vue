@@ -1,27 +1,32 @@
 <script lang="ts" setup>
 const props = defineProps({
   url: String,
-  titles: Array,
-  tags: Array,
-  extensions: Array,
+  title: String,
+  tags: {
+    type: Array,
+    default: () => [],
+  },
+    extensions: Array,
 })
 </script>
 <template>
   <div class="common-layout">
     <!--logo-->
     <div style="margin-right: 20px;">
-      <img class="img" src="https://static-data.gaokao.cn/upload/logo/414.jpg">
+      <img class="img" :src="url">
     </div>
     <!--中间部分：标题等-->
     <div class="mid">
       <div style="margin-bottom: 34px;">
-        <h3 class="title">中南财经政法大学</h3>
+        <h3 class="title">{{title}}</h3>
       </div>
       <div>
-        <span class="content_1">理科</span>
-        <span class="content_1">本科一批</span>
-        <span class="content_2">普通类</span>
-        <span class="content_last">最低分/最低位次：559/12774</span>
+<!--        <span class="content_1">理科</span>-->
+<!--        <span class="content_1">本科一批</span>-->
+<!--        <span class="content_2">普通类</span>-->
+<!--        <span class="content_last">最低分/最低位次：559/12774</span>-->
+        <span v-for="(item, index) in tags.slice(0, tags.length-1)" class="content_1">{{item}}</span>
+        <span class="content_2">{{tags[tags.length-1]}}</span>
       </div>
       <!--拓展部份：按钮-->
       <div class="extension">
@@ -52,8 +57,8 @@ const props = defineProps({
 }
 
 .img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .mid {
@@ -81,6 +86,8 @@ const props = defineProps({
 .mid .content_2{
   border: none;
   margin-right: 20px;
+  color: #555;
+
 }
 .mid .content_last{
   border: none;
@@ -128,9 +135,5 @@ const props = defineProps({
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-.el-main{
-  margin-left: 50px;
-  margin-right: 30px;
 }
 </style>

@@ -2,12 +2,12 @@
   <div class="common-menu">
     <div class="menu-wrap">
       <el-menu
-        :default-active="onRoutes"
-        class="el-menu"
-        mode="horizontal"
-        :ellipsis="false"
-        background-color="#FFFFFF"
-        router
+          :default-active="onRoutes"
+          class="el-menu"
+          mode="horizontal"
+          :ellipsis="false"
+          background-color="#FFFFFF"
+          router
       >
         <el-menu-item v-for="item in menu" :index="item.path" :key="item.path">
           <template v-slot:title>
@@ -17,17 +17,19 @@
         <div class="menu-right">
           <el-button @click="clickSelect">我的</el-button>
           <div class="user-avator">
-            <el-icon><Avatar /></el-icon>
+            <el-icon>
+              <Avatar/>
+            </el-icon>
           </div>
           <el-dropdown
-            class="user-name"
-            trigger="click"
-            @command="handleCommand"
+              class="user-name"
+              trigger="click"
+              @command="handleCommand"
           >
             <div class="el-dropdown-link">
               <span
-                ><b>{{ userData.name }}</b
-                ><el-icon><CaretBottom /></el-icon
+              ><b>{{ userData.name }}</b
+              ><el-icon><CaretBottom/></el-icon
               ></span>
             </div>
 
@@ -42,60 +44,13 @@
     </div>
   </div>
 </template>
-<style scoped>
-b {
-  color: #409eff;
-}
-.common-menu {
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu-wrap {
-  flex-grow: 3;
-}
-.button-wrap {
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
-  margin-left: auto;
-  padding-right: 20px;
-}
-.user-avator {
-  margin-left: 20px;
-}
-.user-avator img {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.user-name {
-  margin-left: 10px;
-  /*vertical-align: middle;*/
-}
-.el-dropdown-link {
-  color: #000;
-  cursor: pointer;
-  vertical-align: middle;
-}
-.menu-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
-  margin-left: auto;
-  padding-right: 20px;
-}
-</style>
+
 
 <script>
-import { useRoute, useRouter } from "vue-router";
-import { useStore } from "vuex";
-import { computed } from "vue";
+import {useRoute, useRouter} from "vue-router";
+import {useStore} from "vuex";
+import {computed,ref} from "vue";
+
 export default {
   setup() {
     const menu = [
@@ -149,9 +104,13 @@ export default {
       }
     ];
     const route = useRoute();
+    const menuPaths = ref(["/home", "/school", "/special", "/recommend", "/analyse", "/predict", "/bigdata"])
     const onRoutes = computed(() => {
-      console.log(route.path)
-      return route.path;
+      menuPaths.value.forEach(p =>{
+        if(p == route.path){
+          return route.path;
+        }
+      })
     });
     const userData = {
       name: localStorage.getItem("ms_username"),
@@ -179,3 +138,61 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+b {
+  color: #409eff;
+}
+
+.common-menu {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-wrap {
+  flex-grow: 3;
+}
+
+.button-wrap {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.user-avator {
+  margin-left: 20px;
+}
+
+.user-avator img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  margin-left: 10px;
+  /*vertical-align: middle;*/
+}
+
+.el-dropdown-link {
+  color: #000;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.menu-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  margin-left: auto;
+  padding-right: 20px;
+}
+</style>

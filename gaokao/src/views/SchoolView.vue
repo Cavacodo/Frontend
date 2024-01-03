@@ -30,9 +30,9 @@
           <school-row v-for="(item,index) in tableData.value"
                       :key="index"
                       :url="item.url"
-                      :titles="item.titles"
+                      :title="item.titles[0]"
                       :tags="item.tags"
-                      @click="redirectDetail"
+                      @click="redirectDetail(item.id)"
           />
         </div>
       </el-main>
@@ -69,8 +69,10 @@ import {onMounted, reactive, ref} from 'vue'
 import SchoolRow from "../components/SchoolRow.vue";
 import RecommendSchoolRow from "@/components/RecommendSchoolRow.vue";
 import axios from "axios";
-import router from "@/router";
-import {useRouter} from "vue-router";
+import {useStore} from "vuex";
+import { useRouter, useRoute } from 'vue-router'
+const router = useRouter();
+const store = useStore();
 // 单选框数据
 const form = reactive({
   province: '全部',
@@ -104,8 +106,9 @@ function getTableData() {
         console.error(error);
       });
 }
-function redirectDetail(){
-  const router = useRouter()
+
+function redirectDetail(sId){
+  store.state.showingSchoolId = sId
   router.push("/schoolDetail")
 }
 onMounted(() => {
@@ -320,5 +323,9 @@ p {
   height: 150px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.el-main{
+  margin-left: 70px;
+  margin-right: 40px;
 }
 </style>
