@@ -32,7 +32,7 @@
         </div>
         <!--学校展示表格-->
         <div>
-          <school-row v-for="(item,index) in tableData"
+          <school-row v-for="(item,index) in tableData.value"
                       :key="index"
                       :url="item.url"
                       :titles="item.titles"
@@ -69,9 +69,10 @@
   </div>
 </template>
 <script setup>
-import {reactive} from 'vue'
+import {onMounted, reactive,ref} from 'vue'
 import SchoolRow from "../components/SchoolRow.vue";
 import RecommendSchoolRow from "@/components/RecommendSchoolRow.vue";
+import axios from "axios";
 // 单选框数据
 const form = reactive({
   kelei: '0',
@@ -85,61 +86,22 @@ const provinceList = ['全部', '北京', '天津', '河北', '山西', '内蒙�
   '辽宁', '吉林', '黑龙江', '上海', '江苏', '浙江', '安徽', '福建', '江西',
   '山东', '河南', '湖北', '湖南', '广东', '广西', '海南', '重庆', '四川',
   '贵州', '云南', '西藏', '陕西', '甘肃', '青海', '宁夏', '新疆'];
+// 初始化
 // 表格数据
-const tableData = [
-  {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  },
-  {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  }, {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  }, {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  }, {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  }, {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  }, {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  }, {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  }, {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  }, {
-    url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    titles: ["西安交通大学", "人气高校"],
-    tags: ["985", "211", "综合院校"],
-    extensions: []
-  },
-]
+const tableData = reactive([])
+onMounted(()=>{
+  axios.get('/mock/getTableData?test=a')
+      .then(response => {
+        // 请求成功后的处理
+        tableData.value = response.data.dataList
+        tableData.value.forEach(item =>{
+        })
+      })
+      .catch(error => {
+        // 请求失败后的处理
+        console.error(error);
+      });
+})
 // 推荐数据
 const recommendTableData = [
   {

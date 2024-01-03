@@ -8,3 +8,63 @@ Mock.mock('/getData', 'get', {
     status:200, //请求成功状态码
     dataList:[1,2,3,4,5,6,7,8,9,10] //模拟的请
     })
+Mock.mock(RegExp('/mock/getTableData' + '.*'), 'get', {
+    status:200,
+    dataList:[
+        {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },
+        {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        }, {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        }, {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        }, {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        }, {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        }, {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        }, {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        }, {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        }, {
+            url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+            titles: ["西安交通大学", "人气高校"],
+            tags: ["985", "211", "综合院校"],
+            extensions: []
+        },]
+})
+Mock.mock('/getRecommendTableData', 'get', {
+    status:200, //请求成功状态码
+    dataList:[1,2,3,4,5,6,7,8,9,10] //模拟的请
+})

@@ -43,20 +43,16 @@ const indexCss = computed(() => {
 const divCss = computed(()=>{
   var css = ''
   let index = props.index
-  console.log(index)
   switch (index) {
     case 1: {
       css += hover.value ? 'warp_active':props.active ? 'warp_active':'wrap'
       css = css + " div_index_" + props.index
-      console.log("css 1" + css)
       break
     }
     default :
       css += hover.value ? 'warp_active':props.active ? 'warp_active':'wrap'
       css = css + " div_index_" + "n"
-      console.log("css defalut" + css)
   }
-  console.log(css)
   return css
 })
 </script>
