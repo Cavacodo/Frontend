@@ -12,6 +12,7 @@
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
     "echarts": "^5.4.3",
+    "echarts-stat": "^1.2.0",
     "element-plus": "^2.2.9",
     "g": "^2.0.1",
     "serve": "^14.0.1",
