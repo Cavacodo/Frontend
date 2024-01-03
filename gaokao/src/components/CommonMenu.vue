@@ -136,6 +136,12 @@ export default {
         lable: "智能推荐",
         url: "/recommend",
       },
+      {
+        path: "bigdata",
+        name: "bigdata",
+        lable: "数据大屏",
+        url: "/bigdata",
+      },
     ];
     //const router = useRouter();
     const clickMenu = () => {
