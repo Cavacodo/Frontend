@@ -8,6 +8,13 @@ Mock.mock('/getData', 'get', {
     status:200, //请求成功状态码
     dataList:[1,2,3,4,5,6,7,8,9,10] //模拟的请
     })
+Mock.mock('/isValid','post',function(res){
+    let body = JSON.parse(res.body)
+    const isTruem = body.account === 'root' && body.passwd === 'root';
+    return {
+        isTrue: isTruem
+    }
+})
 Mock.mock(RegExp('/mock/getTableData' + '.*'), 'get', {
     status:200,
     dataList:[
