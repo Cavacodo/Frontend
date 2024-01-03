@@ -156,7 +156,7 @@ const routes = [{
 {
   path: '/TestMock',
   name: 'testTry',
-  component: () => import('../views/TestMockjs.vue'),
+  component: () => import('../views/TestMock.vue'),
   meta:{
     title: 'testTry'
   }

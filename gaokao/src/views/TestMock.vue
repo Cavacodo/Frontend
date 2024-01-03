@@ -1,53 +1,27 @@
 <template>
-    <div class="about">
-      <h1>This is an about page</h1>
-      <!-- <button @click="getData()">test axios 请求数据</button> -->
-      <button @click="sendback">test</button>
-      <!-- <p>这是请求到的数据{{testData.list}}</p> -->
+    <div>
+        <button @click="sendback">anniu</button>
     </div>
-  </template>
-  <script>
-//   import { reactive } from '@vue/reactivity'
-//   import { getCurrentInstance } from "vue";
-  // import API from "../utils/request"
-  export default{
-      name:'AboutInfo',
-      setup(){
-          //数据
-        //   const testData = reactive({
-        //       list:[]
-        //   });
-        //   const { proxy } = getCurrentInstance();
-        //   //测试请求方法
-        //   const getData = function(){
-        //       proxy.$axios({
-        //           url:'/getData',
-        //           method:'get'
-        //       }).then((res)=>{
-        //           alert('请求成功!');
-        //           testData.list = res.data.dataList;
-        //       });
-        //   }
-        //   return{
-        //       testData,
-        //       getData,
-        //   }
-
-      },
-      method :{
+</template>
+<script>
+import axios from 'axios';
+export default{
+    data() {
+        // const isTrue = false;
+    },
+    methods: {
         sendback() {
-            console.log(123);
+            const res = {
+                account: 'root',
+                passwd: 'root'
+            };
             const isTrue = false;
-            this.proxy.$axios({
-                url: '/isValid',
-                method:'get'
-            }).then((res) =>{
-                alert('wocao');
-
-            })
+            let data = axios.post('/isValid',res);
+            
+            if(data) {
+                console.log(data.isTrue);
+            }
         }
-      }
-
-  }
-  </script>
-  
+    }
+}
+</script>
