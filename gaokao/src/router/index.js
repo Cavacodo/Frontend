@@ -49,14 +49,6 @@ const routes = [{
         }
     },
     {
-        path: '/my',
-        name: 'my',
-        component: () => import('../views/MyView.vue'),
-        meta: {
-            title: '学校详情|高考推荐数据库'
-        }
-    },
-    {
         path: '/analyse',
         name: 'collegeAnalysis',
         component: () => import('../views/CollegeAnalysis.vue'),
