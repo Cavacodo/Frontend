@@ -72,14 +72,14 @@ const routes = [{
     title: '分数预测'
   }
 },
-// {
-//   path: '/bigdata',
-//   name: 'bigdata',
-//   component: () => import('../views/BigDataShow.vue'),
-//   meta: {
-//     title: '数据大屏'
-//   }
-// },
+{
+  path: '/bigdata',
+  name: 'bigdata',
+  component: () => import('../views/BigDataShow.vue'),
+  meta: {
+    title: '数据大屏'
+  }
+},
 {
   path: '/TestMock',
   name: 'testTry',
