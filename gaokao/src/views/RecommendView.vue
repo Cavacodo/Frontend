@@ -380,7 +380,7 @@ a:visited {
 
 a:hover {
   /*悬浮状态*/
-  color: #409eff;;
+  color: #409eff;
 }
 
 p {
