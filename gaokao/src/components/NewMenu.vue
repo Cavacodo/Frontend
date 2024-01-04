@@ -46,25 +46,34 @@ export default {
           router.push("/analyse")
           break;
         }
-        case 5:{
+        case 5: {
           router.push("/recommend")
           break;
         }
-        case 6:{
+        case 6: {
           router.push("/bigdata")
           break;
         }
-        case 7:{
+        case 7: {
           router.push("/myProfile")
+          break;
+        }
+        case 8: {
+          router.push("/login")
           break;
         }
       }
     }
 
+    function showDialog() {
+
+    }
+
     return {
       onRoute,
       cssRouteForm,
-      changeRouter
+      changeRouter,
+      showDialog
     }
   }
 }
@@ -89,14 +98,6 @@ export default {
               <button class="search_icon">搜索</button>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="main-nav_right__2pkOx">
-        <div class="main-nav_changeCity__3TwPo">
-          <span class="main-nav_title__3Mns6" @click="changeRouter(7)" style="cursor: pointer">我的</span>
-        </div>
-        <div style="width: 8px; height: 10px; display: inline-block;"></div>
-        <div class="login-btn-float_loginBtnBox__YXCSd"><span class="login-btn-float_loginText__9o_uo">登录/注册</span>
         </div>
       </div>
     </div>

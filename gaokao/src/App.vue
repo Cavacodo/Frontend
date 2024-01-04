@@ -7,7 +7,7 @@ import newMenu from "./components/NewMenu.vue"
       <el-header style="height: 200px;">
         <new-menu></new-menu>
       </el-header>
-      <el-main style="margin-left: 150px">
+      <el-main style="margin-left: 80px">
         <router-view/>
       </el-main>
     </el-container>

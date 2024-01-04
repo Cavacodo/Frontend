@@ -34,41 +34,7 @@ const routes = [
             need2Login: 1,
             title: '高校查询'
         },
-        children: [
-            {
-                path: '/school/schoolDetail',
-                name: 'schoolDetail',
-                component: () => import('../views/SchoolDetail.vue'),
-                meta: {
-                    title: '学校详情'
-                },
-                children: [
-                    {
-                        path: '/school/schoolDetail/general',
-                        name: 'general',
-                        component: () => import('../views/SchoolDetailGeneral.vue'),
-                        meta: {
-                            title: '学校概况'
-                        }
-                    }, {
-                        path: '/school/schoolDetail/score',
-                        name: 'score',
-                        component: () => import('../views/SchoolDetailScore.vue'),
-                        meta: {
-                            title: '分数/计划'
-                        }
-                    }, {
-                        path: '/school/schoolDetail/major',
-                        name: 'major',
-                        component: () => import('../views/SchoolDetailMajor.vue'),
-                        meta: {
-                            title: '开设专业'
-                        }
-                    },
 
-                ]
-            },
-        ]
     },
     {
         path: '/scoreSearch',
@@ -136,7 +102,40 @@ const routes = [
         meta: {
             title: 'protocol'
         }
-    }
+    },
+    {
+        path: '/schoolDetail',
+        name: 'schoolDetail',
+        component: () => import('../views/SchoolDetail.vue'),
+        meta: {
+            title: '学校详情'
+        },
+        children: [
+            {
+                path: 'general',
+                name: 'general',
+                component: () => import('../views/SchoolDetailGeneral.vue'),
+                meta: {
+                    title: '学校概况'
+                }
+            }, {
+                path: 'score',
+                name: 'score',
+                component: () => import('../views/SchoolDetailScore.vue'),
+                meta: {
+                    title: '分数/计划'
+                }
+            }, {
+                path: 'major',
+                name: 'major',
+                component: () => import('../views/SchoolDetailMajor.vue'),
+                meta: {
+                    title: '开设专业'
+                }
+            },
+
+        ]
+    },
 ]
 const router = createRouter({
     history: createWebHashHistory(),
