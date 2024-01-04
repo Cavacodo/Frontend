@@ -1,0 +1,364 @@
+.pagination_wrap .page_item {
+    width: 60px;
+    height: 38px;
+    line-height: 38px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(237, 237, 237);
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagination_wrap .ant-pagination-item-link-icon {
+    color: rgb(255, 102, 2) !important;
+}
+
+.pagination_wrap .end_page, .pagination_wrap .first_page {
+    float: left;
+    font-size: 12px;
+    border: none;
+    width: auto;
+}
+
+.pagination_wrap .pagination_box {
+    float: left;
+}
+
+.pagination_wrap .ant-pagination li:nth-last-of-type(2) {
+    margin-right: 0px;
+}
+
+.pagination_box .ant-pagination-item-active {
+    border-radius: 100%;
+    background: rgb(103, 102, 103) !important;
+    border-color: rgb(103, 102, 103) !important;
+}
+
+.pagination_box .ant-pagination-item-active a {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+.pagination_box .ant-pagination-item {
+    min-width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    border: none;
+    margin-right: 5px;
+}
+
+.pagination_box .ant-pagination-item:last-child {
+    margin-right: 0px;
+}
+
+.pagination_box .ant-pagination-next, .pagination_box .ant-pagination-prev {
+    margin: 0px 30px;
+    font-size: 12px;
+}
+
+.pagination_box .ant-pagination-item:focus a, .pagination_box .ant-pagination-item:hover a {
+    color: rgb(255, 102, 2);
+}
+
+.pagination_box .ant-pagination-jump-next, .pagination_box .ant-pagination-jump-prev, .pagination_box .ant-pagination-next, .pagination_box .ant-pagination-prev {
+    height: 38px;
+    line-height: 38px;
+}
+
+.pagination_box .ant-pagination-item-active:focus a, .pagination_box .ant-pagination-item-active:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.pagination_box .ant-pagination-disabled a, .pagination_box .ant-pagination-next a, .pagination_box .ant-pagination-prev a {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+}
+
+.live-text-enter a {
+    text-decoration: underline !important;
+}
+
+.live-customstyle-enter {
+    margin-right: 45px;
+}
+
+.live-customstyle-enter i {
+    margin-right: 5px;
+}
+
+.province_score_line_table {
+    position: relative;
+}
+
+.province_score_line_table .line_table_box table {
+    width: 100%;
+    max-height: 339px;
+    padding: 0px 43px 0px 47px;
+    box-shadow: rgb(230, 230, 230) 0px 0px 13px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.province_score_line_table .line_table_box table tr {
+    border: 1px solid rgb(237, 237, 237);
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.province_score_line_table .line_table_box table tr th {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(136, 136, 136);
+    min-width: 75px;
+}
+
+.province_score_line_table .line_table_box table tr .minScore {
+    width: 130px;
+}
+
+.province_score_line_table .line_table_box table tr td {
+    vertical-align: middle;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+}
+
+.province_score_line_table .recruit_table table {
+    max-height: 629px;
+}
+
+.province_score_line_table .recruit_table table tr td:first-child {
+    border-right: 1px solid rgb(237, 237, 237);
+    cursor: pointer;
+    width: 240px;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+
+.province_score_line_table .recruit_table table tr th:first-child {
+    border-right: 1px solid rgb(237, 237, 237);
+}
+
+.province_score_line_table .major_score_table table {
+    max-height: 339px;
+}
+
+.province_score_line_table .major_score_table table tr td:first-child {
+    cursor: pointer;
+    width: 240px;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+
+.province_score_line_table .table_tip {
+    position: absolute;
+    bottom: -30px;
+}
+
+.schoolLine {
+    margin-bottom: 60px;
+    padding-left: 10px;
+}
+
+.showhidetr {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid rgb(237, 237, 237);
+    margin-top: -1px;
+}
+
+.table_tip {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.table_pagination_box {
+    float: right;
+    margin-top: 45px;
+    text-align: right;
+}
+
+.dropdown-box {
+    height: 32px;
+}
+
+.dropdown-box .ant-select-lg .ant-select-selection--single {
+    height: 32px !important;
+}
+
+.dropdown-box .ant-select-lg .ant-select-selection__rendered {
+    line-height: 32px !important;
+}
+
+.dropdown-box .ant-select-selection {
+    border-radius: 0px !important;
+}
+
+.dropdown-box.xuanke33 {
+    position: relative;
+}
+
+.dropdown-box.xuanke33 .xk-title {
+    border: 1px solid rgb(238, 238, 238);
+    width: 100px;
+    height: 32px;
+    padding: 0px 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-box.xuanke33 .xk-title i {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.xk-box {
+    width: 200px;
+    padding: 8px 8px 0px;
+}
+
+.xk-box .grid-box {
+    overflow: hidden;
+}
+
+.xk-box .grid-box div {
+    width: 56px;
+    float: left;
+    height: 26px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 1px solid rgb(216, 216, 216);
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.xk-box .grid-box div:nth-of-type(3n+3) {
+    margin-right: 0px;
+}
+
+.xk-box .grid-box .button-active {
+    border: 1px solid rgb(255, 102, 0);
+    color: rgb(255, 102, 0);
+    background: rgb(255, 249, 242);
+}
+
+.xk-box .grid-box .button-disable {
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+}
+
+.xk-box .operate {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.xk-box .operate div {
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0px 7px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.xk-box .operate .cancelBtn {
+    color: rgb(0, 0, 0);
+}
+
+.xk-box .operate .sureBtn {
+    color: rgb(255, 102, 2);
+}
+
+.specialCoreTip {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+}
+
+.specialCoreTip::before {
+    content: "✱";
+    color: red;
+    margin: 0px 5px 0px 0px;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+}
+
+.school-arrive-wrap {
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+.ad {
+    margin-bottom: 55px;
+}
+
+.ad .ad1-box {
+    float: left;
+    width: 590px;
+    height: 108px;
+}
+
+.ad .ad1-box .ant-carousel .slick-slide {
+    text-align: center;
+    height: 108px;
+    overflow: hidden;
+}
+
+.ad .ad1-box .ant-carousel .slick-slide img {
+    display: block;
+    width: 590px;
+    height: 108px;
+}
+
+.ad .ad2-box {
+    float: right;
+    width: 590px;
+    height: 108px;
+}
+
+.ad .ad2-box .ant-carousel .slick-slide {
+    text-align: center;
+    height: 108px;
+    overflow: hidden;
+}
+
+.ad .ad2-box .ant-carousel .slick-slide img {
+    display: block;
+    width: 590px;
+    height: 108px;
+}

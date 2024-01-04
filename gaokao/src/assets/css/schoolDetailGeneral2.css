@@ -1,0 +1,3405 @@
+.shcool-rank_rankWrap___S-SY {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.shcool-rank_rankWrap___S-SY .shcool-rank_item__XLAA1 {
+    width: 88px;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,.1);
+    border-radius: 8px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.shcool-rank_rankWrap___S-SY .shcool-rank_item__XLAA1 .shcool-rank_num__2vcEf {
+    color: #f60;
+    margin-bottom: 8px;
+    line-height: 20px;
+    text-align: center
+}
+
+.shcool-rank_rankWrap___S-SY .shcool-rank_item__XLAA1 .shcool-rank_num__2vcEf span {
+    font-size: 20px;
+    color: #f60;
+    margin-right: 1px
+}
+
+.shcool-rank_rankWrap___S-SY .shcool-rank_item__XLAA1 .shcool-rank_name__2sDYc {
+    color: #666;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 0 4px;
+    text-align: center
+}
+
+.shcool-rank_rankWrap___S-SY .shcool-rank_item__XLAA1:last-child,.shcool-rank_rankWrap___S-SY .shcool-rank_item__XLAA1:nth-child(7n+7) {
+    margin-right: 0
+}
+
+.shcool-rank_introduceWrap__1mIL7 {
+    padding: 20px;
+    max-height: 140px;
+    color: #000;
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,.1);
+    border-radius: 8px;
+    line-height: 25px
+}
+
+.shcool-rank_introduceWrap__1mIL7 .shcool-rank_more__38Qk3 {
+    color: #f60;
+    cursor: pointer
+}
+
+.shcool-rank_introduceAndRank__2cPn2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 259px;
+    margin: 0 20px;
+    flex: 1 1
+}
+
+.message-board_bigTitle__3R4CV {
+    height: 32px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.message-board_bigTitle__3R4CV .message-board_title__1GlNG {
+    font-size: 20px;
+    color: #000
+}
+
+.message-board_bigTitle__3R4CV .message-board_title__1GlNG:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background: #ff6602;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: 1px
+}
+
+.message-board_bigTitle__3R4CV .message-board_more__2I9fU {
+    color: #666;
+    cursor: pointer
+}
+
+.message-board_hover__1hyuU {
+    transition: all .3s
+}
+
+.message-board_hover__1hyuU:hover {
+    color: #ff6602
+}
+
+.message-board_imgPreview__3Qjru {
+    position: relative
+}
+
+.message-board_imgPreview__3Qjru .message-board_close__1mtMy {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #fff;
+    font-size: 22px
+}
+
+.message-board_imgPreview__3Qjru .message-board_arrow__26fUE {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 22px;
+    background: rgba(0,0,0,.6);
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+    width: 27px;
+    text-align: center
+}
+
+.message-board_imgPreview__3Qjru .message-board_rightArrow__2qvQD {
+    right: 0
+}
+
+.message-board_imgPreview__3Qjru .message-board_leftArrow__2bsOe {
+    left: 0
+}
+
+.message-board_studentMessage__yjeYo {
+    padding-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,.1);
+    border-radius: 8px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH {
+    padding: 20px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionImg__KThs_ {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 5px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD {
+    width: calc(100% - 29px);
+    position: relative
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD .message-board_nameAndAddress__baz_t {
+    display: flex;
+    align-items: center
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD .message-board_nameAndAddress__baz_t .message-board_address__1X3wM,.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD .message-board_nameAndAddress__baz_t .message-board_name__2LPHL {
+    display: inline-block
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD .message-board_nameAndAddress__baz_t .message-board_name__2LPHL {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    margin-right: 10px;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD .message-board_nameAndAddress__baz_t .message-board_address__1X3wM {
+    padding: 0 8px;
+    height: 17px;
+    border-radius: 73px;
+    border: 1px solid #d8d8d8;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    line-height: 17px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD .message-board_time__Gto9H {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ababab
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD .message-board_ask__1Ja6d {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #f60
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_questionInfo__qX02b .message-board_questionAuthor__2FXTD .message-board_ask__1Ja6d i {
+    position: relative;
+    top: 1px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi {
+    padding-left: 28px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi .message-board_questionTitle__QRBxA {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: 19px;
+    margin-bottom: 11px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi .message-board_questionTitle__QRBxA span {
+    margin-right: 4px;
+    display: inline-block;
+    padding: 0 4px;
+    height: 18px;
+    border-radius: 2px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    top: -1px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi .message-board_questionTitle__QRBxA .message-board_sxjy__1C3mX {
+    background: #3093ff
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi .message-board_questionTitle__QRBxA .message-board_zyzx__1aSNf {
+    background: #fe8a00
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi .message-board_replyContent__2wCk7 {
+    padding: 11px 10px;
+    background: #f8f8f8;
+    border-radius: 4px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi .message-board_replyContent__2wCk7 .message-board_content__3lKNp {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 16px;
+    word-break: break-word
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi .message-board_replyContent__2wCk7 .message-board_content__3lKNp a {
+    margin: 0 6px
+}
+
+.message-board_studentMessage__yjeYo .message-board_messageItem__3q-VH .message-board_replyInfo__45Mgi .message-board_replyContent__2wCk7 .message-board_content__3lKNp span {
+    cursor: pointer;
+    color: #f60;
+    margin-left: 2px;
+    white-space: nowrap
+}
+
+.message-board_studentMessage__yjeYo .message-board_leaveMessage__2b69A {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 120px;
+    height: 38px;
+    background: #f60;
+    border-radius: 29px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 16px;
+    color: #fff
+}
+
+.message-board_studentMessage__yjeYo .message-board_leaveMessage__2b69A i {
+    margin-right: 4px
+}
+
+.message-board_guestbook__3UqNs {
+    margin-bottom: 30px
+}
+
+.school-qa_bigTitle___ysO9 {
+    height: 32px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.school-qa_bigTitle___ysO9 .school-qa_title__2DJ3M {
+    font-size: 20px;
+    color: #000
+}
+
+.school-qa_bigTitle___ysO9 .school-qa_title__2DJ3M:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background: #ff6602;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: 1px
+}
+
+.school-qa_bigTitle___ysO9 .school-qa_more__o65sS {
+    color: #666;
+    cursor: pointer
+}
+
+.school-qa_hover__3At3c {
+    transition: all .3s
+}
+
+.school-qa_hover__3At3c:hover {
+    color: #ff6602
+}
+
+.school-qa_imgPreview__3DVQM {
+    position: relative
+}
+
+.school-qa_imgPreview__3DVQM .school-qa_close__3fCzY {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #fff;
+    font-size: 22px
+}
+
+.school-qa_imgPreview__3DVQM .school-qa_arrow__2tHkj {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 22px;
+    background: rgba(0,0,0,.6);
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+    width: 27px;
+    text-align: center
+}
+
+.school-qa_imgPreview__3DVQM .school-qa_rightArrow__EZJpG {
+    right: 0
+}
+
+.school-qa_imgPreview__3DVQM .school-qa_leftArrow__qyFS5 {
+    left: 0
+}
+
+.school-qa_qaWrap__1syDn p {
+    margin-bottom: 15px;
+    height: 21px;
+    line-height: 21px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000
+}
+
+.school-qa_qaWrap__1syDn p:before {
+    content: "â€¢";
+    color: #f15d52;
+    font-size: 16px;
+    margin-right: 3px
+}
+
+.school-fengguang-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 460px;
+    height: 259px;
+    margin-left: 20px;
+    border-radius: 12px
+}
+
+.school-fengguang-wrap .tab-menu {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    z-index: 100;
+    background: rgba(0,0,0,.4);
+    border-radius: 40px;
+    padding: 4px 8px
+}
+
+.school-fengguang-wrap .tab-menu .item {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 4px;
+    padding: 0 8px;
+    color: hsla(0,0%,100%,.88);
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.school-fengguang-wrap .tab-menu .item i {
+    position: relative;
+    top: 1px
+}
+
+.school-fengguang-wrap .tab-menu .item:last-child {
+    margin: 0
+}
+
+.school-fengguang-wrap .tab-menu .item.active {
+    background: #fff;
+    color: #000;
+    border-radius: 50px
+}
+
+.school-fengguang-wrap .vr-quanjing {
+    display: block;
+    width: 86px;
+    height: 31px;
+    background: #fff3ee;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #ff4c00;
+    text-align: center;
+    line-height: 31px;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    z-index: 100;
+    cursor: pointer
+}
+
+.school-fengguang-wrap .school-view-swiper .video-box {
+    cursor: pointer
+}
+
+.school-fengguang-wrap .school-view-swiper .video-box img {
+    object-fit: cover
+}
+
+.school-fengguang-wrap .school-view-swiper .video-box .play-con {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+
+.school-gaikuang_bigTitle__3TeaB {
+    height: 32px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.school-gaikuang_bigTitle__3TeaB .school-gaikuang_title__2rmGz {
+    font-size: 20px;
+    color: #000
+}
+
+.school-gaikuang_bigTitle__3TeaB .school-gaikuang_title__2rmGz:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background: #ff6602;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: 1px
+}
+
+.school-gaikuang_bigTitle__3TeaB .school-gaikuang_more__27ign {
+    color: #666;
+    cursor: pointer
+}
+
+.school-gaikuang_hover__1bIhS {
+    transition: all .3s
+}
+
+.school-gaikuang_hover__1bIhS:hover {
+    color: #ff6602
+}
+
+.school-gaikuang_imgPreview__nhz86 {
+    position: relative
+}
+
+.school-gaikuang_imgPreview__nhz86 .school-gaikuang_close__3u2Ud {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #fff;
+    font-size: 22px
+}
+
+.school-gaikuang_imgPreview__nhz86 .school-gaikuang_arrow__5kVH4 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 22px;
+    background: rgba(0,0,0,.6);
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+    width: 27px;
+    text-align: center
+}
+
+.school-gaikuang_imgPreview__nhz86 .school-gaikuang_rightArrow__D2swQ {
+    right: 0
+}
+
+.school-gaikuang_imgPreview__nhz86 .school-gaikuang_leftArrow__1b-_2 {
+    left: 0
+}
+
+.school-gaikuang_fengguangWrap__dEoXS {
+    margin-bottom: 18px
+}
+
+.school-gaikuang_fengguangWrap__dEoXS .school-gaikuang_bigTitle__3TeaB span {
+    color: #000;
+    transition: all .4s;
+    cursor: pointer
+}
+
+.school-gaikuang_fengguangWrap__dEoXS .school-gaikuang_bigTitle__3TeaB span:hover {
+    color: #f60
+}
+
+.school-gaikuang_fengguangWrap__dEoXS .school-gaikuang_pics__1K8PL img {
+    width: 240px;
+    height: 164px;
+    border-radius: 4px 4px 4px 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+.school-gaikuang_fengguangWrap__dEoXS .school-gaikuang_pics__1K8PL img:nth-child(3n+3) {
+    margin: 0
+}
+
+.school-gaikuang_shisuWrap__2O0RH {
+    margin-bottom: 18px
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_bigTitle__3TeaB a {
+    cursor: pointer;
+    color: #000;
+    transition: all .4s
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_bigTitle__3TeaB a:hover {
+    color: #f60
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_grid__2DBhP {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_grid__2DBhP .school-gaikuang_item__2g0W- {
+    text-align: center;
+    margin-right: 52px;
+    margin-bottom: 20px
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_grid__2DBhP .school-gaikuang_item__2g0W- .school-gaikuang_coverBack__PbM4R {
+    background: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_grid__2DBhP .school-gaikuang_item__2g0W- img {
+    background: #f5f5f5;
+    width: 48px;
+    height: 48px
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_grid__2DBhP .school-gaikuang_item__2g0W-:nth-child(6n+6) {
+    margin-right: 0
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_shisuDes__2Zv2B .school-gaikuang_des__zGa3w {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_shisuDes__2Zv2B .school-gaikuang_des__zGa3w .school-gaikuang_inTitle__2XBAK {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 12px
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_shisuDes__2Zv2B .school-gaikuang_des__zGa3w .school-gaikuang_inTitle__2XBAK i {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 3px;
+    font-size: 20px;
+    margin-right: 12px
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_pics__1K8PL img {
+    width: 240px;
+    height: 164px;
+    border-radius: 4px 4px 4px 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+.school-gaikuang_shisuWrap__2O0RH .school-gaikuang_pics__1K8PL img:nth-child(3n+3) {
+    margin: 0
+}
+
+.school_gk .ad_box {
+    -webkit-transform: translateX(-15px) scale(.931)!important;
+    transform: translateX(-15px) scale(.931)!important
+}
+
+.intro_right_wrap .partner_msg {
+    position: relative;
+    padding-right: 120px
+}
+
+.intro_right_wrap .partner_msg .right_pt {
+    width: 120px;
+    text-align: center;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #f60;
+    border-radius: 0;
+    background: #f60;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.intro_right_wrap .partner_msg .right_pt span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%
+}
+
+.intro_right_wrap .ad_box {
+    width: 430px;
+    height: 240px;
+    position: relative;
+    margin-bottom: 31px;
+    z-index: 1000;
+    -webkit-transform: translateX(-7px) scale(.98);
+    transform: translateX(-7px) scale(.98)
+}
+
+.intro_right_wrap .ad_box .close {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid #6d6262;
+    right: -65px;
+    top: -40px
+}
+
+.intro_right_wrap .ad_box .ad_page_box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: left -2px top;
+    background-size: 50% 100%;
+    transition: 1s;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: -ms-preserve-3d;
+    cursor: pointer
+}
+
+.intro_right_wrap .ad_box .ad_page_box .page1 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0
+}
+
+.intro_right_wrap .ad_box .ad_page_box .page1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.intro_right_wrap .ad_box .ad_page_box .page1 .page1up {
+    background: #fff;
+    z-index: 2;
+    transform-origin: left center;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center
+}
+
+.intro_right_wrap .ad_box .ad_page_box .page1 .page1down {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    left: -214px!important;
+    transform-origin: right center;
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center
+}
+
+.intro_right_wrap .ad_box .ad_page_box .page2 {
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.intro_right_wrap .ad_box .ad_page_box .shou {
+    position: absolute;
+    top: 70%;
+    left: 51%
+}
+
+.intro_right_wrap .ad_box .ad_page_box .pause {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.intro_right_wrap .ad_box .videobox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+    -webkit-animation: videomove 1s linear forwards;
+    animation: videomove 1s linear forwards
+}
+
+.intro_right_wrap .ad_box .videobox .cover-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 10;
+    cursor: pointer
+}
+
+.intro_right_wrap .ad_box .air_icon {
+    position: absolute;
+    top: 200px;
+    left: 380px;
+    display: none
+}
+
+.intro_right_wrap .ad_box .air_icon_move {
+    -webkit-animation: airmove 1s linear forwards;
+    animation: airmove 1s linear forwards
+}
+
+.intro_right_wrap .ad_box2 {
+    height: 129px;
+    margin-top: 31px;
+    margin-bottom: 31px
+}
+
+.intro_right_wrap .ad_box2 .ad_item_left_height_style {
+    width: 430px;
+    height: 129px
+}
+
+.intro_right_wrap .ad_box2 .ad_item_left_height_style .ant-carousel .slick-slide img {
+    width: 430px;
+    height: 129px!important
+}
+
+.intro_right_wrap .right_item {
+    margin-bottom: 31px
+}
+
+.intro_right_wrap .right_item .info_title_box {
+    margin-bottom: 23px;
+    height: 32px
+}
+
+.intro_right_wrap .right_item .info_title_box .info_title_left {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000
+}
+
+.intro_right_wrap .right_item .info_title_box .info_title_left .title_border {
+    float: left;
+    width: 2px;
+    height: 16px;
+    background: #ff6602;
+    margin: 8px 10px 0 0
+}
+
+.intro_right_wrap .right_item .info_title_box .info_title_right {
+    float: right;
+    width: 116px;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    border: none!important
+}
+
+.intro_right_wrap .right_item .info_title_box .info_title_right .comment_more {
+    color: #000;
+    transition: all .4s
+}
+
+.intro_right_wrap .right_item .info_title_box .info_title_right a {
+    color: #000
+}
+
+.intro_right_wrap .right_item .info_title_box .info_title_right a:hover {
+    color: #ff6602
+}
+
+.intro_right_wrap .right_item .info_title_box .info_title_right .info_title_right_icon {
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+.intro_right_wrap .right_item .info_title_box .info_title_right .comment_more:hover {
+    color: #ff6602
+}
+
+.intro_right_wrap .right_item .info_title_box .major_more {
+    border: none;
+    text-align: right
+}
+
+.intro_right_wrap .right_item .info_xstitle {
+    margin-bottom: 13px
+}
+
+.intro_right_wrap .right_item .school_xs_lb {
+    padding-bottom: 10px
+}
+
+.intro_right_wrap .right_item .school_xs_lb span {
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #666;
+    line-height: 30px
+}
+
+.intro_right_wrap .right_item .school_xs_lb span:before {
+    content: "âœ±";
+    color: red;
+    margin: 0 5px 0 0
+}
+
+.intro_right_wrap .right_item .school_xs_lb .noneSpan:before {
+    content: none
+}
+
+.intro_right_wrap .right_item .item_content_box {
+    box-shadow: 0 0 13px #e6e6e6;
+    border-radius: 10px
+}
+
+.intro_right_wrap .right_item .item_content_box .introright_loading_box {
+    border: 1px solid #e4e4e4;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center
+}
+
+.intro_right_wrap .right_item .sex_rate_box {
+    height: 130px;
+    padding-top: 30px;
+    text-align: center
+}
+
+.intro_right_wrap .right_item .sex_rate_box .sex_in {
+    display: inline-block
+}
+
+.intro_right_wrap .right_item .sex_rate_box .sex_box {
+    float: left
+}
+
+.intro_right_wrap .right_item .sex_rate_box .sex_box p {
+    margin-left: 3px
+}
+
+.intro_right_wrap .right_item .sex_rate_box .sex_box2 {
+    margin-left: -1px
+}
+
+.intro_right_wrap .right_item .sex_rate_box .rate_box {
+    float: left;
+    width: 295px;
+    margin: -2px 10px 0
+}
+
+.intro_right_wrap .right_item .sex_rate_box .rate_box .rate_num {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1ea5eb;
+    opacity: .85;
+    padding: 0 15px
+}
+
+.intro_right_wrap .right_item .sex_rate_box .rate_box .rate_num span {
+    float: left
+}
+
+.intro_right_wrap .right_item .sex_rate_box .rate_box .rate_num span:last-child {
+    float: right;
+    color: #f96359
+}
+
+.intro_right_wrap .right_item .sex_rate_box .rate_box .rate_line {
+    height: 10px
+}
+
+.intro_right_wrap .right_item .sex_rate_box .rate_box .rate_line .line1 {
+    float: left;
+    height: 100%;
+    background: #1ea5eb;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.intro_right_wrap .right_item .sex_rate_box .rate_box .rate_line .line_center {
+    float: left;
+    background: #fff;
+    width: 2px;
+    height: 100%
+}
+
+.intro_right_wrap .right_item .sex_rate_box .rate_box .rate_line .line2 {
+    float: left;
+    height: 100%;
+    background: #f96359;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.intro_right_wrap .right_item .job_rate_box {
+    height: 170px;
+    padding: 25px 35px
+}
+
+.intro_right_wrap .right_item .job_rate_box .job_item {
+    float: left;
+    margin-right: 25px
+}
+
+.intro_right_wrap .right_item .job_rate_box .job_item .job_circle {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #ffc351;
+    border-radius: 50%;
+    line-height: 90px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffc351
+}
+
+.intro_right_wrap .right_item .job_rate_box .job_item .job_circle2 {
+    border: 1px solid #f96359;
+    color: #f96359
+}
+
+.intro_right_wrap .right_item .job_rate_box .job_item .job_circle3 {
+    border: 1px solid #13aff2;
+    color: #13aff2
+}
+
+.intro_right_wrap .right_item .job_rate_box .job_item .job_title {
+    text-align: center;
+    margin-top: 2px
+}
+
+.intro_right_wrap .right_item .job_rate_box .job_item:last-child {
+    margin-right: 0
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item {
+    padding: 20px 0 0 21px
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item img {
+    float: left;
+    position: relative;
+    top: 1px
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .grade_school_info {
+    float: left;
+    margin-left: 20px
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .grade_school_info .school_title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 15px;
+    height: 24px
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .grade_school_info .school_title p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 270px;
+    float: left;
+    margin: 0!important
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .grade_school_info .school_title .hot_img {
+    margin-left: 5px
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .grade_school_info .school_tag {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 280px;
+    color: #1ea5eb;
+    word-break: break-word
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .grade_school_info .school_tag span {
+    display: inline-block
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .school_minscore {
+    float: right;
+    margin: 10px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1ea5eb;
+    line-height: 30px
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .user_head {
+    border-radius: 50%
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .comment_content {
+    width: 300px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 20px;
+    background: #f6f7f9;
+    border-radius: 0 20px 20px 20px
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item .comment_content:hover {
+    color: #ff6602
+}
+
+.intro_right_wrap .right_item .grade_rate_box .grade_item:last-child {
+    padding-bottom: 16px
+}
+
+.intro_right_wrap .right_item .college_rate_box ul {
+    padding: 21px;
+    margin: 0
+}
+
+.intro_right_wrap .right_item .college_rate_box ul li {
+    list-style-position: inside;
+    list-style: none;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 10px;
+    top: -2px
+}
+
+.intro_right_wrap .right_item .college_rate_box ul li a {
+    max-width: 345px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+    display: block
+}
+
+.intro_right_wrap .right_item .college_rate_box ul li a:hover {
+    color: #ff6602
+}
+
+.intro_right_wrap .right_item .college_rate_box ul li:before {
+    content: "â€¢";
+    color: #f15d52;
+    font-size: 16px;
+    position: absolute;
+    left: 0
+}
+
+.intro_right_wrap .right_item .college_rate_box ul li:last-child {
+    margin-bottom: 0
+}
+
+.intro_right_wrap .right_item1 {
+    margin: 0 0 31px
+}
+
+.intro_right_wrap .right_item_provinceline {
+    margin-top: 0
+}
+
+@-webkit-keyframes shoumove {
+    50% {
+        left: 50%
+    }
+}
+
+@keyframes shoumove {
+    50% {
+        left: 50%
+    }
+}
+
+@-webkit-keyframes airmove {
+    0% {
+        top: 200px;
+        left: 380px;
+        opacity: 1
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        opacity: 0
+    }
+}
+
+@keyframes airmove {
+    0% {
+        top: 200px;
+        left: 380px;
+        opacity: 1
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes videomove {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes videomove {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.intro_right_ad .slick-slide {
+    height: 129px!important
+}
+
+.ant-carousel .slick-slide .ad_item_left_height_style img {
+    width: 420px;
+    height: 129px!important
+}
+
+.maxWidth300 {
+    max-width: 300px
+}
+
+.beakWord {
+    word-wrap: break-word;
+    word-break: break-all
+}
+
+.beakWord,.danzhaoli {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.danzhaoli {
+    max-width: 345px;
+    white-space: nowrap;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 15px;
+    list-style: none
+}
+
+.point {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+    margin-bottom: 4px
+}
+
+.right-side-bar_titleHead__2QCQa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.right-side-bar_titleHead__2QCQa .right-side-bar_bigTitle__1QI1e {
+    font-size: 20px;
+    color: #000
+}
+
+.right-side-bar_titleHead__2QCQa .right-side-bar_bigTitle__1QI1e:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    border-right: 2px solid #ff6602;
+    height: 16px;
+    margin: 0 10px 0 0;
+    border-radius: 20px;
+    position: relative;
+    top: 2px
+}
+
+.right-side-bar_titleHead__2QCQa .right-side-bar_more__23HTy {
+    cursor: pointer;
+    color: #000;
+    transition: all .4s
+}
+
+.right-side-bar_titleHead__2QCQa .right-side-bar_more__23HTy:hover {
+    color: #ff6602
+}
+
+.right-side-bar_barHead__36ZBm {
+    margin-bottom: 14px
+}
+
+.right-side-bar_barHead__36ZBm .right-side-bar_bigTitle__1QI1e {
+    font-size: 20px;
+    color: #000;
+    height: 28px;
+    line-height: 28px
+}
+
+.right-side-bar_barHead__36ZBm .right-side-bar_bigTitle__1QI1e:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    border-right: 2px solid #ff6602;
+    height: 16px;
+    margin: 0 10px 0 0;
+    border-radius: 20px;
+    position: relative;
+    top: 2px
+}
+
+.right-side-bar_borderWrap__zoUmb {
+    border: 1px solid #eee;
+    padding: 10px
+}
+
+.right-side-bar_findBox__183zE {
+    border: 1px solid #eee;
+    width: 840px;
+    padding: 20px 20px 0;
+    margin-bottom: 20px
+}
+
+.right-side-bar_sortBox__3Yvm8 {
+    display: flex;
+    justify-content: flex-start
+}
+
+.right-side-bar_sortBox__3Yvm8 .right-side-bar_item__OHsaf {
+    min-width: 98px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    color: #333;
+    margin-right: 9px;
+    cursor: pointer
+}
+
+.right-side-bar_sortBox__3Yvm8 .right-side-bar_item__OHsaf:last-child {
+    margin: 0
+}
+
+.right-side-bar_sortBox__3Yvm8 .right-side-bar_active__34soF {
+    background: #f60;
+    color: #fff
+}
+
+.right-side-bar_listBox__RbbNE {
+    position: relative;
+    min-height: 30vh
+}
+
+.right-side-bar_commonBigTitle__2sR_j {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px
+}
+
+.right-side-bar_commonBigTitle__2sR_j span {
+    color: #f60;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.right-side-bar_commonBigTitle__2sR_j em {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.right-side-bar_commonBigTitle__2sR_j em:before {
+    content: "";
+    display: inline-block;
+    border-right: 2px solid #f60;
+    height: 19px;
+    margin-right: 14px;
+    position: relative;
+    top: 3px
+}
+
+.right-side-bar_enrollmentInfor__1cyUb {
+    position: relative
+}
+
+.right-side-bar_enrollmentInfor__1cyUb .right-side-bar_item__OHsaf {
+    cursor: pointer;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    transition: all .2s
+}
+
+.right-side-bar_enrollmentInfor__1cyUb .right-side-bar_item__OHsaf .right-side-bar_title__1OUXG {
+    max-width: 550px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.right-side-bar_enrollmentInfor__1cyUb .right-side-bar_item__OHsaf:hover {
+    color: #f60
+}
+
+.right-side-bar_schoolFastNews__3TqHE {
+    position: relative;
+    margin-bottom: 20px
+}
+
+.right-side-bar_schoolFastNews__3TqHE .right-side-bar_item__OHsaf {
+    cursor: pointer;
+    color: #000;
+    padding: 5px 0
+}
+
+.right-side-bar_schoolFastNews__3TqHE .right-side-bar_item__OHsaf .right-side-bar_title__1OUXG {
+    color: #333;
+    font-size: 15px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all .2s;
+    margin-bottom: 4px
+}
+
+.right-side-bar_schoolFastNews__3TqHE .right-side-bar_item__OHsaf .right-side-bar_time__1L66u {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999
+}
+
+.right-side-bar_schoolFastNews__3TqHE .right-side-bar_item__OHsaf:hover .right-side-bar_title__1OUXG {
+    color: #f60
+}
+
+.right-side-bar_sideArtMajorWrap__3Ra8U {
+    margin-bottom: 20px
+}
+
+.right-side-bar_sideArtMajorWrap__3Ra8U .right-side-bar_borderWrap__zoUmb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 0
+}
+
+.right-side-bar_sideArtMajorWrap__3Ra8U .right-side-bar_borderWrap__zoUmb .right-side-bar_item__OHsaf {
+    width: 49%;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all .2s;
+    cursor: pointer;
+    color: #555
+}
+
+.right-side-bar_sideArtMajorWrap__3Ra8U .right-side-bar_borderWrap__zoUmb .right-side-bar_item__OHsaf:before {
+    content: ".";
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    top: 8px;
+    margin-right: 5px
+}
+
+.right-side-bar_sideArtMajorWrap__3Ra8U .right-side-bar_borderWrap__zoUmb .right-side-bar_item__OHsaf:hover {
+    color: #f60
+}
+
+.right-side-bar_courseImg__38uUT,.right-side-bar_sideGaokaoNewsWrap__2mG1Z {
+    margin-bottom: 20px
+}
+
+.right-side-bar_sideGaokaoNewsWrap__2mG1Z .right-side-bar_borderWrap__zoUmb {
+    padding-top: 15px;
+    padding-bottom: 0
+}
+
+.right-side-bar_sideGaokaoNewsWrap__2mG1Z .right-side-bar_borderWrap__zoUmb .right-side-bar_item__OHsaf {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all .2s;
+    cursor: pointer;
+    color: #555
+}
+
+.right-side-bar_sideGaokaoNewsWrap__2mG1Z .right-side-bar_borderWrap__zoUmb .right-side-bar_item__OHsaf:before {
+    content: ".";
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    top: 8px;
+    margin-right: 5px
+}
+
+.right-side-bar_sideGaokaoNewsWrap__2mG1Z .right-side-bar_borderWrap__zoUmb .right-side-bar_item__OHsaf:hover {
+    color: #f60
+}
+
+.right-side-bar_schoolSexRatio__1joG0 {
+    margin-bottom: 31px
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_barHead__36ZBm .right-side-bar_bigTitle__1QI1e {
+    margin-bottom: 23px
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    padding: 0 33px;
+    box-shadow: 0 0 13px #e6e6e6;
+    border-radius: 10px
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_sex__OvEB1 p {
+    margin: 0;
+    text-align: center
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 {
+    flex: 1 1;
+    margin: 0 10px
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 .right-side-bar_percentNum__2jCHC {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 .right-side-bar_percentNum__2jCHC .right-side-bar_menText__2rdXy {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1ea5eb
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 .right-side-bar_percentNum__2jCHC .right-side-bar_womenText__3U-EG {
+    font-size: 28px;
+    font-weight: 700;
+    color: #f96359
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 .right-side-bar_percentBox__2qFic {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 .right-side-bar_percentBox__2qFic span {
+    display: inline-block;
+    height: 100%
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 .right-side-bar_percentBox__2qFic em {
+    display: inline-block;
+    width: 2px
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 .right-side-bar_percentBox__2qFic .right-side-bar_menLine__2ymBM {
+    background: #1ea5eb
+}
+
+.right-side-bar_schoolSexRatio__1joG0 .right-side-bar_ratioBox__2_0kM .right-side-bar_progressBox__yZlg5 .right-side-bar_percentBox__2qFic .right-side-bar_womenLine__1Pp5P {
+    background: #f96359
+}
+
+.right-side-bar_schoolJobRatio__1a61Y .right-side-bar_barHead__36ZBm .right-side-bar_bigTitle__1QI1e {
+    margin-bottom: 23px
+}
+
+.right-side-bar_schoolJobRatio__1a61Y .right-side-bar_ratioBox__2_0kM {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    height: 170px;
+    box-shadow: 0 0 13px #e6e6e6;
+    border-radius: 10px
+}
+
+.right-side-bar_schoolJobRatio__1a61Y .right-side-bar_ratioBox__2_0kM .right-side-bar_item__OHsaf .right-side-bar_circle__2X3QO {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    line-height: 90px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2px
+}
+
+.right-side-bar_schoolJobRatio__1a61Y .right-side-bar_ratioBox__2_0kM .right-side-bar_item__OHsaf p {
+    margin: 0;
+    text-align: center
+}
+
+.right-side-bar_schoolJobRatio__1a61Y .right-side-bar_ratioBox__2_0kM .right-side-bar_item__OHsaf:first-of-type .right-side-bar_circle__2X3QO {
+    border: 1px solid #ffc351;
+    color: #ffc351
+}
+
+.right-side-bar_schoolJobRatio__1a61Y .right-side-bar_ratioBox__2_0kM .right-side-bar_item__OHsaf:nth-of-type(2) .right-side-bar_circle__2X3QO {
+    border: 1px solid #f96359;
+    color: #f96359
+}
+
+.right-side-bar_schoolJobRatio__1a61Y .right-side-bar_ratioBox__2_0kM .right-side-bar_item__OHsaf:nth-of-type(3) .right-side-bar_circle__2X3QO {
+    border: 1px solid #13aff2;
+    color: #13aff2
+}
+
+.hezuofang_bxshili .base_info_item_top {
+    margin-bottom: 20px;
+    width: 720px
+}
+
+.hezuofang_bxshili .base_info_item_top p {
+    margin-bottom: 0
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box {
+    box-shadow: 0 0 13px #e6e6e6;
+    float: left;
+    width: 23%;
+    height: 100px;
+    margin-right: 2.666%;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top-num {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    text-align: left
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top-num span {
+    font-size: 12px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top-num01 {
+    color: #ff1515
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top-num02 {
+    color: #007aff
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top-num03 {
+    color: #ff6602
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top-num04 {
+    color: #00b68e
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor {
+    display: flex
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor>div p {
+    width: 100%
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor>div p:last-child {
+    font-size: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    text-align: left;
+    color: #999
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor>div .doctor-one {
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    color: #333
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor>div .doctor-one span:first-child {
+    font-size: 22px;
+    margin-right: 3px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor>div .doctor-one span:last-child {
+    font-size: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor>div .doctor-two {
+    height: 25px;
+    line-height: 30px;
+    text-align: left;
+    color: #333
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor>div .doctor-two span:first-child {
+    font-size: 16px;
+    margin-right: 3px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor>div .doctor-two span:last-child {
+    font-size: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor i {
+    color: #999;
+    padding: 5px 10px 0
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor .one-two p {
+    font-size: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    text-align: left;
+    width: 50%
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_doctor .one-two i {
+    margin-right: 10px;
+    box-sizing: border-box
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title {
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title i {
+    margin-right: 10px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background-size: cover!important
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title01 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAADxElEQVRYR+2ZTUhUURTHf1fTNMVcNKMS2IeU6GAUZCqRgYQQtggKKkgiUcO+DVyUCC1aW5ARifSxiAzatIqEDJKgWhQVJhXkRyGmZZkS5deN4/XRqKPMm2G+qAMu3vPed373zP+ec967ilmmU1NdTEyUo1QxkI7WibPHBPRaqRGgB61biI5uUn197e7+lHWhXa5YBgbq0boKiAoolPcPn0Spyzgcp1R7+6hMmwKehr2H1kXePyuII5VqxeHYLtAG2OlsQOsjQUSw70qpS6q//6ia1uyrMJLBfIuZJDp6ndIOx3ngpP0lh2TGBaWdzna0zg6Je7tOlXojwMNBT112Qa3xSo2IJLSv80Mx7z9woKP+D0TY6YTsbPj1C548WTig+fkQFwevX8PXr2ZsZia8ewfat61jP8I7d0JjI/T2wvr1CwO/fAlpaVBaCvfvm78NG6CuDq5c8Uk9/gMnJcHy5Z6d37kDDgecOQOPH8OWLXDuHPz8CXv3wtAQdHTYAvcfeM8euHjRltMZg1NSbMnDf+CCAigr8wxcXAzx8fD0KfT1eR5TUWFrsf4DL+RutoZtoXke7D1wTAwkJkJJCdTXw+fPUFgIv39DZSUcPjzXw9KloBSMjMD4+Mz/i35zc20vwXvgHTvg6tW5Dm7dMj93dbVZRFfX3zGSEWJj4f17GBw095csgZwc+P4d1q4NMXBTk8kIlnmSxJo1JmMEHFjS14oVUFQEtbUwMGBS07dvJs9KhL98MfnZsqwsECl1dsLwsLm7eLEpHgEHtiA8FY7Tpw3wp0+milm2ebMBlEonCxRLSIC8vDABDitJeBNh2Viy8SwTvS5aBB8/mkxhSWL16jCJcE/PzFK7datpfl68gP5+AyypUaQSFhqeLYlHj0BKb1UVtLaCLECifugQdHfD7t0BTGsLSSI5GSSLyM9u5VtPKM+ewcqVcPw4NDfbhpUJ3heO+YAfPgSXyyfnU5P274eWFq/n+w988yZkZBiHy5aZXDyfpaebTSgpzsrLNTXQ1hZEYMvVtm1w4wZcvw5nz8LY2FwI6dpWrYJjx+D2ba8h3Qf6H2HraSdOmLIszc7z51BebgqJZXL/7VsQvYcFsIBJg9TQYKqblGt52xCTTm3TJjhwwFzv2wcPHoQ4wpZ76dBE0/J6dPcuSIPvbpJ/N26EHz/CBNgd4+BB2LULRkfNe9yHD3DtmmmGfDT7Go6KMj2uvKZL8x5ki8CPgRH3uTXiPmibY67IOTKQPRNRhzJTwOaMLnKOvdygI+Ng0T2VhvvR7R9FQO78DB51qgAAAABJRU5ErkJggg==)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title02 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAEGUlEQVRYR+2ZfUyVVRjAf+cityzNqOssqQtWBtPCTaZ8WG5k2VKyhpvYbH6kQAozhn9UmI3SPmzNrzLJSCsrtY9lfuRMZaF2+UMUwyVoUEEBLUQIKULafdvx9HaB62Xve7f7yrt5/nvPfZ7z/M5zn/Oc55wj6N2WaaPxsgCNyQjcaAzykwllh6AdjToEX+OgiOXi++7mxP8fBZqTC6xCsBANRyiZDI8t8KKxASd5FIgLUk8BS9gu9qJxn+HBrBQUFBPOQxJaAedrbwLZVjIEYWs9L4scgYrZin4TBoFmIsPDQZxgqbYajdwgZmy9imCNIF+Tq3CU9daDsnhKevi85akrKNaLKaJdelgLVv9y6F0BDrXXr3jYVh4e4IC4m8whlzeAmVVvKiQ2pUHs0MBAaR9B47PmgJ3LoMtrXMcUcNkiiI8MPPjNr0DDMz1/F756kEsl0KueDyHwvVEw5Gp4cCTkJEFdK2Tv9AHuPu0/ma3pMDMOSusg+W3jngxcUgSxcXw8Ax4bA2+UwuLdfUNU5ULMUFjrgdw9lwE4TEDTUogYCA9sggM1PSEmRsNdw1SfjIZ1qeBwwNbv4EhtT9kD1XCm2dwkTMWwHFoClWRA29/gesk//t6aBgsTjEHM/hS2nDAmq0uZBl47FRYnw/F6WPGNz9jPLVDeCDrwL61QdfbSMONvUWsh5MDDB0P1EhgY7g9SdBQydsCGafBkAqzzwFMBYrY0CxLdMOcz+KA8hB4ufASyxisDFb9BdTNEXw9jIyEQ8LhI2DsXOrrg1teUriXAd9wAlbkwIEwZXfIVrPoW5sdDUVpgYJkKD2VCeycMftFC4Flj4MMZvr/PKHDKCCheAK0dELHCQmD3EDiTB2X1MCHKuIdTY2DXbKhtgejXLQSWptLvhkm3Q8Y4yNsDqz3wRDy8mwbvHIXMHb4soW8Uc8fC5ungqYUJGxWwJwuS3BZkCWls46PmgJffD8+lwCcnIX2bDYAPZ8A90XC6Caa8Dz+29DMP5yTC1Bj4shJO/a52Rb21dMDMbXCnC+Sa2H4SjjWEMA93D4lzf0FbJwxygutaXwzr5mNdcHA+DL8OSn4C1zUwehh4vZC/H1YeMgca9Nasx3Bvc/qik6cO6eWCSWr7rWqCpEIu1sJfPA4ptynN7RUw73Po+MccuOlaQgdeWQKbj/uMOQSkxkJ2AkRFqP6zf0JiIdScU9/OMHhvuipNZTtWDw9vgcbzxqFNA786WRXksvApKvMZSnbDkUzQTxi7KmHRTvi1rSeMLDnX/FdA1TRD/Hr4ozOEwH0NLc98I2+EF4r96+Teek9PhH0/wIlG47BS0rSH+xo+3GHufGYOVUnb8jLQdtetNrvQtt2TgYxkWz3KSGDbPXvp0LZ5WOyeEPv50+2/q+fpMlJ9YsUAAAAASUVORK5CYII=)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title03 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAADT0lEQVRYR+2ZWUiUURSAvztOY9bQvjDtFJWpGLSvkBJmtEG+FEUEhVLTgw60PVgG0b6oNFYk9BKVPdmTEDgPQURFUIItSEULZEaROpGJzh/XqzRUM3P/mWYDz9vPf+4533/+e869517BH2I4bZl0+XaCLw+YhIH9T52oPgu8wDuw3MFqqRbuzkZ/f6LvwSjLtPHxxTkwdmFgiSqUrnGBD8RFHOkuUdbYKYf1APfC1mEYubq2YqonhAdH+moJrYCLUi5gGM6YQph1JoRbXO7eI9Sc7WpImGkQ6EPk9LBas4VRZD2P4Ss2+8Fx0ReWcmEUWRoxyIgLgFmngmcSuD3mpcssaJ++wCuMQouhPd6WBuvKIHstjJkBFhPV7+1jcK+H1mZtd/9S1AeWsAcfwLjM8B02v4RzuRFB6wNvPA6r9kHbJ6gpBhkxwxccftg42HtX6bR+hKEOiBBaH/jQUxifBdVb4NFNvSjbR8HZT0r3xBIorIEREyOC1geu6oCUAXA4QznUlYpWGGiHyjXQ/BxcHhg1JWxoE8A/IcUKpenQ0qSLCzuuwYLN8Oo+nF4OwyeAqx5GTwsLOvrAcgocaoC0IfDwBlx3QupgBT12hoI+tQy+f9UKQvSBJcbCrbD9qiqD3i/w6h78aINFWxVkTQl4KhMIWKJMXaygx07/G6y2FOqOJRiwxLGmQlY+TJ4H9pEwa6WayzEFttpgZq6qBMHk/dO/k7UvIWMKLBcTuaiEkg4vlIwAX/dvzbgAT5kPBadU5gcTmWgyufwlLsChIhvsfT+wf3Sqwlzp+iOsu4EPFOGMPNh2BWwaSefekABJl7MHNlWETr22Ftg/IQHKmkSVm5jUEAuH3OF1tCdAhEPHNrBGVMta+VdIGwpH58L7J5Fg/h67uxZmr4NbLqjXmFbybE27a5b715krlGHpIFLx3yefyYGm3t4vhF19YNnaO28rcy88ek1oIOeDhsGcApA935uHcHJp6Ia215Y+sByQfwDWH1Gt0v+QDw1wqQA+v9a2Zg5YmnXMAll7ZWUQJg5S/JF+fFN/6EktdHdpw0pF88CmzP9/5SQETrrDwOQ7bk22A+1kuzKQeZxUlzI9wOqOLnmuvfygk+Ni0b+8J/rV7S/2Mcm8bgdKrAAAAABJRU5ErkJggg==)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title04 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAE5ElEQVRYR+2Za0xbZRjH/28ppZRyKwzKZWUERW5rxjYZZQS5OCbO6WIEg4TFBYWA07jFb4QvZtkXE5gXgkEx25w3IEYR6WSMsHEZ4DauRekCcquMITIulZaWHnNOhSxj2HNKuDR6vrV9Lr/3Oc/zvE/fl+Dh53JhOEBeA0UlA0QGihKvktnILwiZB6gREFILUJ/imdOqB92RlQ+qcgFGNIWgqFwAvI1k4mDbBEJKIPM7jfC0RVrPDEzDDmuUAJXIwdgmipJ6BPil0NBmYGXRR6CoNzaRgLsrQoqRcuokAZ2zJnRvozRYazEm8CAnuFxUBBP1Nvclb4EGj5wjUBaqQCFsC9xzd0nQR6Asmtv01sUd1axByDxBTSFlrf5W6P13gLP8w1EclggHOz6nQOuWjMjqqcWX4/2c9JaFrY5wrkyOD0ITwOdx2xQNpiVk99bhvKZvc4FpbwLCQ4hYgq7YTMwa9NjX8sUjIXpij0Nox0fo9fMY+GsGBspkFax5a15n0T3h5I5f417FfYMO7nUljwTRJp+EyM4egQ1lGFqYtRr2f2A6wiIeH6FiCW7N3luJ5LaK8AFXKVpj0nFXr4VPfSl6YjMR4eyJ/P5mnB1sZ6CnknIhEQgR2XQJnXOTW5sS7z6uQMFj0WiYGkVieyXuxJ1AkJMbzg60IV/dwsC1RL8MhbsvCtTNODNgXoS1z7qKTiZ0ZiLqYu+AjM4aprd6C0TY6+KFuqkRGCkTQpwkiHaT4jP5YUwbdIhovIjf9Vprea3vEvQgXfvki3jaMwCNf44hvq0CDzer8j1HkOoTjJLhLkS6eCHa3QfKyd/w7M3vNh84TyZHcXgStEYD5E2fY3BhZhXEtQOpiJP4o3JcjXx1MzpjM+Fox0d2zxV8MtZrFbRVKREkckXXwUw48e2Rp7qKkhF6/l/9eAkckeQhg3JyCPeNerwVsAfvhyVgzrjILNKanswZmN6Ir0en4aC7H678MYzkn7/FUxI/KNx8UTbWi8nFhTUjR6dRfdRLiPfYiWtTY0horwDXUZEz8DuB+/BeSBxmDHrsbrqIhSUjNInZEPDsUDGuRlrnj//6qnc5uqA7NhPOfAFO/dKAc0MdnFKDE3CYWILbMRnMhHai+ydmgBHb2WMoPgseAkemuPL66i0CvO4fgdLdh5jFRjZfQr922qLOsgBrYPp1tirSEeUmRfW9QRy99f2KE3+hGBFij39aGbuXXLP/GFJ2BKJ1ehwxrV+zTg3WwGnSYHwTeYSBvDCmwvg6eiltw1coxnE/81/J1I5qVN69wyrKrIGr9j6Po95BrIxyFaqaGMALt6tYqbEGnkjMgZeDCGWjvdDo5lkZtyQkdRAhWybHhF4LaX2pJXHmd9bAuuQ3mWKLay1H47SGlXFLQlGu3miLeQX6JSOEtR9aEucGTHeCAEcXpHVUo4JlvlkieG5HIH7YfwzDC7PY1VBmSZwb8MfhSciRyaHWTiOjU4mbsxOsHKwlRA9IF+SHmVG0dKQbOaqrrOyxTomdQjFuKNLhJzQfF1MUu/a1FgUh5nNIuh4UN77CKMu6YA1MG6fHyTPBMTjkGQCpgxOriKwlRA/89NZeoG7BsG6OtS1OwKytbqCgDQLb3GGgzR232tyBts1dGdAVbVOXMjSwzV17LUPbzMXig41+m1/d/g236RbTsl6IWgAAAABJRU5ErkJggg==)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title05 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPWSURBVHgB1ZlPTxNBGMbfXdFGErGSEA5gUiIckET+eBASE8pFT0I5eDOhxA9AOXhu+QIWPoCxJN488C/R4IWSeNCDUEmQC4YaIZEQDOKBUC3rPLOdMmlLt7Pt2u2TrDvTbu1v3nnmfYeORrlaivpJTwdI00dYz0fVkEEJ9k+CUvoUjU4m5be0bGsu6iUPhdmDIXKVjGk65eBH6JnAgL1irLBeD7lRiHhKGwK0zl9AZN0KC4HNcxY2m2+jPjKMHaoFpdNDOhnpCNWK9EsBBqx3U61IoxHd1d7Nl0+nMhRs6SLf1Ybz/01qOyXbwC/vPGTXAwq395O3zkMr9x7Tjv8pv3quNZFTsgUM2GDLbTr6e0ozyXUO629s5e8hyug7Ba0MDFABO/ppkcP3NDRR8uSY2uIvaHbvC3kvexyDVgZO/D6g+f1tGvr4mqKd/iws+rgHN5YdhVYHPj6g0bUlmvD15cEKOQldlocLwQrJ0HN3hyuWQZSBsbiyHl5bLAgrJKDFQqwEtDIwQLkM1v5zavl8paFteTjXn+GOAZrrG+b9MRb9QtDxn7sVgdbozXODbCjGfFwIDsKg4O3sbDDJAyzmfSvZrnSIGlIchC8e33hHoa04byN7hFgWkQX7ABKfKSfSZe0lhFBAYnubvOqNs4FAY6350c+FRllXlW3gcEd/Nr/KUyvboJAAjcID3WA2UZUtYMBG2gek/nl7ImOF+OH3op/FwEJbq6SqOlIUplLAzu5usqnvYn7tpWDGAti58fdYJikG+98WXbRzkN9jDBYREl8KUFzCEqiG8qKSZwU+RybB80iHGHCpUoowAALN7bw9tf2BWwGvARoLD7C4RPrCHZHEApRh5/e/ZvfQyChIedNswVYcONB8i98RXUCKyOROL/oCev3+k6xNABtD0ZFgzZS4XDKDkiUGG2/y+2eWlsSGHRUs14vIBIg4Xhc2uQhW1ctKEfZm0hD8ZyWxocfA8LzwdjmwysC5QJDVXhczIIQB++obyirNSsBid3adTSu+DBULwIiiDFbs873vX/G7VYG5SEoe/nbyi9/b6s10tfDDrFhIYWJhWQkDtQsLKQEL74oFF2GpDQB8XyBVOydVkiV4UWD+E7szZAtYAZGaZMUDv08gxaGP6mdHpfq5pP0wcqmTP45AWANYiFYqKcLwaqketavVQ+tFC9n+i6NawqJLUu0owX4fpgWqFRkaAz5Lz1OtKEVTOj16FmdRniG3C4zszM4sHCktYh7muVTmsVcETRMYh3Y4B3NjpMGUOaNDV8t7wDwGQ8S7q3j+keTJAOsLlpX0D4MdHw08tsWNAAAAAElFTkSuQmCC)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title06 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASPSURBVHgB1Vk9TBRBFH53UWiEmAiNUBw0ehRCA1hIIkFICAUQTITGRGJiZcTCkvhDiYkQbbCARAtiohELLCBGEyz4aQ4KoBISgUZIlGsUTc759s3Lzh13ezt7KHdfspndndnd7733zZuZnRClIPI0cVkVXeropBBF6HgQc47f9HDzbmjTrAjJSeRJ4jSdpPvqdIDyCyOa+HdcOIQ12Y/qtI7yE/B2M0iHnUv2bL6SBeo0Rwop70bUxQYVAhLUHKYT9IAKB11hpeJaKhx0QsP5rN1kqDR7go4IpcVEPeeIasrVeRFfb8WJVr8RzW7w+VEgFHmWSFAOuHiW6E6DKiu8281vEw3NKQP2KCfkRHignskC+7+IZpQn15RHfxwQxdVReYqosYKNgceBkUWi0SUKjMCEh1uIrp7ncxAYX2bS6VBZotpGlXH1fP16nejeBwqEQITFs9DlrfcqzLtuHTwJz5aocm0v2QgQn+zmEgYOfSZrWBOuOUM03ctEOl65nammjGjw0mEtw5uji8ntJrvYsN4pooVtskKYLDHWwSVkICQgDZAAWUfLX/hAPermrrvyQTREw49byBpWaQ0ZAeEEEYQUwPWw/jBCLPcF/bXsebT5GmePog30jGfRKW28bOXh1mou4T2BF1nA1OpAvXsfUgHaqsgKVoShP2BGT5XgIcjA9Hg6oA55GG3xDDC/w2W2/J0TYcml8Z9cRsu5ND2eCZJJGjVB5GvznX4RiPD+gb4u8v9sphxtCyvCW/tcVpRyuaa9JlLxgoReMotIw9YQK8ISVuRiucYHQabRQ4um1iUjiJHihH9CeFZ3trZq956ZU8VrJpyBolu3XXTvS8aZtVzrWOVh0ax4VHIqtI28igECHXB+220nxo2vuKkM+VwkUmLRDwDfQ7M5DwAQXgzNokEMEDdqD3sZ9TI5coxWxk1fS25nM0T7Imx+ZGSJkz1CDQ33TSV3HHg0qjWOyQ+8LfV4D4ZwPAuDJ5Z5FMR531t/k3xfhGUqiY+DoOltvx+DDAabXLLyDO71X0hvfCDC5lTSJJYqEegT+kWqM9tEy1guZlpLNRDRgyF+ppyehNGTn7cfnkomGdTgTsy9gHdMrKSf6JvGP5rjdoEIj7WzJmUxiRIfQ/jMdCQztkzzAjzT9DJF61Xs/cpSzj5YvIrEml5QRnimtYUdJowXmb06lQD0LQNDarhlnowomOGGdtPl7ZksedmTMMIHbcIDjif0Uh5GtCoPvVl3V80AlkupssHaDeGGjjGqIdzmvBqL0u0412GOkq3TZR048AIcQgTnIAyvIncOX+H7SHfm2k4g6z54GnpH1Hqi2iExNtoGgRahyzc1+QO9oFzhfw5ekJWHmUGgVdsfLNZrOsCRSbEbVnOOkAmQFwyT/rC6G+xvUCDCGKGczLHLnczvFBFRQK6W4ToIcv5V9b8RVj+JN6lwEIMk3lHhwCE8RYUCtZsU3rwd+qRkMUr5DsURe3acJf44+xwxyl/ENEdOa86mndoHy0tPg5Peo8NlKLXe2QbDzhJv1hzP/gdnLiSDKUeyBv4CY7MC0rA7gHQAAAAASUVORK5CYII=)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title07 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPASURBVHgB7VmxT1NBGP/dUyLRCDiIk7EkOgmxBiYYpG66WCbZYNLJCIMDE2UykUHqpguwuQH/ALDIJLFGNk1o4iQOFBMVTOj5/e7e1aYt7Xt9RdqEX3J9vXf37n73fd993/feKZRAz2I4f4ik8vBAqjGcDDJKCg4xo6aQLW5Q7o9OoQsXMK01JtBEUApz+CnEU8iZOn9IVp/HmvyNozmRUb+QIGnPVEWyaF6yRNznCKWfI6bPYBstgEOFhJf3kEKLwBNn4IlR30KLgJ6LNtzMtluK2FlERbes91xX8P5f1xEF0QgPTUMNpsI8Af1uBthIoV5EI7y1CFyMAX3jtv5poXK/4vYvy4gClX8BjYhQz+wQelbV1R4GHloMp4SPG6eEjxvRCXf7gXIve3Qf13Z1GFERmbBKLpmrrhIM9Oqk7Xv3JaIiGuHecaAzBnyWYLDz0UqQpTRUM1gwJFMbA9FeaOoPHB0xqNE1S7gShKT+Jos42IXq7JGF3LGED3LQr3vMtR7UHZpV39g/svs5a6ckwXss15NQUsog0leSgzgzCT1vXRKmdB/blxT9NlGegZGoSFN1XIP+syeL2bYmIwtSD0Ur7V1Wyj+yCIu6JKyGUpYsM69K6SJtliZBWy5Rvd5MGwmr+/N2sSERftNxU/WOWROoliZSC4+2rZ0XY3POPus2aEiEJqzuzZtrwY1xI1XyDKyL6svuc9M5N+ePFQbhCBe7McmFqVY19sFIkddCECG+Z6BfXYJevG3rInFTCOfmOFbIF4DghKniQfNpAHpt0pK/OW7VywXI5GWBwbdfsyDZpKb4fQpSHnga6hUrMGEzsJDipjEkL1tpcuPp5RHr2irZJBfG+3yGpX/C1ndEA+/TBTfXWMJUJSfihNw0hKjcLIQ7ftS6KpIog5MezcC1t3faK/cBF8qxu4O9vAciXHBjnMAlMlsLVkK0Q1+CRtKlIFFH6kbSPk+fTHADbszYOQLmGbUDhwsSJPSmp7ydhClFF+kqgX36/RzCubViEk92bTDh+NWyPgQJHE6lR5GpMUGhz+pE9fb2uDW9yIQZPqlShtqRJfu/kaBArsR9U8nU7F6bMO1M3Jhx8pWSmUZAhGDCfIAMLnjyQzt0jr/RoGQDppvBkx/nR08YdGtZtAh4UOOJPaygdZDx5Igr2te5/wk5BvPaprAuUk6jyaHzSPPMzoRmr82cc9R2gicFLaawb89iDGE1iZxqQ6IZJW0k+9ue0bFe9sGWx2A8WfIPa4KlUI1HVoiu5DWWabLFDX8B7dJtkvMd5GYAAAAASUVORK5CYII=)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .bottom-title08 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMUSURBVHgB7Zk/aBNRHMe/79oKChVBF4tCtnbSCC7VxdAuDk27OcRBaAd1chIc1GZS1KGd0kGogwXdTDq41OqgcVDwBIdmMlDopCBUdGiS8/3u5XHvrmfz7t3V3IEfOPru3aX53vd+f177GALM5Z0LTgszsDDNgBz6g+04sId2UF7aYE31ApODGznnyM/DuEtDpAkHC60BlJ/Y7AeduoK7Yl/zYR7pxG5ZKJBoi866zqZVLJEfbLsawa6OObnWAXxFFuigYO0MYR4ZwbEwYzGG08gIPH6nKYb7FruHhoHFt8DUNb37HV5mLfSRg8NC9LHj+p/pq2ATMid4EAlx6SZwrijG9Rrw/AH2BTZ3inftmJwpANcX/HOPZoHGR//cvZc8XkegxfJt8eBBEnF44vLuOcr8xqx/7vM6cGLMPzd6Fvi1DWw2/PO/txFKbMFHR8SXEt+33NLjukhzdKguP3u4+7P3ues2f5DlO9AidtIVlRpaqwBrT71z3foahViCySGZaOSuzdd772viFRPksG7M6hJLsOpu44MQSofq8vg0EsVYMLmbL3jnq0ve+NWKN54siW4WBiXWty1x6GIsmF63FFKv+r+UXP60LsZ0T1gVkffduuh/2F4YC1YTKqxe6rocFSPBlGgymah+BhsEQXNynsSOF5EIRoJVd9UEC7Ja8cbnE0q+yIKpDUt3qZSFhYOEHJYl7uSo12DiELnTqQn0riaqxV5QXZ4oiXFYu45KpMWPbKVxCFsURSFSSBQTaLVx27V2SKhtmKD1LrViHSh+5fJTtusozUJFW7DqLiXb2gq0kd1MJivlgekCXyskgm24VkFk1BJHb8q0kWgJVttwr1L2N+rKKm6vdt0LLcFTgTWvKWqTmSzBCC3BmxviJ7lk4q6E1heypMnfGZVE/gj9l/z/R8p+kz3BPICbyA42OVxFRnAYF8w6eIGM0GYoW4+/sDc8LBaRckgj30VquknXttx9Dhvpxe5qFFWC9r9oHyyNTpMmuUdH5yx4w5W8kxvoYJ5foM2avux/dCtXlfKLQla99ged1PYbFw+xwAAAAABJRU5ErkJggg==)
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .top_item {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 1px solid #1ea5eb;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1ea5eb;
+    margin-bottom: 7px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .span1 {
+    margin-left: 29px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .span2 {
+    margin-left: 21px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box .span3 {
+    margin-left: 16px
+}
+
+.hezuofang_bxshili .base_info_item_top .top_item_box:last-child,.hezuofang_bxshili .base_info_item_top .top_item_box:nth-child(4n+4) {
+    margin-right: 0
+}
+
+.school-search_titleHead__1F33C {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.school-search_titleHead__1F33C .school-search_bigTitle__2LRLe {
+    font-size: 20px;
+    color: #000
+}
+
+.school-search_titleHead__1F33C .school-search_bigTitle__2LRLe:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    border-right: 2px solid #ff6602;
+    height: 16px;
+    margin: 0 10px 0 0;
+    border-radius: 20px;
+    position: relative;
+    top: 2px
+}
+
+.school-search_titleHead__1F33C .school-search_more__u64QU {
+    cursor: pointer;
+    color: #000;
+    transition: all .4s
+}
+
+.school-search_titleHead__1F33C .school-search_more__u64QU:hover {
+    color: #ff6602
+}
+
+.school-search_barHead__Sz2ob {
+    margin-bottom: 14px
+}
+
+.school-search_barHead__Sz2ob .school-search_bigTitle__2LRLe {
+    font-size: 20px;
+    color: #000;
+    height: 28px;
+    line-height: 28px
+}
+
+.school-search_barHead__Sz2ob .school-search_bigTitle__2LRLe:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    border-right: 2px solid #ff6602;
+    height: 16px;
+    margin: 0 10px 0 0;
+    border-radius: 20px;
+    position: relative;
+    top: 2px
+}
+
+.school-search_borderWrap__lXEhT {
+    border: 1px solid #eee;
+    padding: 10px
+}
+
+.school-search_findBox__3C5IT {
+    border: 1px solid #eee;
+    width: 840px;
+    padding: 20px 20px 0;
+    margin-bottom: 20px
+}
+
+.school-search_sortBox__1m9zx {
+    display: flex;
+    justify-content: flex-start
+}
+
+.school-search_sortBox__1m9zx .school-search_item__1xLeM {
+    min-width: 98px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    color: #333;
+    margin-right: 9px;
+    cursor: pointer
+}
+
+.school-search_sortBox__1m9zx .school-search_item__1xLeM:last-child {
+    margin: 0
+}
+
+.school-search_sortBox__1m9zx .school-search_active__3dQZd {
+    background: #f60;
+    color: #fff
+}
+
+.school-search_listBox__at-rI {
+    position: relative;
+    min-height: 30vh
+}
+
+.school-search_commonBigTitle__1QOBj {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px
+}
+
+.school-search_commonBigTitle__1QOBj span {
+    color: #f60;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.school-search_commonBigTitle__1QOBj em {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.school-search_commonBigTitle__1QOBj em:before {
+    content: "";
+    display: inline-block;
+    border-right: 2px solid #f60;
+    height: 19px;
+    margin-right: 14px;
+    position: relative;
+    top: 3px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_tabPage__2vUxf .school-search_item__1xLeM {
+    color: #f60;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    font-size: 20px;
+    height: 42px;
+    line-height: 42px;
+    cursor: pointer;
+    padding: 0 20px;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.school-search_schoolListMain__B9yLk .school-search_tabPage__2vUxf .school-search_item__1xLeM:first-child:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    z-index: 100
+}
+
+.school-search_schoolListMain__B9yLk .school-search_tabPage__2vUxf .school-search_item__1xLeM:last-child {
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    color: #333
+}
+
+.school-search_schoolListMain__B9yLk .school-search_findBox__3C5IT {
+    padding: 15px 20px 0
+}
+
+.school-search_schoolListMain__B9yLk .school-search_findBox__3C5IT .school-search_searchBox__1VpjV {
+    display: flex;
+    align-items: center
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolNum__3ncnb {
+    font-size: 14px;
+    color: #f60;
+    text-align: right
+}
+
+.school-search_schoolListMain__B9yLk .school-search_listBox__at-rI {
+    min-height: 30vh;
+    position: relative
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolSort__1SR3O {
+    padding: 5px 0 10px;
+    border-bottom: 1px solid #eee
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolSort__1SR3O .school-search_item__1xLeM {
+    display: inline-block;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 15px;
+    border: 1px solid #eee;
+    color: #000;
+    font-size: 14px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all .2s
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolSort__1SR3O .school-search_item__1xLeM.school-search_active__3dQZd,.school-search_schoolListMain__B9yLk .school-search_schoolSort__1SR3O .school-search_item__1xLeM:hover {
+    background: #ff6602;
+    color: #fff
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    position: relative
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolLogo__2SBIq {
+    margin-right: 20px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolLogo__2SBIq img {
+    width: 60px;
+    height: 60px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_title__Yizxh {
+    margin-bottom: 18px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_title__Yizxh .school-search_schoolName__1L7pc {
+    color: #333;
+    font-size: 18px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 20px 0 0;
+    transition: all .3s;
+    display: flex;
+    align-items: center
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_title__Yizxh .school-search_schoolName__1L7pc em {
+    display: inline-block;
+    max-width: 298px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_title__Yizxh .school-search_schoolName__1L7pc .school-search_cityName__3LsWN {
+    height: 26px;
+    line-height: 24px;
+    font-size: 12px;
+    border: 1px solid #eee;
+    color: #555;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 20px 0 15px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_title__Yizxh .school-search_schoolName__1L7pc .school-search_hot__3injV {
+    color: red;
+    font-size: 14px;
+    vertical-align: top
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_title__Yizxh .school-search_schoolName__1L7pc .school-search_hot__3injV:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAA8klEQVQ4T43SPyuFURwH8M9vMRgMSkzKQDJ4B0oyKsXmNVjuYJAXoCib0Wi8gxJlkHdgIwwMSkqSkjI4Ou5zb9fT8+g52/nz+Z3T9/xCaSROsBVclvfyPCrAI4axGpyW9/+AxDgeikIvmA2e+lEZHGKt78B+sF4JEntolZ7whhEs4iz4/r2h5nDXzukEcRC0IjGP86oACnGPiU5dCxm0sVIVYcVaO4OcwlhD8JzBBwYbgs8MrjHdENxksIONhmA3g1FcFe3wn3vFTPcfcrRHGKoR71gOLnqtkZjCNpYwUMAvHGMzuK3r1nzLZAHugly9N34AIfk3TZveZIAAAAAASUVORK5CYII=);
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-right: 7px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_title__Yizxh .school-search_label__3xgK7 {
+    border-radius: 2px;
+    padding: 0 8px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    color: #3093ff;
+    border: 1px solid #3093ff
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_title__Yizxh .school-search_label__3xgK7:last-child {
+    margin: 0
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_tags__ZPsHs span {
+    display: inline-block;
+    color: #555;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #c5c5c5;
+    line-height: 15px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_tags__ZPsHs span:last-child {
+    border: none
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_tags__ZPsHs .school-search_wrapItem__3MHIA {
+    display: block;
+    margin: 0 0 10px;
+    padding-right: 280px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    border: none;
+    line-height: 25px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_operate__1330D {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_operate__1330D .school-search_commonEnter__vgq1S {
+    padding: 0 8px;
+    border-radius: 4px;
+    color: #ff6602;
+    font-size: 14px;
+    height: 28px;
+    margin-right: 10px;
+    border: 1px solid #ffe6d6;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_operate__1330D .school-search_commonEnter__vgq1S .school-search_iconBtn__3es0l {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_operate__1330D .school-search_commonEnter__vgq1S:last-child {
+    margin: 0
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_operate__1330D .school-search_joinVolteer__3RsGI i {
+    position: relative;
+    top: 1px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2 .school-search_schoolInfo__2sLfR .school-search_operate__1330D .school-search_scoreLine__PaxYz {
+    width: 74px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolItem__3q7R2:hover .school-search_schoolInfo__2sLfR .school-search_title__Yizxh .school-search_schoolName__1L7pc {
+    color: #ff6602
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_labelName__ePIJG {
+    font-size: 14px;
+    color: #000;
+    cursor: default;
+    font-weight: 500;
+    width: 56px;
+    margin-right: 49px;
+    text-align-last: justify;
+    position: relative
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_labelName__ePIJG:after {
+    content: "î˜§";
+    font-family: "iconfont";
+    color: #999;
+    margin-left: 17px;
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- {
+    display: flex;
+    justify-content: flex-start
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo {
+    min-width: 62px;
+    position: relative
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_checkLable__2On-T {
+    font-size: 14px;
+    color: #000;
+    height: 21px;
+    line-height: 21px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_checkLable__2On-T i {
+    font-size: 20px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_checkLable__2On-T.school-search_active__3dQZd {
+    color: #f60
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z {
+    box-shadow: 0 3px 10px 0 rgba(65,65,65,.2);
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 1000;
+    background: #fff;
+    width: 440px;
+    border-radius: 5px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_allLocation__2AYU- {
+    height: 460px;
+    display: flex;
+    justify-content: space-between
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_allLocation__2AYU- .school-search_leftBox__3BDPT {
+    width: 220px;
+    height: 100%;
+    overflow-y: auto
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_allLocation__2AYU- .school-search_leftBox__3BDPT .school-search_item__1xLeM {
+    background: #f8f8f8;
+    padding: 0 16px;
+    height: 46px;
+    line-height: 46px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_allLocation__2AYU- .school-search_leftBox__3BDPT .school-search_item__1xLeM.school-search_active__3dQZd {
+    background: #fff;
+    color: #f60
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_allLocation__2AYU- .school-search_rightBox__DjVck {
+    width: 217px;
+    height: 100%;
+    overflow: auto
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_allLocation__2AYU- .school-search_rightBox__DjVck .school-search_item__1xLeM {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    transition: all .3s;
+    cursor: pointer
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_allLocation__2AYU- .school-search_rightBox__DjVck .school-search_item__1xLeM:hover {
+    background: #fff9f2;
+    color: #f60
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_operate__1330D {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    padding: 0 20px;
+    border-top: 1px solid #e8e8ed
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_operate__1330D .school-search_checkNum__1lhoi {
+    color: #999;
+    font-size: 16px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_operate__1330D .school-search_checkNum__1lhoi span {
+    color: #f60;
+    margin-left: 16px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_operate__1330D .school-search_operateBtns__1deZ1 {
+    color: #333;
+    font-size: 16px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_operate__1330D .school-search_operateBtns__1deZ1 div {
+    display: inline-block;
+    cursor: pointer
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_locationMenu__1mP_Z .school-search_operate__1330D .school-search_operateBtns__1deZ1 .school-search_sure__y7hS3 {
+    width: 112px;
+    height: 42px;
+    background: #f60;
+    border-radius: 79px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 60px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE {
+    box-shadow: 0 3px 10px 0 rgba(65,65,65,.2);
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 1000;
+    background: #fff;
+    width: 673px;
+    border-radius: 5px;
+    padding: 16px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_labelItem__3GYTk .school-search_headTitle__3TIAt {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_labelItem__3GYTk .school-search_checkBox__1nq_u {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_labelItem__3GYTk .school-search_checkBox__1nq_u .school-search_item__1xLeM {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+    text-align: center;
+    min-width: 100px;
+    margin-right: 8px;
+    background: #f8f8f8;
+    border-radius: 4px;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 16px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_labelItem__3GYTk .school-search_checkBox__1nq_u .school-search_item__1xLeM:nth-child(6n+6) {
+    margin-right: 0
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_labelItem__3GYTk .school-search_checkBox__1nq_u .school-search_item__1xLeM.school-search_active__3dQZd {
+    background: #fff9f2;
+    color: #f60
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_operate__1330D {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    border-top: 1px solid #e8e8ed
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_operate__1330D .school-search_checkNum__1lhoi {
+    color: #999;
+    font-size: 16px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_operate__1330D .school-search_checkNum__1lhoi span {
+    color: #f60;
+    margin-left: 16px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_operate__1330D .school-search_operateBtns__1deZ1 {
+    color: #333;
+    font-size: 16px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_operate__1330D .school-search_operateBtns__1deZ1 div {
+    display: inline-block;
+    cursor: pointer
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_schoolTypeMenu__f2wKE .school-search_operate__1330D .school-search_operateBtns__1deZ1 .school-search_sure__y7hS3 {
+    width: 112px;
+    height: 42px;
+    background: #f60;
+    border-radius: 79px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 60px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_rankMenu__HDvIc {
+    box-shadow: 0 3px 10px 0 rgba(65,65,65,.2);
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 1000;
+    background: #fff;
+    width: 260px;
+    border-radius: 5px
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_rankMenu__HDvIc .school-search_item__1xLeM {
+    height: 46px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_rankMenu__HDvIc .school-search_item__1xLeM.school-search_active__3dQZd {
+    color: #f60
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_filterList__3dNb- .school-search_filterItem__VRlKo .school-search_rankMenu__HDvIc .school-search_item__1xLeM:hover {
+    background: #fff9f2;
+    color: #f60
+}
+
+.school-search_schoolListMain__B9yLk .school-search_schoolDropFilter__3f8qd .school-search_labelTitle__2v-AE {
+    color: #000;
+    font-size: 14px;
+    display: inline-block;
+    text-align: left
+}
+
+.schoolDropFilter .checkLocation .ant-checkbox-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.schoolDropFilter .checkLocation .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #f60;
+    border-color: #f60
+}
+
+.schoolDropFilter .checkLocation .ant-checkbox-indeterminate .ant-checkbox-inner:after {
+    background-color: #f60
+}
+
+.schoolDropFilter .checkLocation .ant-checkbox-input:focus+.ant-checkbox-inner,.schoolDropFilter .checkLocation .ant-checkbox-wrapper:hover .ant-checkbox-inner,.schoolDropFilter .checkLocation .ant-checkbox:hover .ant-checkbox-inner {
+    border-color: #f60
+}
+
+.schoolintro-box {
+    width: 1200px;
+    overflow: visible!important;
+    margin: 0 auto
+}
+
+.schoolintro-box .introduce_box .introduce_head {
+    display: flex;
+    margin-bottom: 35px
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_img_box {
+    height: 100%;
+    position: relative;
+    float: left
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_img_box .vr_quanjing {
+    display: block;
+    right: 0;
+    top: 0;
+    width: 86px;
+    height: 31px;
+    background: #fff3ee;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #ff4c00;
+    text-align: center;
+    line-height: 31px;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    cursor: pointer
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_img_box .play_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    width: 49px;
+    height: 48px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_img_box .introduce_img {
+    margin: 0 0 0 20px;
+    float: left;
+    border-radius: 10px
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_img_box .fill_cover {
+    object-fit: cover
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_img_box .introduce_img_play {
+    margin: 0 0 0 20px;
+    float: left;
+    border-radius: 10px
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box {
+    border-radius: 10px;
+    position: relative;
+    float: right;
+    height: 259px;
+    background: #fff;
+    margin: 0 20px;
+    padding: 10px 20px!important;
+    width: 680px;
+    box-shadow: 0 0 13px #e6e6e6
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .comment-enter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .comment-enter h3 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+    padding-left: 8px
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .comment-enter h3:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 14px;
+    background: #f60;
+    position: absolute;
+    left: 0;
+    top: 6px
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .comment-enter button {
+    width: 81px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid #ffb888;
+    background: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    color: #f60
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .evaluate_box {
+    width: 96%;
+    margin: 12px auto 8px
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .evaluate_box .circle_item {
+    margin-right: 96px;
+    text-align: center;
+    float: left
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .evaluate_box .circle_item:last-child {
+    margin: 0
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .evaluate_box .circle_item .circle_title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    margin: 5px 0 0
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .school_introduce_text {
+    position: relative;
+    width: 640px
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .school_introduce_text .school_introduce_text_item {
+    display: inline-block;
+    width: 640px;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    word-break: break-all;
+    position: relative;
+    overflow: hidden
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .school_introduce_text .school_introduce_text_item span {
+    color: #ff2d2d;
+    margin-left: 7px
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .school_introduce_text .school_introduce_text_more {
+    color: #1ea5eb
+}
+
+.schoolintro-box .introduce_box .introduce_head .introduce_text_box .vote {
+    position: absolute;
+    right: 10px;
+    top: 103px;
+    color: #1ea5eb;
+    font-weight: 400
+}
+
+.schoolintro-box .info_content .left_info_wrap {
+    margin: 0 20px;
+    width: 740px;
+    float: left
+}
+
+.schoolintro-box .info_content .left_info_wrap .dualcalss {
+    margin-bottom: 20px
+}
+
+.schoolintro-box .info_content .left_info_wrap .info_dualcalss {
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0 0 13px #e6e6e6;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.schoolintro-box .info_content .left_info_wrap .info_dualcalss p {
+    margin-right: 20px;
+    line-height: 30px;
+    color: #000
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item,.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box {
+    margin-bottom: 23px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box .info_title_left {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box .info_title_left .title_border {
+    float: left;
+    width: 2px;
+    height: 16px;
+    background: #ff6602;
+    margin: 8px 10px 0 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box .info_title_right {
+    float: right;
+    width: 116px;
+    height: 32px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    transition: all .4s
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box .info_title_right a {
+    color: #666;
+    display: block
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box .info_title_right .info_title_right_icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-top: -3px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box .info_title_right2 {
+    line-height: 32px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box .major_more {
+    border: none;
+    text-align: right
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .info_title_box .major_more:hover {
+    color: #ff6602
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .college_rank_box .rank_item {
+    box-shadow: 0 0 8px #ebebeb;
+    width: 17.6%;
+    height: 100px;
+    background: #fff;
+    border-radius: 14px;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .college_rank_box .rank_item:nth-child(5n+5) {
+    margin-right: 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .college_rank_box .rank_item .rank_contain {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .college_rank_box .rank_item .rank_contain .num {
+    white-space: nowrap;
+    font-size: 12px;
+    color: #f60;
+    margin-bottom: 8px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .college_rank_box .rank_item .rank_contain .num span {
+    display: inline-block;
+    color: #f60;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    height: 28px;
+    margin-right: 2px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .college_rank_box .rank_item .rank_contain .name {
+    white-space: nowrap;
+    color: #999;
+    font-size: 16px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .college_rank_box .active {
+    margin-bottom: 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .ad_item {
+    height: 90px;
+    background: sienna;
+    background: grey
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .ad_item .ad_item_height_style {
+    width: 100%;
+    height: 90px!important;
+    overflow: hidden!important
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item {
+    width: 740px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top {
+    margin-bottom: 20px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box {
+    box-shadow: 0 0 13px #e6e6e6;
+    float: left;
+    width: 23%;
+    height: 100px;
+    margin-right: 2.666%;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top-num {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    text-align: left
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top-num span {
+    font-size: 12px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top-num01 {
+    color: #ff1515
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top-num02 {
+    color: #007aff
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top-num03 {
+    color: #ff6602
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top-num04 {
+    color: #00b68e
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor {
+    display: flex
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor>div p {
+    width: 100%
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor>div p:last-child {
+    font-size: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    text-align: left;
+    color: #999
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor>div .doctor-one {
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    color: #333
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor>div .doctor-one span:first-child {
+    font-size: 22px;
+    margin-right: 3px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor>div .doctor-one span:last-child {
+    font-size: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9)
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor>div .doctor-two {
+    height: 25px;
+    line-height: 30px;
+    text-align: left;
+    color: #333
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor>div .doctor-two span:first-child {
+    font-size: 16px;
+    margin-right: 3px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor>div .doctor-two span:last-child {
+    font-size: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9)
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor i {
+    color: #999;
+    padding: 5px 10px 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor .one-two p {
+    font-size: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    text-align: left;
+    width: 50%
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_doctor .one-two i {
+    margin-right: 10px;
+    box-sizing: border-box
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .bottom-title {
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .bottom-title i {
+    margin-right: 10px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background-size: cover!important
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .bottom-title01 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAADxElEQVRYR+2ZTUhUURTHf1fTNMVcNKMS2IeU6GAUZCqRgYQQtggKKkgiUcO+DVyUCC1aW5ARifSxiAzatIqEDJKgWhQVJhXkRyGmZZkS5deN4/XRqKPMm2G+qAMu3vPed373zP+ec967ilmmU1NdTEyUo1QxkI7WibPHBPRaqRGgB61biI5uUn197e7+lHWhXa5YBgbq0boKiAoolPcPn0Spyzgcp1R7+6hMmwKehr2H1kXePyuII5VqxeHYLtAG2OlsQOsjQUSw70qpS6q//6ia1uyrMJLBfIuZJDp6ndIOx3ngpP0lh2TGBaWdzna0zg6Je7tOlXojwMNBT112Qa3xSo2IJLSv80Mx7z9woKP+D0TY6YTsbPj1C548WTig+fkQFwevX8PXr2ZsZia8ewfat61jP8I7d0JjI/T2wvr1CwO/fAlpaVBaCvfvm78NG6CuDq5c8Uk9/gMnJcHy5Z6d37kDDgecOQOPH8OWLXDuHPz8CXv3wtAQdHTYAvcfeM8euHjRltMZg1NSbMnDf+CCAigr8wxcXAzx8fD0KfT1eR5TUWFrsf4DL+RutoZtoXke7D1wTAwkJkJJCdTXw+fPUFgIv39DZSUcPjzXw9KloBSMjMD4+Mz/i35zc20vwXvgHTvg6tW5Dm7dMj93dbVZRFfX3zGSEWJj4f17GBw095csgZwc+P4d1q4NMXBTk8kIlnmSxJo1JmMEHFjS14oVUFQEtbUwMGBS07dvJs9KhL98MfnZsqwsECl1dsLwsLm7eLEpHgEHtiA8FY7Tpw3wp0+milm2ebMBlEonCxRLSIC8vDABDitJeBNh2Viy8SwTvS5aBB8/mkxhSWL16jCJcE/PzFK7datpfl68gP5+AyypUaQSFhqeLYlHj0BKb1UVtLaCLECifugQdHfD7t0BTGsLSSI5GSSLyM9u5VtPKM+ewcqVcPw4NDfbhpUJ3heO+YAfPgSXyyfnU5P274eWFq/n+w988yZkZBiHy5aZXDyfpaebTSgpzsrLNTXQ1hZEYMvVtm1w4wZcvw5nz8LY2FwI6dpWrYJjx+D2ba8h3Qf6H2HraSdOmLIszc7z51BebgqJZXL/7VsQvYcFsIBJg9TQYKqblGt52xCTTm3TJjhwwFzv2wcPHoQ4wpZ76dBE0/J6dPcuSIPvbpJ/N26EHz/CBNgd4+BB2LULRkfNe9yHD3DtmmmGfDT7Go6KMj2uvKZL8x5ki8CPgRH3uTXiPmibY67IOTKQPRNRhzJTwOaMLnKOvdygI+Ng0T2VhvvR7R9FQO78DB51qgAAAABJRU5ErkJggg==)
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .bottom-title02 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAEGUlEQVRYR+2ZfUyVVRjAf+cityzNqOssqQtWBtPCTaZ8WG5k2VKyhpvYbH6kQAozhn9UmI3SPmzNrzLJSCsrtY9lfuRMZaF2+UMUwyVoUEEBLUQIKULafdvx9HaB62Xve7f7yrt5/nvPfZ7z/M5zn/Oc55wj6N2WaaPxsgCNyQjcaAzykwllh6AdjToEX+OgiOXi++7mxP8fBZqTC6xCsBANRyiZDI8t8KKxASd5FIgLUk8BS9gu9qJxn+HBrBQUFBPOQxJaAedrbwLZVjIEYWs9L4scgYrZin4TBoFmIsPDQZxgqbYajdwgZmy9imCNIF+Tq3CU9daDsnhKevi85akrKNaLKaJdelgLVv9y6F0BDrXXr3jYVh4e4IC4m8whlzeAmVVvKiQ2pUHs0MBAaR9B47PmgJ3LoMtrXMcUcNkiiI8MPPjNr0DDMz1/F756kEsl0KueDyHwvVEw5Gp4cCTkJEFdK2Tv9AHuPu0/ma3pMDMOSusg+W3jngxcUgSxcXw8Ax4bA2+UwuLdfUNU5ULMUFjrgdw9lwE4TEDTUogYCA9sggM1PSEmRsNdw1SfjIZ1qeBwwNbv4EhtT9kD1XCm2dwkTMWwHFoClWRA29/gesk//t6aBgsTjEHM/hS2nDAmq0uZBl47FRYnw/F6WPGNz9jPLVDeCDrwL61QdfbSMONvUWsh5MDDB0P1EhgY7g9SdBQydsCGafBkAqzzwFMBYrY0CxLdMOcz+KA8hB4ufASyxisDFb9BdTNEXw9jIyEQ8LhI2DsXOrrg1teUriXAd9wAlbkwIEwZXfIVrPoW5sdDUVpgYJkKD2VCeycMftFC4Flj4MMZvr/PKHDKCCheAK0dELHCQmD3EDiTB2X1MCHKuIdTY2DXbKhtgejXLQSWptLvhkm3Q8Y4yNsDqz3wRDy8mwbvHIXMHb4soW8Uc8fC5ungqYUJGxWwJwuS3BZkCWls46PmgJffD8+lwCcnIX2bDYAPZ8A90XC6Caa8Dz+29DMP5yTC1Bj4shJO/a52Rb21dMDMbXCnC+Sa2H4SjjWEMA93D4lzf0FbJwxygutaXwzr5mNdcHA+DL8OSn4C1zUwehh4vZC/H1YeMgca9Nasx3Bvc/qik6cO6eWCSWr7rWqCpEIu1sJfPA4ptynN7RUw73Po+MccuOlaQgdeWQKbj/uMOQSkxkJ2AkRFqP6zf0JiIdScU9/OMHhvuipNZTtWDw9vgcbzxqFNA786WRXksvApKvMZSnbDkUzQTxi7KmHRTvi1rSeMLDnX/FdA1TRD/Hr4ozOEwH0NLc98I2+EF4r96+Teek9PhH0/wIlG47BS0rSH+xo+3GHufGYOVUnb8jLQdtetNrvQtt2TgYxkWz3KSGDbPXvp0LZ5WOyeEPv50+2/q+fpMlJ9YsUAAAAASUVORK5CYII=)
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .bottom-title03 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAADT0lEQVRYR+2ZWUiUURSAvztOY9bQvjDtFJWpGLSvkBJmtEG+FEUEhVLTgw60PVgG0b6oNFYk9BKVPdmTEDgPQURFUIItSEULZEaROpGJzh/XqzRUM3P/mWYDz9vPf+4533/+e869517BH2I4bZl0+XaCLw+YhIH9T52oPgu8wDuw3MFqqRbuzkZ/f6LvwSjLtPHxxTkwdmFgiSqUrnGBD8RFHOkuUdbYKYf1APfC1mEYubq2YqonhAdH+moJrYCLUi5gGM6YQph1JoRbXO7eI9Sc7WpImGkQ6EPk9LBas4VRZD2P4Ss2+8Fx0ReWcmEUWRoxyIgLgFmngmcSuD3mpcssaJ++wCuMQouhPd6WBuvKIHstjJkBFhPV7+1jcK+H1mZtd/9S1AeWsAcfwLjM8B02v4RzuRFB6wNvPA6r9kHbJ6gpBhkxwxccftg42HtX6bR+hKEOiBBaH/jQUxifBdVb4NFNvSjbR8HZT0r3xBIorIEREyOC1geu6oCUAXA4QznUlYpWGGiHyjXQ/BxcHhg1JWxoE8A/IcUKpenQ0qSLCzuuwYLN8Oo+nF4OwyeAqx5GTwsLOvrAcgocaoC0IfDwBlx3QupgBT12hoI+tQy+f9UKQvSBJcbCrbD9qiqD3i/w6h78aINFWxVkTQl4KhMIWKJMXaygx07/G6y2FOqOJRiwxLGmQlY+TJ4H9pEwa6WayzEFttpgZq6qBMHk/dO/k7UvIWMKLBcTuaiEkg4vlIwAX/dvzbgAT5kPBadU5gcTmWgyufwlLsChIhvsfT+wf3Sqwlzp+iOsu4EPFOGMPNh2BWwaSefekABJl7MHNlWETr22Ftg/IQHKmkSVm5jUEAuH3OF1tCdAhEPHNrBGVMta+VdIGwpH58L7J5Fg/h67uxZmr4NbLqjXmFbybE27a5b715krlGHpIFLx3yefyYGm3t4vhF19YNnaO28rcy88ek1oIOeDhsGcApA935uHcHJp6Ia215Y+sByQfwDWH1Gt0v+QDw1wqQA+v9a2Zg5YmnXMAll7ZWUQJg5S/JF+fFN/6EktdHdpw0pF88CmzP9/5SQETrrDwOQ7bk22A+1kuzKQeZxUlzI9wOqOLnmuvfygk+Ni0b+8J/rV7S/2Mcm8bgdKrAAAAABJRU5ErkJggg==)
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .bottom-title04 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAE5ElEQVRYR+2Za0xbZRjH/28ppZRyKwzKZWUERW5rxjYZZQS5OCbO6WIEg4TFBYWA07jFb4QvZtkXE5gXgkEx25w3IEYR6WSMsHEZ4DauRekCcquMITIulZaWHnNOhSxj2HNKuDR6vrV9Lr/3Oc/zvE/fl+Dh53JhOEBeA0UlA0QGihKvktnILwiZB6gREFILUJ/imdOqB92RlQ+qcgFGNIWgqFwAvI1k4mDbBEJKIPM7jfC0RVrPDEzDDmuUAJXIwdgmipJ6BPil0NBmYGXRR6CoNzaRgLsrQoqRcuokAZ2zJnRvozRYazEm8CAnuFxUBBP1Nvclb4EGj5wjUBaqQCFsC9xzd0nQR6Asmtv01sUd1axByDxBTSFlrf5W6P13gLP8w1EclggHOz6nQOuWjMjqqcWX4/2c9JaFrY5wrkyOD0ITwOdx2xQNpiVk99bhvKZvc4FpbwLCQ4hYgq7YTMwa9NjX8sUjIXpij0Nox0fo9fMY+GsGBspkFax5a15n0T3h5I5f417FfYMO7nUljwTRJp+EyM4egQ1lGFqYtRr2f2A6wiIeH6FiCW7N3luJ5LaK8AFXKVpj0nFXr4VPfSl6YjMR4eyJ/P5mnB1sZ6CnknIhEQgR2XQJnXOTW5sS7z6uQMFj0WiYGkVieyXuxJ1AkJMbzg60IV/dwsC1RL8MhbsvCtTNODNgXoS1z7qKTiZ0ZiLqYu+AjM4aprd6C0TY6+KFuqkRGCkTQpwkiHaT4jP5YUwbdIhovIjf9Vprea3vEvQgXfvki3jaMwCNf44hvq0CDzer8j1HkOoTjJLhLkS6eCHa3QfKyd/w7M3vNh84TyZHcXgStEYD5E2fY3BhZhXEtQOpiJP4o3JcjXx1MzpjM+Fox0d2zxV8MtZrFbRVKREkckXXwUw48e2Rp7qKkhF6/l/9eAkckeQhg3JyCPeNerwVsAfvhyVgzrjILNKanswZmN6Ir0en4aC7H678MYzkn7/FUxI/KNx8UTbWi8nFhTUjR6dRfdRLiPfYiWtTY0horwDXUZEz8DuB+/BeSBxmDHrsbrqIhSUjNInZEPDsUDGuRlrnj//6qnc5uqA7NhPOfAFO/dKAc0MdnFKDE3CYWILbMRnMhHai+ydmgBHb2WMoPgseAkemuPL66i0CvO4fgdLdh5jFRjZfQr922qLOsgBrYPp1tirSEeUmRfW9QRy99f2KE3+hGBFij39aGbuXXLP/GFJ2BKJ1ehwxrV+zTg3WwGnSYHwTeYSBvDCmwvg6eiltw1coxnE/81/J1I5qVN69wyrKrIGr9j6Po95BrIxyFaqaGMALt6tYqbEGnkjMgZeDCGWjvdDo5lkZtyQkdRAhWybHhF4LaX2pJXHmd9bAuuQ3mWKLay1H47SGlXFLQlGu3miLeQX6JSOEtR9aEucGTHeCAEcXpHVUo4JlvlkieG5HIH7YfwzDC7PY1VBmSZwb8MfhSciRyaHWTiOjU4mbsxOsHKwlRA9IF+SHmVG0dKQbOaqrrOyxTomdQjFuKNLhJzQfF1MUu/a1FgUh5nNIuh4UN77CKMu6YA1MG6fHyTPBMTjkGQCpgxOriKwlRA/89NZeoG7BsG6OtS1OwKytbqCgDQLb3GGgzR232tyBts1dGdAVbVOXMjSwzV17LUPbzMXig41+m1/d/g236RbTsl6IWgAAAABJRU5ErkJggg==)
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .bottom-title05 i {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPWSURBVHgB1ZlPTxNBGMbfXdFGErGSEA5gUiIckET+eBASE8pFT0I5eDOhxA9AOXhu+QIWPoCxJN488C/R4IWSeNCDUEmQC4YaIZEQDOKBUC3rPLOdMmlLt7Pt2u2TrDvTbu1v3nnmfYeORrlaivpJTwdI00dYz0fVkEEJ9k+CUvoUjU4m5be0bGsu6iUPhdmDIXKVjGk65eBH6JnAgL1irLBeD7lRiHhKGwK0zl9AZN0KC4HNcxY2m2+jPjKMHaoFpdNDOhnpCNWK9EsBBqx3U61IoxHd1d7Nl0+nMhRs6SLf1Ybz/01qOyXbwC/vPGTXAwq395O3zkMr9x7Tjv8pv3quNZFTsgUM2GDLbTr6e0ozyXUO629s5e8hyug7Ba0MDFABO/ppkcP3NDRR8uSY2uIvaHbvC3kvexyDVgZO/D6g+f1tGvr4mqKd/iws+rgHN5YdhVYHPj6g0bUlmvD15cEKOQldlocLwQrJ0HN3hyuWQZSBsbiyHl5bLAgrJKDFQqwEtDIwQLkM1v5zavl8paFteTjXn+GOAZrrG+b9MRb9QtDxn7sVgdbozXODbCjGfFwIDsKg4O3sbDDJAyzmfSvZrnSIGlIchC8e33hHoa04byN7hFgWkQX7ABKfKSfSZe0lhFBAYnubvOqNs4FAY6350c+FRllXlW3gcEd/Nr/KUyvboJAAjcID3WA2UZUtYMBG2gek/nl7ImOF+OH3op/FwEJbq6SqOlIUplLAzu5usqnvYn7tpWDGAti58fdYJikG+98WXbRzkN9jDBYREl8KUFzCEqiG8qKSZwU+RybB80iHGHCpUoowAALN7bw9tf2BWwGvARoLD7C4RPrCHZHEApRh5/e/ZvfQyChIedNswVYcONB8i98RXUCKyOROL/oCev3+k6xNABtD0ZFgzZS4XDKDkiUGG2/y+2eWlsSGHRUs14vIBIg4Xhc2uQhW1ctKEfZm0hD8ZyWxocfA8LzwdjmwysC5QJDVXhczIIQB++obyirNSsBid3adTSu+DBULwIiiDFbs873vX/G7VYG5SEoe/nbyi9/b6s10tfDDrFhIYWJhWQkDtQsLKQEL74oFF2GpDQB8XyBVOydVkiV4UWD+E7szZAtYAZGaZMUDv08gxaGP6mdHpfq5pP0wcqmTP45AWANYiFYqKcLwaqketavVQ+tFC9n+i6NawqJLUu0owX4fpgWqFRkaAz5Lz1OtKEVTOj16FmdRniG3C4zszM4sHCktYh7muVTmsVcETRMYh3Y4B3NjpMGUOaNDV8t7wDwGQ8S7q3j+keTJAOsLlpX0D4MdHw08tsWNAAAAAElFTkSuQmCC)
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .top_item {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 1px solid #1ea5eb;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1ea5eb;
+    margin-bottom: 7px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .span1 {
+    margin-left: 29px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .span2 {
+    margin-left: 21px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box .span3 {
+    margin-left: 16px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_top .top_item_box:last-child {
+    margin-right: 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_bottom {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 13px #e6e6e6
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_bottom .item_bottom_content {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    margin-bottom: 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_bottom .item_bottom_content .item_bottom_li {
+    margin: 0 30px 30px 0;
+    height: 18px;
+    line-height: 18px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_bottom .item_bottom_content .item_bottom_li .block-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    position: relative;
+    background-size: 100% 100%!important
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_bottom .item_bottom_content .item_bottom_li img {
+    margin: 4px 10px 0 0;
+    vertical-align: top
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_bottom .item_bottom_content .item_bottom_li span {
+    display: inline-block;
+    width: 275px;
+    font-size: 14px;
+    color: #000
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .base_info_item .base_info_item_bottom .item_bottom_content .item_bottom_li:last-child {
+    margin-bottom: 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item {
+    width: 740px;
+    color: #333;
+    border: 1px solid #e4e4e4
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item1 {
+    display: table
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item1 p {
+    float: left;
+    width: 182px;
+    padding: 10px;
+    display: table-cell
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item1 p:first-child {
+    text-align: center;
+    border-right: 1px solid #f3f3f3;
+    height: 100%
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item1 p:last-child {
+    width: 566px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 {
+    height: auto;
+    margin-top: 30px;
+    border: none
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 table {
+    width: 100%;
+    padding: 0 43px 0 47px;
+    box-shadow: 0 0 13px #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 table tr {
+    border: 1px solid #ededed;
+    height: 46px;
+    line-height: 46px;
+    text-align: center
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 table tr th {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    vertical-align: middle;
+    padding: 10px;
+    text-align: center
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 table tr td {
+    font-size: 14px;
+    color: #000;
+    vertical-align: middle;
+    padding: 10px;
+    text-align: left
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 table tr td .major_item {
+    width: auto;
+    float: left;
+    margin: 0 5px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 table tr td .major_item .major_item_name {
+    margin-right: 3px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 table tr th:first-child {
+    width: 182px;
+    border-right: 1px solid #ededed
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 table tr td:first-child {
+    width: 182px;
+    border-right: 1px solid #ededed;
+    text-align: center
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 .both_heigh_table th {
+    vertical-align: middle;
+    padding: 10px;
+    color: #000;
+    font-size: 14px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 .both_heigh_table th:last-child {
+    line-height: 30px;
+    text-align: left
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .major_info_item2 .major_no_data {
+    margin-left: 20px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .enrollment_content {
+    width: 740px;
+    max-height: 445px;
+    padding: 30px 20px;
+    box-shadow: 0 0 13px #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .enrollment_content li {
+    margin: 0 20px 15px;
+    list-style: disc;
+    color: #000
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .enrollment_content li .enrollment_text {
+    max-width: 540px;
+    float: left
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .enrollment_content li .enrollment_time {
+    float: right
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .enrollment_content li:last-child {
+    margin-bottom: 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .swiper_box {
+    width: 750px;
+    height: 587px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .video_content .video_item {
+    float: left;
+    width: 240px;
+    margin: 0 8px 0 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .video_content .video_item .video_in {
+    position: relative
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .video_content .video_item .video_in .play_icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABgCAYAAADmbacFAAAMXUlEQVR4Xu2de3BU9RXHv+duHhCICAhCkt0FEQI+QQPJ3hVMBita5SUQSPYuiqA8xKHo8FCnVmvriPZhqcq0U7DDbkBiK7ajVp2O0ba7AaQyWpGCL7JJ0MpDJAHMY+/p3Bs25L2ve3fvkr1/MGHy+53zPeeT+7v3/p4Eg17M5aaaSowkbsiVBWEMmHOZ2UygTAYyCZzJRP2JWWBQHYHrANSBqI6ZagWSDzHhYAqbDg1PG/M55eU1GTRUVRYZRRzvL0+rrm/IJz8VMVDEzDYA6ZroIzSBaS8B7wiECkaa1ywWn9XEtkZG4gqCv6zoU/117UxmSARMZea+GsXVsxmiRgD/AMGdMTDzlSFjZyp3U1yvuICo9m67kSEvZGAumC+KZwaIcAagvxCErTm2kreIiOOhJ2YgmJmqK7fPBOSHmXliPIIN5pNA+8mEp3Lys18iKmoOVl7L3+sOgpmFmt1lpbKMh8B8hZbidbNF+JKInjanjt0cq4e8riB8HvdEgF9gIE+3pOlpmHDAxKaVOfbSd/R0o9tbU83uVwb7/aefJGAJMwS9g9DbPoF2EKU9aBaLa/XypfkdUVW5bTrJ8hYGX6KX6HjYJVA9E91nFR1b9fCvGQj1O+C7xg3M/CM9hBrFJhG2pvUbumLYtdNOa6lJExBV75ddRo3yjoR9FoSdUToomIRic0HpR2FX7aZC1CBqdrkLZJlfY8ZgrUQlgh0inCaY5prF0je10BsViBqP6zaZUM6MDC3EJJoNAjUz0WItnhsRg/B5ti0C5N8zOCXREqilXuVLnAjrzTbp6WjsRgRCgcDwb4nG8QVXl+ghqyg9FWlcYYPw7SqbCT//mcGmSJ1eqPUEAfeYbc4/RBJfWCCUzjqZ/crDqU8kzi70OgTyE2GeWZR2hhtryCBq33flNjfRnnj3loYbYBzKN5hMVJhTIO0Kx3dIIKq95X0ZDXuYcVU4xntrWQJ8ROkTzGLxiVBzEBIIX6VrC8tYFKrRZDll7JNet9gc00Md3wgKoqrSfSdk/mMyuZFkQFhvtTs2hFKzRxA1u9w5sh8HGNw/FGPJMu0zoHzwASkTLPYFHwfLTY8gqjyuPwGYE8xI8vfdZ4CAf5lFaUqwJqpbENWV7ltlmd9IJjn6DBBMd1vspS/2ZKlLEMrsCt+R2v0AXxa9jKQFAh0jSsvt6S2qSxC+yrLVLMu/SqZQywzQ01a7tK47i51A8KdvpFd/c+ILBmdpKaO321JG+IjSrN3dFZ1A+DzuFQx+vrcnTo/4iYQnLKLj0a5stwPBe/emVjcc+IwBix5CkjZxMjM9fcSgvOLvOuaiHYiqSlcxZOxIJky/DAgQVpntjo09g/C4XgfwQ/1kJC2D6AOrKF3fLYhv9pQP+76psSY5zqD/Hwsh9eqOX9utTZOv0vUAy/il/jKSHkD0jFWU1rbNRCuIKq/732C+zmhp+vRwLTbveBNNzX5Mn5qPwoJrjSYxbD1EqLWIzpxOIJQpkrL/zFFlxnbYVnWscKr+DArnr8Hxk6daveSPH4uHVszHhCsv19Gz/qbTTHTl8ALpk4AnNfE1HvdcP/hl/d2H5+Hvnn1YvLbrD/xbbszDmqXzcLk1Mb87BRLuN4uO59qB8Hndm5h5WXhp0r/0q297serxTd06EgRC8W1TsHrxHRg2ZJD+gjT0QIRXLaJzdnsQHtdBBsZo6EcTU8FABJykp6Xi7nnTsFy6HQMu6qeJ7xgYOWkRpcFEJCu+6Pgu90X1fu70pRcDIUFdhAoiYGhAZgaWS9OxaN7N6JOeFtR+vAuYUlJzc/IXHFJBVHvLJsks7463qK78hwsiYOPSSwaqzZXSbJlMxl2eQQJmWmzOv6ogajxlTj9kXeb8Rws3UhABv6Msw7F2WTGUB7sRL4Gw1iw6n1FB+DxlP2fIDxtRaLQgAjGNv2KU+spbMGGcocIkwmaL6Fyigqjyul8G81xDKTwnRisQgdgKC67BumXFuGK01RDhKuPZFrtzcgsIj/sdgIsMoayDCK1BBMzPnibigSVzYMkaGt+wCQesolNdaavcEXvB3Kk3ML4KW7zrBUKxnZpigjRrKu6/ayYGD4zPmnsiqrGIkvncM8KY3xB6gwj8oQ295GK8tPFhjLIOj/3fHtEpqygNCDRNRwCOg4rgcet5R7T1XjKjEE+tWxxckMYliCBbRKe6vEFpmk6CWaVitCtWIGb+wIaNj62IS/iWrJy+NLLoe6ryur4CY1hcVARxGgsQyhe4+9l1mHhN7Ht4lNl/ZpvDpC7/8nndh5h5dG8EcUPelXhkZUk8X2frrHan+qagNE2GHBDS82F9de4IrF8+HzdMjO9yDwIdsdil7Ja3Jq/rXWbc2BvuCGv2pVhz71zcPjUfREYYA6ODVrs0NgBiJzNmXcgghgwagFWLZmHBjEKkphhpNTJVWu2SGHh93QBwu4Fso0CJ9mHdP6MPljpuw5L5tyCjr/HWXyr7elhE553n7gj33cy82SjJb6sjUhBpqSlw3nETVi6cgUEXZxoxNFUTCXjEYnM+qf5c690uNnOzx4hqwwWhtPuzp9nx4D1zkDPM+LsUCYIwx2xzvKKCUDe5aj59LNFBTBXHq2MPY0epXTeJcaWarrJOKt2vglD+8XlcVUaceBzKHXH9VaPVV9FJ43MTI/nnVCq725jTxg0M7Bl4DoT7RQbfZbRI/vbu+1j2SKf5uqrM0SOysHZpMW6eYsiO46CpJMKbFtF5a6DguXlNxhwuPXriO9jnrEZD4/ndpIcPHaSOR8+9dbKhx6ODkWg7THq+afpgexafbdZt48Bgonr6/T/3/AfPbtmJxqZmTL+pAAvvuCkhZmgEizlVwPVZNucH7e4I5T9VXtcnYBhrUDdYNAn6eyIcN9ukoYE5Ta13hPJDtdf9qMz8eILGllCyCdhksTvb9bu3drh8vbt8ZKO/8XOjTUROqAyHKFYQUgrMtpJ2c8na9Xz5vO73mHlKiPaSxSLKwPmOvrbVO4IwbHdHRDEbsFLbbo1uQXz94Vv9GuuPHr7QdjE2Cg8iOpsuCCMvLSj9X0dNnTrlq7xuZVd7tSMqeWmcAYE2Wm3Sqq6sdgLRMjschwEeqLGM3m2OqFFA2mXdbfTe5TBVlcf1GICf9O7MaRs9Ef3OIkrdLgbqEsS3+3ZefOps/UEw4jwnUdtkxMua0sFnSkkZlz2ppLo7Dd0O3Bp5un68EhqpXyJhjUV0/KKn+j2OoPu87gpmLoxUQLKessciPjbbciYEO7OoRxBHvNvGNkH+EMzGXwdlQOrKxDETYXK2TQo6Ahp0TkmVp2wdIEe857UB8xMzSUT0rEWUVofiMCgIpe/J53W/ltwsJZR0ni9DhN3mtHGTQz21KygIxXS1t3wQc8M+Iw6nhpee2JQmohMpTNdl2R1VoXoMCYRiTDk5xS/jveTzoufUKs8FAZiRI0pKKxLyFTIIxaKysRYxtl8IR5qFnKEwC3bc2iHU6mGBUIz6KsuWsyy/EKqDXlbucavdqfRKhH2FDUKF4XX9mBk/DdvbBVyBBHrBYpPuizTEiECozVSyP6o158rQp1mUVrYdgw4XSMQgVBhe11Jier43bz9HhEctovOJcBPfsXxUIFqaqW2zmP3be9txNy3H2NBSs+jQZAJ31CDU74zK7fky+3eA2RhL+qP98wxSn4CjMJFkKZDe1sqVJiDUZuqjsoFUz5uZuXUzKK1EGssOVWSks2NInvMrLXVpBiIgqtpbtlJmWenyTddSaLxtnTtR66c5NsfPonkodxeH5iAURzW7XxojNzf/lsE3xzuB2vinyhQy3ZctluzTxl5nK7qAaL07dm2bw3751wxOoEUL55OkPguI1pttjheDnYgSLSBdQSjiWqboHFsN8KqEmaZDdArEm9BP2GC9xvFttEkOpb7uIAIiVCBnjt0Llh9khrq22GiXcvIJQL/JzMh4buCE2SdjqS9mIAJBKSfB+041loB5IQGFxuhApEoSsDUldcDWrLzpZ2IJIOAr5iDaBqkcr+b3k4NIlmJ96iMRPiMS3JxqclvyFnwej+S39RlXEB2hwE9FsiAXMVMRmEdomRxluwUGVwgkVMipqLBOdHyhpf1obRkGRMdAqr3l2TI1jSPmXCaMIUYuA2ZiZDI4k0D9A4eaK+/4TKgnoI7BdQAdIcJBkukgiA6lEP13uK3kcLTJ0rO+YUGEErRyTNtXx+uFeLXroWgMtcz/AT0jRJ2OhantAAAAAElFTkSuQmCC);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .video_content .video_item a {
+    color: #666
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .video_content .video_item .video_item_title {
+    text-align: center;
+    height: 60px;
+    overflow: hidden;
+    color: #000
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .video_content .video_item:nth-child(3n+3) {
+    margin-right: 0
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .video_content .video_item:first-child {
+    margin-right: 8px
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .vote_box {
+    overflow: hidden;
+    height: 506px;
+    padding: 49px 140px;
+    border: 1px solid #e4e4e4
+}
+
+.schoolintro-box .info_content .left_info_wrap .left_info_item .school_deatils {
+    text-indent: 15px
+}
+
+.schoolintro-box .info_content .left_info_wrap .more_info_box {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #eee;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0
+}
+
+.schoolintro-box .info_content .right_info_wrap {
+    width: 420px
+}
+
+.schoolintro-box .left_content {
+    float: right;
+    width: 400px;
+    margin-right: 20px
+}
+
+p {
+    margin: 0;
+    padding: 0
+}
+
+.circle_item1 .ant-progress-text {
+    color: #ff6602!important
+}
+
+.circle_item2 .ant-progress-text {
+    color: #0251ff!important
+}
+
+.circle_item3 .ant-progress-text {
+    color: #00c99d!important
+}
+
+.circle_item4 .ant-progress-text {
+    color: #ff0202!important
+}
+
+.consultList_content {
+    text-indent: 15px;
+    color: #888;
+    width: 100%;
+    height: 95px;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 23px
+}
+
+.consultList_content li {
+    display: block;
+    line-height: 30px;
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.consultList_content li a {
+    color: #000
+}
+
+.consultList_content li a:hover {
+    color: #1ea5eb
+}
+
+.consultList_content li:before {
+    content: "â€¢";
+    color: #f15d52;
+    font-size: 16px;
+    margin-right: 5px
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.specialty {
+    width: 100%;
+    height: 32px;
+    position: relative
+}
+
+.school-content {
+    width: 1200px;
+    margin: 20px auto 50px;
+    position: relative
+}
+
+.content-left {
+    float: left;
+    width: 1200px!important;
+    position: relative;
+    overflow: hidden
+}
+
+.content-right {
+    width: 420px;
+    position: absolute;
+    right: 0;
+    top: 370px
+}
+
+.weizhi {
+    width: 1200px;
+    height: 153px;
+    position: fixed;
+    bottom: -290px;
+    left: 50%;
+    z-index: 999;
+    margin-left: -600px
+}
+
+.weizhi .w_title {
+    position: absolute;
+    left: 227px;
+    top: 50%;
+    font-size: 36px;
+    color: #fff
+}
+
+.over_contentl {
+    overflow: visible!important
+}

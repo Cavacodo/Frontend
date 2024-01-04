@@ -19,7 +19,11 @@ const routes = [{
     },
     {
         path: '/home',
+        name: 'home',
         component: () => import('../views/HomeView.vue'),
+        meta: {
+            title: '主页'
+        }
     },
     {
         path: '/school',
@@ -78,7 +82,32 @@ const routes = [{
         component: () => import('../views/SchoolDetail.vue'),
         meta: {
             title: '学校详情'
-        }
+        },
+        children:[
+            {
+                path: '/schoolDetail/general',
+                name: 'general',
+                component: () => import('../views/SchoolDetailGeneral.vue'),
+                meta: {
+                    title: '学校概况'
+                }
+            },{
+                path: '/schoolDetail/score',
+                name: 'score',
+                component: () => import('../views/SchoolDetailScore.vue'),
+                meta: {
+                    title: '分数/计划'
+                }
+            },{
+                path: '/schoolDetail/major',
+                name: 'major',
+                component: () => import('../views/SchoolDetailMajor.vue'),
+                meta: {
+                    title: '开设专业'
+                }
+            },
+
+        ]
     },
     {
         path: '/TestMock',

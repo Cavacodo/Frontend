@@ -1,0 +1,346 @@
+.professional_wrap .pagationWrap {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.professional_wrap .pagationWrap .pagination_wrap {
+    display: inline-block;
+}
+
+.professional_wrap .professional_item {
+    margin-bottom: 33px;
+    padding-left: 20px;
+}
+
+.professional_wrap .professional_item .info_title_box {
+    margin-bottom: 23px;
+}
+
+.professional_wrap .professional_item .info_title_box .info_title_left {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.professional_wrap .professional_item .info_title_box .info_title_left .title_border {
+    float: left;
+    width: 2px;
+    height: 16px;
+    background: rgb(255, 102, 2);
+    margin: 8px 10px 0px 0px;
+}
+
+.professional_wrap .professional_item .info_title_box .info_title_right {
+    width: 116px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid rgb(228, 228, 228);
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+}
+
+.professional_wrap .professional_item .info_title_box .info_title_right .info_title_right_icon {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.professional_wrap .professional_item .info_title_box .major_more {
+    border: none;
+    text-align: right;
+}
+
+.professional_wrap .professional_item .search_special {
+    margin: 0px 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.professional_wrap .professional_item .search_special .ant-input-group-wrapper {
+    position: relative;
+    right: -20px;
+    width: 384px;
+}
+
+.professional_wrap .professional_item .search_special .ant-btn-primary {
+    background: rgb(255, 102, 2);
+    border-color: rgb(255, 102, 2);
+    width: 93px;
+    height: 40px;
+    border-radius: 4px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.professional_wrap .professional_item .search_special .ant-input-affix-wrapper .ant-input-prefix {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.professional_wrap .professional_item .search_special .ant-input:focus, .professional_wrap .professional_item .search_special .ant-input:hover {
+    box-shadow: none;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.professional_wrap .professional_item .search_special .ant-input-lg {
+    width: 281px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.professional_wrap .professional_item .search_special .ant-select-selection--single {
+    height: 40px !important;
+}
+
+.professional_wrap .professional_item .search_special .ant-select-selection__rendered {
+    line-height: 38px !important;
+}
+
+.professional_wrap .professional_item .professional_content div {
+    line-height: 30px;
+}
+
+.professional_wrap .professional_item .professional_content div .professional_tag {
+    float: left;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid rgb(230, 230, 230);
+    margin-right: 10px;
+}
+
+.professional_wrap .professional_item .professional_content div .professional_tag:hover {
+    border: 1px solid rgb(30, 165, 235);
+    color: rgb(30, 165, 235);
+}
+
+.professional_wrap .professional_item .professional_content div .professional_nodata {
+    text-indent: 18px;
+}
+
+.professional_wrap .professional_item .professional_content .professional_table {
+    table-layout: fixed;
+    box-shadow: rgb(230, 230, 230) 0px 0px 13px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr {
+    text-align: center;
+    border: 1px solid rgb(237, 237, 237);
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr .name {
+    cursor: pointer;
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr .name p {
+    color: rgb(255, 102, 0);
+    line-height: 21px;
+    margin: 4px 0px 0px;
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr .operate {
+    color: rgb(255, 102, 0);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr th {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    border-right: 1px solid rgb(237, 237, 237);
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr td {
+    color: rgb(102, 102, 102);
+    padding: 15px 5px;
+    vertical-align: middle;
+    border-right: 1px solid rgb(237, 237, 237);
+    text-align: center;
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr td .major_item {
+    width: auto;
+    float: left;
+    margin: 0px 8px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr td .major_item .major_item_name {
+    margin-right: 3px;
+    max-width: 515px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.professional_wrap .professional_item .professional_content .professional_table tr:first-child {
+    background: rgb(250, 250, 250);
+    height: 44px;
+}
+
+.professional_wrap .professional_item .professional_content .professional_nodata {
+    text-indent: 18px;
+}
+
+.pagination_wrap .page_item {
+    width: 60px;
+    height: 38px;
+    line-height: 38px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(237, 237, 237);
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagination_wrap .ant-pagination-item-link-icon {
+    color: rgb(255, 102, 2) !important;
+}
+
+.pagination_wrap .end_page, .pagination_wrap .first_page {
+    float: left;
+    font-size: 12px;
+    border: none;
+    width: auto;
+}
+
+.pagination_wrap .pagination_box {
+    float: left;
+}
+
+.pagination_wrap .ant-pagination li:nth-last-of-type(2) {
+    margin-right: 0px;
+}
+
+.pagination_box .ant-pagination-item-active {
+    border-radius: 100%;
+    background: rgb(103, 102, 103) !important;
+    border-color: rgb(103, 102, 103) !important;
+}
+
+.pagination_box .ant-pagination-item-active a {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+.pagination_box .ant-pagination-item {
+    min-width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    border: none;
+    margin-right: 5px;
+}
+
+.pagination_box .ant-pagination-item:last-child {
+    margin-right: 0px;
+}
+
+.pagination_box .ant-pagination-next, .pagination_box .ant-pagination-prev {
+    margin: 0px 30px;
+    font-size: 12px;
+}
+
+.pagination_box .ant-pagination-item:focus a, .pagination_box .ant-pagination-item:hover a {
+    color: rgb(255, 102, 2);
+}
+
+.pagination_box .ant-pagination-jump-next, .pagination_box .ant-pagination-jump-prev, .pagination_box .ant-pagination-next, .pagination_box .ant-pagination-prev {
+    height: 38px;
+    line-height: 38px;
+}
+
+.pagination_box .ant-pagination-item-active:focus a, .pagination_box .ant-pagination-item-active:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.pagination_box .ant-pagination-disabled a, .pagination_box .ant-pagination-next a, .pagination_box .ant-pagination-prev a {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+}
+
+.ad {
+    margin-bottom: 55px;
+}
+
+.ad .ad1-box {
+    float: left;
+    width: 590px;
+    height: 108px;
+}
+
+.ad .ad1-box .ant-carousel .slick-slide {
+    text-align: center;
+    height: 108px;
+    overflow: hidden;
+}
+
+.ad .ad1-box .ant-carousel .slick-slide img {
+    display: block;
+    width: 590px;
+    height: 108px;
+}
+
+.ad .ad2-box {
+    float: right;
+    width: 590px;
+    height: 108px;
+}
+
+.ad .ad2-box .ant-carousel .slick-slide {
+    text-align: center;
+    height: 108px;
+    overflow: hidden;
+}
+
+.ad .ad2-box .ant-carousel .slick-slide img {
+    display: block;
+    width: 590px;
+    height: 108px;
+}
+
+.school-content {
+    margin: 20px auto 50px;
+    width: 1200px !important;
+}
+
+.school-content .professional_left {
+    float: left;
+    width: 750px;
+}
+
+.school-content .professional_right {
+    float: right;
+    width: 420px;
+}
+
+.school_tab_wrap {
+    z-index: 1;
+    width: 100% !important;
+}

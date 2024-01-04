@@ -51,7 +51,7 @@
           </div>
 
           <div class="recommend-border">
-            <recommend-school-row v-for="(item,index) in recommendTableData"
+            <recommend-school-row v-for="(item,index) in recommendTableData.value"
                                   :key="index"
                                   :index="index+1"
                                   :active=false
@@ -73,6 +73,12 @@ import {useStore} from "vuex";
 import { useRouter, useRoute } from 'vue-router'
 const router = useRouter();
 const store = useStore();
+//初始化数据
+onMounted(() => {
+  getTableData()
+  getRecommendTableData()
+})
+
 // 单选框数据
 const form = reactive({
   province: '全部',
@@ -94,10 +100,10 @@ function handleSearch(){
 const tableData = reactive([])
 function getTableData() {
 
-  axios.get(`/school/getByKey?province=${form.province}&characteristic=${form.schoolClass}&page=${form.page}&size=${form.size}`)
+  axios.get(`/mock/school/getByKey?province=${form.province}&characteristic=${form.schoolClass}&page=${form.page}&size=${form.size}`)
       .then(response => {
         // 请求成功后的处理
-        tableData.value = response.data.dataList
+        tableData.value = response.data.data
         tableData.value.forEach(item => {
         })
       })
@@ -109,65 +115,22 @@ function getTableData() {
 
 function redirectDetail(sId){
   store.state.showingSchoolId = sId
-  router.push("/schoolDetail")
+  router.push("/schoolDetail/general")
 }
-onMounted(() => {
-  getTableData()
-})
-// 推荐数据
-const recommendTableData = [
-  {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  },
-  {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  }, {
-    logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
-    title: '北京大学',
-  },
 
-]
+// 推荐数据
+const recommendTableData = reactive([])
+function getRecommendTableData(){
+  axios.get(`/mock/school/recommendSchool`)
+      .then(response => {
+        // 请求成功后的处理
+        recommendTableData.value = response.data.data
+      })
+      .catch(error => {
+        // 请求失败后的处理
+        console.error(error);
+      });
+}
 // 推荐计时轮换
 
 const ads = [

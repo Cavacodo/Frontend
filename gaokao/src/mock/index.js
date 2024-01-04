@@ -15,9 +15,10 @@ Mock.mock('/isValid', 'post', function (res) {
         isTrue: isTruem
     }
 })
-Mock.mock(RegExp('/school/getByKey' + '.*'), 'get', {
-    status: 200,
-    dataList: [
+Mock.mock(RegExp('/mock/school/getByKey' + '.*'), 'get', {
+    code: 200,
+    msg:"hi",
+    data: [
         {
             id: 1,
             url: 'https://static-data.gaokao.cn/upload/logo/414.jpg',
@@ -139,18 +140,62 @@ Mock.mock(RegExp('/school/getByKey' + '.*'), 'get', {
             tags: ["985", "211", "综合院校"],
             extensions: []
         }
-    ]
+    ],
+    size:20
 })
-Mock.mock('/getRecommendTableData', 'get', {
+Mock.mock('/mock/school/recommendSchool', 'get', {
     status: 200, //请求成功状态码
-    dataList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] //模拟的请
-})
-Mock.mock('/checkAnalyse','post',(dataset) => {
-    let params = JSON.parse(dataset.body);
-    const picURL2 = params.province =='河北' && params.batch == '提前批' && params.year == '2023' ? 'https://cimg.cnyes.cool/prod/news/4246948/xl/e1268acfc33ad4e776ca70c22ecb5213.jpg' : '';
-    if(picURL2 == '') alert('null');
-    return{
-        status : 200,
-        pic : picURL2
-    }
+    data: [
+        {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        },
+        {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        }, {
+            logo: 'https://static-data.gaokao.cn/upload/logo/31.jpg',
+            title: '北京大学',
+        },
+
+    ]
 })
