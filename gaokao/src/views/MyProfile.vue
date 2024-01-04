@@ -4,7 +4,7 @@
       <el-row class="tac">
         <el-col :span="12">
           <h3 class="mb-2">目录</h3>
-          <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
+          <el-menu default-active="2" class="el-menu-vertical-demo">
             <el-menu-item index="2">
               <el-icon><icon-menu /></el-icon>
               <RouterLink to="/myProfile">我的资料</RouterLink>
@@ -26,7 +26,7 @@
       <h2>个人资料</h2>
       <div class="col">
         <span class="col1Common">头像</span>
-        <span class="col1Common">昵称</span>
+        <span class="col1Common" id="nickname">昵称</span>
         <span class="col1Common">账号</span>
         <span class="col1Common">修改/设置密码</span>
       </div>
@@ -35,13 +35,33 @@
         <span class="col1Real" id="account">123</span>
         <span class="col1Real" id="passwd">123</span>
       </div>
+      <div class="editable">
+        <div id="input1">
+          <el-input class="e1" v-model="text1" maxlength="10" placeholder="" show-word-limit type="text" />
+        </div>
+        <div id="input2">
+          <el-input class="e2" v-model="text2" maxlength="10" placeholder="" show-word-limit type="text" />
+        </div>
+        <div id="input3">
+          <el-input class="e3" v-model="text3" maxlength="10" placeholder="" show-word-limit type="text" />
+        </div>
+        <div id="input4">
+          <el-input class="e4" v-model="text4" maxlength="10" placeholder="" show-word-limit type="text" />
+        </div>
+        <div id="input5">
+          <el-input class="e5" v-model="text5" maxlength="10" placeholder="" show-word-limit type="text" />
+        </div>
+        <div id="input6">
+          <el-input class="e6" v-model="text6" maxlength="10" placeholder="" show-word-limit type="text" />
+        </div>
+      </div>
       <div class="icons">
-        <Edit class="edit1" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
-        <Edit class="edit2" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
-        <Edit class="edit3" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
-        <Edit class="edit4" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
-        <Edit class="edit5" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
-        <Edit class="edit6" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit @click="editNickName" class="edit1" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit @click="editPasswd" class="edit2" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit @click="editId" class="edit3" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit @click="editSchool" class="edit4" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit @click="editGrade" class="edit5" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit @click="editClass" class="edit6" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
       </div>
       <h2>学生信息</h2>
       <div class="info">
@@ -68,13 +88,62 @@ import {
   Setting,
 } from '@element-plus/icons-vue'
 import { useRoute, useRouter } from "vue-router";
-const handleOpen = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath)
-}
-const handleClose = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath)
-}
+import { ref } from 'vue'
+const text1 = ref('')
+const text2 = ref('')
+const text3 = ref('')
+const text4 = ref('')
+const text5 = ref('')
+const text6 = ref('')
+const textarea = ref('')
+// const handleOpen = (key: string, keyPath: string[]) => {
+//   console.log(key, keyPath)
+// }
+// const handleClose = (key: string, keyPath: string[]) => {
+//   console.log(key, keyPath)
+// }
+const editNickName = function () {
+  const current = document.getElementById('name');
+  console.log(current?.innerText);
 
+  var input1 = document.getElementById('input1')
+  if(input1 !== null){
+    input1.style.visibility = 'visible'
+  }
+  
+  
+}
+const editPasswd = function() {
+  var input2 = document.getElementById('input2')
+  if(input2 !== null){
+    input2.style.visibility = 'visible'
+  }
+}
+const editId = function(){
+  var input3 = document.getElementById('input3')
+  if(input3 !== null){
+    input3.style.visibility = 'visible'
+  }
+}
+const editSchool = function(){
+  var input4 = document.getElementById('input4')
+  if(input4 !== null){
+    input4.style.visibility = 'visible'
+  }
+}
+const editGrade = function() {
+  var input5 = document.getElementById('input5')
+  if(input5 !== null){
+    input5.style.visibility = 'visible'
+  }
+}
+const editClass = function(){
+  var input6 = document.getElementById('input6')
+  if(input6 !== null){
+    input6.style.visibility = 'visible'
+  }
+
+}
 
 // const router = useRouter();
 
@@ -106,38 +175,99 @@ const handleClose = (key: string, keyPath: string[]) => {
   padding-left: 400px;
   top: 148px;
 }
-.icons{
+
+.editable {
+  position: absolute;
+  width: 100px;
+  padding-left: 600px;
+  top: 400px
+}
+#input1{
+  visibility: hidden;
+}
+#input2{
+  visibility: hidden;
+}
+#input3{
+  visibility: hidden;
+}
+#input4{
+  visibility: hidden;
+}
+#input5{
+  visibility: hidden;
+}
+#input6{
+  visibility: hidden;
+}
+
+.e1 {
+  top: -255px;
+  /* visibility: visible; */
+}
+
+.e2 {
+  top: -180px;
+  /* visibility: hidden; */
+}
+
+.e3 {
+  top: -89px;
+  /* display: none; */
+}
+
+.e4 {
+  top: -70px;
+  /* display: none; */
+}
+
+.e5 {
+  top: -50px;
+  /* display: none; */
+}
+
+.e6 {
+  top: -32px;
+  /* display: none; */
+}
+
+.icons {
   position: absolute;
   display: flex;
   flex-direction: column;
   padding-left: 480px;
 }
-.edit1{
+
+.edit1 {
   position: absolute;
-  top : -155px;
+  top: -155px;
 }
-.edit2{
+
+.edit2 {
   position: absolute;
-  top : -50px;
+  top: -50px;
 }
-.edit3
-{
+
+.edit3 {
   position: absolute;
-  top : 75px;
+  top: 75px;
 }
-.edit4{
+
+.edit4 {
   position: absolute;
-  top : 125px;
+  top: 125px;
 }
-.edit5
-{
+
+.edit5 {
   position: absolute;
-  top : 178px;
+  top: 178px;
 }
-.edit6{
+
+.edit6 {
   position: absolute;
-  top : 230px;
+  top: 230px;
 }
+
 .col {
   display: flex;
   flex-direction: column;
@@ -179,9 +309,9 @@ const handleClose = (key: string, keyPath: string[]) => {
 .stuData {
   padding-bottom: 30px;
 }
-.el-row.tac{
+
+.el-row.tac {
   width: 1400px;
-}
-</style>
+}</style>
 
 
