@@ -5,10 +5,11 @@ import {
 
 // import store from '../store/index.js'
 
-const routes = [{
-    path: '/',
-    redirect: '/home'
-},
+const routes = [
+    {
+        path: '/',
+        redirect: '/home'
+    },
     {
         path: '/login',
         name: 'login',
@@ -31,25 +32,60 @@ const routes = [{
         component: () => import('../views/SchoolView.vue'),
         meta: {
             need2Login: 1,
-            title: '学校查询|高考推荐数据库'
+            title: '高校查询'
+        },
+        children: [
+            {
+                path: '/school/schoolDetail',
+                name: 'schoolDetail',
+                component: () => import('../views/SchoolDetail.vue'),
+                meta: {
+                    title: '学校详情'
+                },
+                children: [
+                    {
+                        path: '/school/schoolDetail/general',
+                        name: 'general',
+                        component: () => import('../views/SchoolDetailGeneral.vue'),
+                        meta: {
+                            title: '学校概况'
+                        }
+                    }, {
+                        path: '/school/schoolDetail/score',
+                        name: 'score',
+                        component: () => import('../views/SchoolDetailScore.vue'),
+                        meta: {
+                            title: '分数/计划'
+                        }
+                    }, {
+                        path: '/school/schoolDetail/major',
+                        name: 'major',
+                        component: () => import('../views/SchoolDetailMajor.vue'),
+                        meta: {
+                            title: '开设专业'
+                        }
+                    },
+
+                ]
+            },
+        ]
+    },
+    {
+        path: '/scoreSearch',
+        name: 'scoreSearch',
+        component: () => import('../views/ScoreSearch.vue'),
+        meta: {
+            need2Login: 1,
+            title: '分数查询'
         }
     },
     {
-        path: '/special',
-        name: 'special',
-        component: () => import('../views/SpecialView.vue'),
+        path: '/scorePrediction',
+        name: 'scorePrediction',
+        component: () => import('../views/ScorePrediction.vue'),
         meta: {
             need2Login: 1,
-            title: '专业查询|高考推荐数据库'
-        }
-    },
-    {
-        path: '/recommend',
-        name: 'recommend',
-        component: () => import('../views/RecommendView.vue'),
-        meta: {
-            need2Login: 1,
-            title: '报考推荐|高考推荐数据库'
+            title: '分数预测'
         }
     },
     {
@@ -61,12 +97,12 @@ const routes = [{
         },
     },
     {
-        path: '/predict',
-        name: 'scorePredict',
-        component: () => import('../views/ScorePrediction.vue'),
+        path: '/recommend',
+        name: 'reccommend',
+        component: () => import('../views/RecommendView.vue'),
         meta: {
-            title: '分数预测'
-        }
+            title: '智能推荐'
+        },
     },
     {
         path: '/bigdata',
@@ -76,39 +112,7 @@ const routes = [{
             title: '数据大屏'
         }
     },
-    {
-        path: '/schoolDetail',
-        name: 'schoolDetail',
-        component: () => import('../views/SchoolDetail.vue'),
-        meta: {
-            title: '学校详情'
-        },
-        children:[
-            {
-                path: '/schoolDetail/general',
-                name: 'general',
-                component: () => import('../views/SchoolDetailGeneral.vue'),
-                meta: {
-                    title: '学校概况'
-                }
-            },{
-                path: '/schoolDetail/score',
-                name: 'score',
-                component: () => import('../views/SchoolDetailScore.vue'),
-                meta: {
-                    title: '分数/计划'
-                }
-            },{
-                path: '/schoolDetail/major',
-                name: 'major',
-                component: () => import('../views/SchoolDetailMajor.vue'),
-                meta: {
-                    title: '开设专业'
-                }
-            },
 
-        ]
-    },
     {
         path: '/TestMock',
         name: 'testTry',
@@ -118,12 +122,12 @@ const routes = [{
         }
     },
     {
-      path: '/myProfile',
-      name: 'profile',
-      component: () => import('../views/MyProfile.vue'),
-      meta: {
-        title: 'profile'
-      }
+        path: '/myProfile',
+        name: 'profile',
+        component: () => import('../views/MyProfile.vue'),
+        meta: {
+            title: 'profile'
+        }
     },
     {
         path: '/protocol',

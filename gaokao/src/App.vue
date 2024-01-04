@@ -1,20 +1,18 @@
 <script setup>
-import commonMenu from "./components/CommonMenu.vue";
+import newMenu from "./components/NewMenu.vue"
 </script>
 <template>
   <div class="common-layout">
     <el-container>
-      <el-header>
-        <common-menu></common-menu>
+      <el-header style="height: 200px;">
+        <new-menu></new-menu>
       </el-header>
-      <el-main>
-        <router-view />
+      <el-main style="margin-left: 150px">
+        <router-view/>
       </el-main>
-      <el-footer>Footer</el-footer>
     </el-container>
   </div>
 </template>
-
 
 
 <script>
@@ -32,6 +30,7 @@ body,
   padding: 0;
   /* height: 100%; */
 }
+
 html {
   overflow-y: scroll;
 }

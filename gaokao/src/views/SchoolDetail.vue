@@ -93,9 +93,9 @@ const store = useStore();
 
         </div>
         <div class="schooltab-menu">
-          <router-link :class="classControlForm.general" to="/schoolDetail/general" @click="routerToGeneral">学校概况</router-link>
-          <router-link :class="classControlForm.score" to="/schoolDetail/score" @click="routerToScore">分数/计划</router-link>
-          <router-link :class="classControlForm.major" to="/schoolDetail/major" @click="routerToMajor">开设专业</router-link>
+          <router-link :class="classControlForm.general" to="/school/schoolDetail/general" @click="routerToGeneral">学校概况</router-link>
+          <router-link :class="classControlForm.score" to="/school/schoolDetail/score" @click="routerToScore">分数/计划</router-link>
+          <router-link :class="classControlForm.major" to="/school/schoolDetail/major" @click="routerToMajor">开设专业</router-link>
         </div>
       </div>
       <div class="robot_rightbar" style="display: none;"><a class="eda_enter_wrapper"
