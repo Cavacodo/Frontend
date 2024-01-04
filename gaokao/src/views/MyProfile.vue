@@ -35,6 +35,14 @@
         <span class="col1Real" id="account">123</span>
         <span class="col1Real" id="passwd">123</span>
       </div>
+      <div class="icons">
+        <Edit class="edit1" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit class="edit2" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit class="edit3" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit class="edit4" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit class="edit5" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+        <Edit class="edit6" style="width: 1.5em; height: 1.5em; margin-right: 8px" />
+      </div>
       <h2>学生信息</h2>
       <div class="info">
         <span class="stu">身份信息</span>
@@ -66,6 +74,8 @@ const handleOpen = (key: string, keyPath: string[]) => {
 const handleClose = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
+
+
 // const router = useRouter();
 
 </script>
@@ -96,7 +106,38 @@ const handleClose = (key: string, keyPath: string[]) => {
   padding-left: 400px;
   top: 148px;
 }
-
+.icons{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-left: 480px;
+}
+.edit1{
+  position: absolute;
+  top : -155px;
+}
+.edit2{
+  position: absolute;
+  top : -50px;
+}
+.edit3
+{
+  position: absolute;
+  top : 75px;
+}
+.edit4{
+  position: absolute;
+  top : 125px;
+}
+.edit5
+{
+  position: absolute;
+  top : 178px;
+}
+.edit6{
+  position: absolute;
+  top : 230px;
+}
 .col {
   display: flex;
   flex-direction: column;

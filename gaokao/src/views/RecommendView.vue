@@ -227,15 +227,15 @@ export default {
             form.userRank = res.rank;
             //ElMessage.success("获取学校列表成功");
           } else {
-            ElMessage.error({
-              message: "获取失败:" + res.message,
-            });
+            // ElMessage.error({
+            //   message: "获取失败:" + res.message,
+            // });
           }
         })
         .catch((err) => {
-          ElMessage.error({
-            message: "服务器错误：" + err,
-          });
+          // ElMessage.error({
+          // //   message: "服务器错误：" + err,
+          // });
         });
     };
     getSchoolList();

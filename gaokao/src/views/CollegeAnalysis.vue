@@ -70,7 +70,7 @@
 }
 </style>
 <script>
-
+import axios from 'axios'
 export default {
     data() {
         return {
@@ -211,20 +211,26 @@ export default {
     methods: {
         submitForm(){
             // const picURL = 'https://cimg.cnyes.cool/prod/news/4246948/xl/e1268acfc33ad4e776ca70c22ecb5213.jpg';
-            // const picElement = document.getElementById('pics');
-            // picElement.src = picURL;
+            
 
             const province = document.getElementById('province').value;
             const batch = document.getElementById('batch').value;
             const year = document.getElementById('year').value;
 
-            const data = {
+            const dataset = {
                 province: province,
                 batch: batch,
                 year: year
             };
-            console.log(data);
-            
+            // console.log(data);
+            let data = axios.post('/checkAnalyse',dataset).then(response => {
+                const picURL = response.data.pic;
+                console.log(picURL)
+                if(picURL != ''){
+                    const picElement = document.getElementById('pics');
+                    picElement.src = picURL;
+                }
+            })
         }
     }
 }

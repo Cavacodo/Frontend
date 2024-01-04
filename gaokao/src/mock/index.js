@@ -145,3 +145,12 @@ Mock.mock('/getRecommendTableData', 'get', {
     status: 200, //请求成功状态码
     dataList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] //模拟的请
 })
+Mock.mock('/checkAnalyse','post',(dataset) => {
+    let params = JSON.parse(dataset.body);
+    const picURL2 = params.province =='河北' && params.batch == '提前批' && params.year == '2023' ? 'https://cimg.cnyes.cool/prod/news/4246948/xl/e1268acfc33ad4e776ca70c22ecb5213.jpg' : '';
+    if(picURL2 == '') alert('null');
+    return{
+        status : 200,
+        pic : picURL2
+    }
+})
