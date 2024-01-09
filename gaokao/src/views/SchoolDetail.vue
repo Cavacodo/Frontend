@@ -1,86 +1,33 @@
-<script setup lang="ts">
-import {useStore} from "vuex";
-import {reactive, ref} from "vue"
-//二级路由控制
-const classControlForm = reactive({
-  general:"item tab-active",
-  score:"item false",
-  major:"item false"
-})
-function routerToGeneral(){
-  classControlForm.general = "item tab-active"
-  classControlForm.score = "item false"
-  classControlForm.major = "item false"
-}
-function routerToScore(){
-  classControlForm.general = "item false"
-  classControlForm.score = "item tab-active"
-  classControlForm.major = "item false"
-
-}
-function routerToMajor(){
-  classControlForm.general = "item false"
-  classControlForm.score = "item false"
-  classControlForm.major = "item tab-active"
-
-}
-const store = useStore();
-</script>
-
 <template>
   <div class="layoutWrap clearfix">
     <div class="relative-for-liuyan"
          style="background: linear-gradient(131deg, rgb(255, 102, 0) 0%, rgb(255, 187, 72) 100%);">
       <div class="relative_box">
-        <div class="scss_kyAppletBox__wMCcL">
-          <div class="scss_enter__144t9"><i class="scss_hat__1Ny5l iconfont icon_hat"></i>学校考研<i
-              class="scss_arrow__1YFsU iconfont icon_dafangxiang_ight"></i></div>
-          <div class="dialog_package" id="dialog_package"></div>
-        </div>
         <div class="left_circle"></div>
         <div class="right_circle"></div>
         <div class="school clearfix">
           <div class="schoolLogo clearfix"><img src="https://static-data.gaokao.cn/upload/logo/140.jpg" width="120"
                                                 height="120" alt=".."></div>
           <div class="schoolName clearfix school_view_top">
-            <div class="line1"><span class="line1-schoolName">清华大学</span>
-              <div class="filledbox">
-                <div class="follow_wrap" style="width: 76px;"><i aria-label="icon: star"
-                                                                 class="anticon anticon-star star">
-                  <svg viewBox="64 64 896 896" class="" data-icon="star" width="1em" height="1em" fill="currentColor"
-                       aria-hidden="true" focusable="false">
-                    <path
-                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z"></path>
-                  </svg>
-                </i>关注
-                </div>
-              </div>
-              <button class="volteer-join" style="display: inline-flex;"><i class="iconfont icon_Test"></i>测录取
-              </button>
+            <div class="line1"><span class="line1-schoolName">{{ schoolData.sName }}</span>
             </div>
-            <div class="l-city"><span class="line1-province"><i></i>北京海淀区</span>
-              <p class="line1-rank p_before_style"><i class="line1-rank-img"></i><span><span class="line1-rank-title">人气值:</span><span>24129666</span><img
+            <div class="l-city"><span class="line1-province"><i></i>{{ schoolData.sProvince + schoolData.sRegion }}</span>
+              <p class="line1-rank p_before_style"><i class="line1-rank-img"></i><span><span class="line1-rank-title">人气值:</span><span>？？？</span><img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAp1JREFUWEfVl41NVUEQhc90oB1ABUIFSAVqBUIFagVgBWIFQgVqBdIBWIFYgXQw5Etmzdz9uXdRkxc3Ibzw7p05c+bMmcW042M7zq//D4C7P5F0IOmZpKeJwVtJt2Z29xhWpxlw9+eSziI5IEbnWtKlmV3NANkEEBV/kvQyBSTJd0n36W9HFTiYON5iZBWAu+9J+iaJ3yT7KOnCzHLiRaHufhJM8Q7nnZldjNgYAqiS099XW9XkJO5O0jdbILoAquRXZkZVdaVoorTlptdzdz8PNnj30MwoZHFGAC4lvZZ0Z2b7VWUI8LMkAOTT7XlioonFyw2AqP5HRN6vaXf3Aq5o4pekt6ETQFDpQiPuTjw00eihB6AkYJROq+oJ0oCLSUGs+MOpmRHj94kR5nt84jB/1wNQ0DY9c3d6Dv3XZnZcJYGFD0yKmfG51gxM0b5F3AUAd6eCm17viZYqZRQXRpMENwJQmF20oQYwrHA0xwEs+wXmg1HVDHQZqgEwbrhe0/8eAHdnzpkGfqC3aU15Lwyqif23AIpeyPMlBNh1yVkApQVfzSx7f7cDaby6JjMj0pqBMmb3ZpZX7RaAxi86GmB6KGoswhBUGZeumKqqCHhgZlju6hmx1fOB4t9TQtxKHEUVcTd2vGXFq711d4wH72BTrq3oItaT2j9Gy6is0q63p9HabFeAxAPmllFyPBwRUbJC0UNTYSyuvZ7xRByucEUfXaHOXkimrleJGUyJ5GUnNAuqPPuYKxnv4OfvRzej2BW4I4kBAWuM3WI7ZuHOXkrRBBeUcmgLrHAx5ZCMa3q+pLAPqHz1mr4JINGKHujni0g4mkASw1KzkHovTAOoDIhK8z8mTMPPWEbDcfxnAGbMZ/aZP2JgNvjMczsH8ACau1kwvYenWQAAAABJRU5ErkJggg=="
                   style="width: 20px; height: 20px; vertical-align: top;"></span></p></div>
             <div class="line2 clearfix" style="margin-bottom: 12px;">
-              <div class="line2_item">普通本科</div>
-              <div class="line2_item">综合类</div>
-              <div class="line2_item">公办</div>
-              <div class="line2_item">211工程</div>
-              <div class="line2_item">985工程</div>
-              <div class="line2_item">双一流</div>
-              <div class="line2_item">18所参照</div>
+              <div v-for="(tag,index) in tags" class="line2_item">{{tag}}</div>
             </div>
             <div class="line3">
               <div class="line3_item" style="white-space: nowrap;"><span class="website relative1"></span><span
-                  class="school-info-label">官方网址：<a class="marginRight25" href="http://www.join-tsinghua.edu.cn"
-                                                        target="_blank">http://www.join-tsinghua.edu.cn</a><a
-                  href="https://www.tsinghua.edu.cn" target="_blank">https://www.tsinghua.edu.cn</a></span></div>
-              <div class="line3_item"><span class="l-phone relative1"></span><span class="school-info-label">招生电话：010-62770334,010-62782051</span>
+                  class="school-info-label">官方网址：<a class="marginRight25" :href="schoolData.sWeb"
+                                                        target="_blank">{{schoolData.sWeb}}</a><a
+                  :href="schoolData.sRecruitWeb" target="_blank">{{schoolData.sRecruitWeb}}</a></span></div>
+              <div class="line3_item"><span class="l-phone relative1"></span><span class="school-info-label">招生电话：{{schoolData.sContact}}</span>
               </div>
               <div class="mailAndqq">
                 <div class="line3_item" style="margin-right: 15px;"><span class="l-mail relative1"></span><span
-                    class="school-info-label">电子邮箱：zsb@tsinghua.edu.cn</span></div>
+                    class="school-info-label">电子邮箱：{{schoolData.sRecruitMail}}</span></div>
               </div>
             </div>
           </div>
@@ -93,9 +40,12 @@ const store = useStore();
 
         </div>
         <div class="schooltab-menu">
-          <router-link :class="classControlForm.general" to="/schoolDetail/general" @click="routerToGeneral">学校概况</router-link>
-          <router-link :class="classControlForm.score" to="/schoolDetail/score" @click="routerToScore">分数/计划</router-link>
-          <router-link :class="classControlForm.major" to="/schoolDetail/major" @click="routerToMajor">开设专业</router-link>
+          <router-link :class="classControlForm.general" to="/schoolDetail/general" @click="routerToGeneral">学校概况
+          </router-link>
+          <router-link :class="classControlForm.score" to="/schoolDetail/score" @click="routerToScore">分数/计划
+          </router-link>
+          <router-link :class="classControlForm.major" to="/schoolDetail/major" @click="routerToMajor">开设专业
+          </router-link>
         </div>
       </div>
       <div class="robot_rightbar" style="display: none;"><a class="eda_enter_wrapper"
@@ -114,5 +64,98 @@ const store = useStore();
 
   </div>
 </template>
-<style src="../assets/css/schoolDetail.css"></style>
+<script setup lang="ts">
+import {useStore} from "vuex"
+import {onMounted, reactive, ref} from "vue"
+import axios from "axios";
+
+const store = useStore();
+//初始化数据
+onMounted(() => {
+  getSchoolData(store.state.showingSchoolId)
+})
+//二级路由控制
+const classControlForm = reactive({
+  general: "item tab-active",
+  score: "item false",
+  major: "item false"
+})
+
+function routerToGeneral() {
+  classControlForm.general = "item tab-active"
+  classControlForm.score = "item false"
+  classControlForm.major = "item false"
+}
+
+function routerToScore() {
+  classControlForm.general = "item false"
+  classControlForm.score = "item tab-active"
+  classControlForm.major = "item false"
+}
+
+function routerToMajor() {
+  classControlForm.general = "item false"
+  classControlForm.score = "item false"
+  classControlForm.major = "item tab-active"
+
+}
+
+//查学校数据
+const schoolData = ref({
+  sId: "",
+  sName: "",
+  sBelong: "",
+  sOthername: "",
+  sRange: "",
+  sType: "",
+  sPrivate: "",
+  sDoubleFirst: "",
+  sProvince: "",
+  sCity: "",
+  sRegion: "",
+  sRecruitMail: "",
+  sAddress: "",
+  sMailcode: "",
+  sRecruitWeb: "",
+  sWeb: "",
+  sContact: "",
+  sIntroduction: "",
+  sMajor: "",
+  rkRank: "",
+  qsRank: "",
+  aInc: "",
+  a: "",
+  aDec: "",
+  bInc: "",
+  b: "",
+  bDec: "",
+  cInc: "",
+  c: "",
+  cDec: "",
+})
+const tags = reactive<String[]>([])
+function getSchoolData(sId: Number) {
+  axios.get(`/mock/schoolInfo/getSchool/${sId}`)
+      .then(response => {
+        schoolData.value = response.data.data
+        if(schoolData.value.sRange.length !== 0){
+          tags.push(schoolData.value.sRange)
+        }
+        if(schoolData.value.sType.length !== 0){
+          tags.push(schoolData.value.sType)
+        }
+        if(schoolData.value.sPrivate.length !== 0){
+          tags.push(schoolData.value.sPrivate)
+        }
+        if(schoolData.value.sDoubleFirst.length !== 0){
+          console.log(schoolData.value.sDoubleFirst)
+          tags.push(schoolData.value.sDoubleFirst)
+        }
+      }).catch(error => {
+    console.log(error)
+  })
+}
+
+</script>
+<style scoped src="../assets/css/schoolDetail.css"></style>
 

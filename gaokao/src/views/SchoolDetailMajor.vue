@@ -338,7 +338,7 @@
   </div>
 </template>
 
-<style src="../assets/css/schoolDetailMajor1.css"></style>
-<style src="../assets/css/schoolDetailMajor2.css"></style>
-<style src="../assets/css/schoolDetailMajor3.css"></style>
+<style scoped src="../assets/css/schoolDetailMajor1.css"></style>
+<style scoped src="../assets/css/schoolDetailMajor2.css"></style>
+<style scoped src="../assets/css/schoolDetailMajor3.css"></style>
 

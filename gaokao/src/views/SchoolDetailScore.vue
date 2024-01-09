@@ -492,6 +492,6 @@
   </div>
 </template>
 
-<style src="../assets/css/schoolDetailScore1.css"></style>
-<style src="../assets/css/schoolDetailScore2.css"></style>
-<style src="../assets/css/schoolDetailScore3.css"></style>
+<style scoped src="../assets/css/schoolDetailScore1.css"></style>
+<style scoped src="../assets/css/schoolDetailScore2.css"></style>
+<style scoped src="../assets/css/schoolDetailScore3.css"></style>

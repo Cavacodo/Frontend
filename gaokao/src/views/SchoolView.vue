@@ -22,17 +22,19 @@
               </el-form-item>
             </el-form>
 
-  
+
           </div>
         </div>
         <!--学校展示表格-->
         <div>
           <school-row v-for="(item,index) in tableData.value"
                       :key="index"
-                      :url="item.url"
-                      :title="item.titles[0]"
+                      :img-url="'https://static-data.gaokao.cn/upload/logo/' + item.sId + '.jpg'"
+                      :title="item.sName"
                       :tags="item.tags"
-                      @click="redirectDetail(item.id)"
+                      :s-city="item.sCity"
+                      :s-region="item.sRegion"
+                      @click="redirectDetail(item.sId)"
           />
         </div>
       </el-main>
@@ -53,8 +55,13 @@
           <div class="recommend-border">
             <recommend-school-row v-for="(item,index) in recommendTableData.value"
                                   :key="index"
-                                  :index="index+1"
-                                  :active=false
+                                  :row-id="index + 1"
+                                  :active-index="timer"
+                                  :active="timer===index"
+                                  :img-url="'https://static-data.gaokao.cn/upload/logo/' + item.sId + '.jpg'"
+                                  :title="item.sName"
+                                  @click="redirectDetail(item.sId)"
+                                  @mouseover="handleMouseOver(index)"
             />
           </div>
 
@@ -65,46 +72,58 @@
   </div>
 </template>
 <script setup>
-import {onMounted, reactive, ref} from 'vue'
+import {onMounted, reactive, ref, watch} from 'vue'
 import SchoolRow from "../components/SchoolRow.vue";
 import RecommendSchoolRow from "@/components/RecommendSchoolRow.vue";
 import axios from "axios";
 import {useStore} from "vuex";
-import { useRouter, useRoute } from 'vue-router'
+import {useRouter, useRoute} from 'vue-router'
+
 const router = useRouter();
 const store = useStore();
+const timer = ref(0)
 //初始化数据
 onMounted(() => {
   getTableData()
   getRecommendTableData()
+  setInterval(() => {
+    timer.value = (timer.value + 1) % 20
+  }, 2000)
 })
 
 // 单选框数据
 const form = reactive({
   province: '全部',
   schoolClass: '全部',
-  page:ref(1),
-  size:ref(20),
+  page: ref(1),
+  size: ref(20),
 
 });
 const provinceList = ['全部', '北京', '天津', '河北', '山西', '内蒙古',
   '辽宁', '吉林', '黑龙江', '上海', '江苏', '浙江', '安徽', '福建', '江西',
   '山东', '河南', '湖北', '湖南', '广东', '广西', '海南', '重庆', '四川',
   '贵州', '云南', '西藏', '陕西', '甘肃', '青海', '宁夏', '新疆'];
-function handleSearch(){
+
+function handleSearch() {
   console.log(form)
 }
 
 // 初始化
 // 表格数据
 const tableData = reactive([])
+
 function getTableData() {
 
-  axios.get(`/mock/school/getByKey?province=${form.province}&characteristic=${form.schoolClass}&page=${form.page}&size=${form.size}`)
+  axios.get(`/mock/schoolInfo/getByKey?province=${form.province}&characteristic=${form.schoolClass}&page=${form.page}&size=${form.size}`)
       .then(response => {
         // 请求成功后的处理
         tableData.value = response.data.data
         tableData.value.forEach(item => {
+          item.tags = []
+          if (item.sRange.length !== 0) item.tags.push(item.sRange)
+          if (item.sType.length !== 0) item.tags.push(item.sType)
+          if (item.sPrivate.length !== 0) item.tags.push(item.sPrivate)
+          if (item.sDoubleFirst.length !== 0) item.tags.push(item.sDoubleFirst)
         })
       })
       .catch(error => {
@@ -113,15 +132,16 @@ function getTableData() {
       });
 }
 
-function redirectDetail(sId){
+function redirectDetail(sId) {
   store.state.showingSchoolId = sId
   router.push("/schoolDetail/general")
 }
 
 // 推荐数据
 const recommendTableData = reactive([])
-function getRecommendTableData(){
-  axios.get(`/mock/school/recommendSchool`)
+
+function getRecommendTableData() {
+  axios.get(`/mock/schoolInfo/recommendSchool`)
       .then(response => {
         // 请求成功后的处理
         recommendTableData.value = response.data.data
@@ -131,8 +151,13 @@ function getRecommendTableData(){
         console.error(error);
       });
 }
-// 推荐计时轮换
-
+function handleMouseOver(hoverIndex){
+  timer.value = hoverIndex
+}
+watch(timer,()=>{
+  console.log(timer.value)
+})
+// 广告图片
 const ads = [
   'https://img6.eol.cn/e_images/gk/2023/ddpy.jpg',
   'https://img7.eol.cn/e_images/gk/2023/pyfsx.jpg',
@@ -287,7 +312,8 @@ p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.el-main{
+
+.el-main {
   margin-left: 70px;
   margin-right: 40px;
 }

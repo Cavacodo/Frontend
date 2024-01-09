@@ -1,4 +1,5 @@
 import {createStore} from 'vuex'
+import {ref} from "vue";
 
 const state = {
     showingSchoolId: 1,

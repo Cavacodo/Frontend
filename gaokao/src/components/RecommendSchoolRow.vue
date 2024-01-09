@@ -2,37 +2,26 @@
 import {ref, computed} from "vue"
 
 const props = defineProps({
-  index: Number,
-  active: Boolean,//外部通过定时器指定是否激活，测试阶段统统为false
-  logo: String,
+  rowId:Number,
+  activeIndex: Number,
+  active: Boolean,
+  imgUrl: String,
   title: String,
 })
-//鼠标悬浮更改样式
-var hover = ref(false)
-
-function handleMouseOver() {
-  hover.value = true
-}
-
-function handleMouseOut() {
-  hover.value = false
-}
-
 //计算css样式
-const indexCss = computed(() => {
-  let index = props.index
+const rowIdCss = computed(() => {
   var css = "hot-school-"
-  switch (index) {
+  switch (props.rowId) {
     case 1: {
-      css += index
+      css += props.rowId
       break
     }
     case 2: {
-      css += index
+      css += props.rowId
       break
     }
     case 3: {
-      css += index
+      css += props.rowId
       break
     }
     default :
@@ -40,29 +29,24 @@ const indexCss = computed(() => {
   }
   return css
 })
-const divCss = computed(()=>{
+const divCss = computed(() => {
   var css = ''
-  let index = props.index
-  switch (index) {
-    case 1: {
-      css += hover.value ? 'warp_active':props.active ? 'warp_active':'wrap'
-      css = css + " div_index_" + props.index
-      break
-    }
-    default :
-      css += hover.value ? 'warp_active':props.active ? 'warp_active':'wrap'
-      css = css + " div_index_" + "n"
+  if (props.activeIndex === 1) {
+    css += props.active ? 'warp_active' : 'wrap'
+    css = css + " div_index_" + props.activeIndex
+  } else {
+    css += props.active ? 'warp_active' : 'wrap'
+    css = css + " div_index_" + "n"
   }
   return css
 })
 </script>
 <template>
-  <div :class="divCss" @mouseover="handleMouseOver"
-       @mouseout="handleMouseOut">
-    <span :class="indexCss">{{ index }}</span>
-    <el-image class="logo_icon" :src="'https://static-data.gaokao.cn/upload/logo/114.jpg'" :fit="'cover'"/>
+  <div :class="divCss">
+    <span :class="rowIdCss">{{ props.rowId }}</span>
+    <el-image class="logo_icon" :src="imgUrl" :fit="'cover'"/>
     <div class="right">
-      <div class="title">浙江大学</div>
+      <div class="title">{{ title }}</div>
       <div class="score">历年分数</div>
     </div>
 
@@ -190,14 +174,16 @@ const divCss = computed(()=>{
   font-size: 12px;
   font-weight: 100
 }
-.div_index_1{
+
+.div_index_1 {
   color: #000;
   cursor: pointer;
   padding-bottom: 10px;
   display: flex;
   align-items: center;
 }
-.div_index_n{
+
+.div_index_n {
   color: #000;
   cursor: pointer;
   padding-bottom: 10px;

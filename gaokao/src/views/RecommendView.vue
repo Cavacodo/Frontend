@@ -265,7 +265,7 @@ export default {
 <style scoped>
 
 .recommend-wrap {
-  margin: auto;
+  margin-left: 114px;
   text-align: center;
   height: 100%;
 }

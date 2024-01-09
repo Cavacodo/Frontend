@@ -288,8 +288,10 @@
 }
 
 .home_wrap .hot_school {
+
+    margin-top: 20px;
     margin-bottom: 40px;
-    padding: 0 20px
+    padding: 0 0px
 }
 
 .home_wrap .hot_school .l_title {

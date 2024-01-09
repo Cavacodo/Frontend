@@ -1,10 +1,11 @@
 <script>
-import {reactive, ref} from "vue";
-import {useRouter} from "vue-router";
+import {reactive, ref, watch, onMounted} from "vue";
+import {useRouter, useRoute} from "vue-router";
 
 export default {
   setup() {
     const router = useRouter()
+    const route = useRoute()
     const onRoute = ref(1)
     const cssRouteForm = reactive([
       "main-nav_navItem__3w2xP main-nav_active__2I_L3",
@@ -15,15 +16,28 @@ export default {
       "main-nav_navItem__3w2xP",
       "main-nav_navItem__3w2xP",
     ])
-
-    function changeRouter(routeTo) {
-      cssRouteForm.forEach((item, index) => {
-        if (index == routeTo) {
+    const cssNameEnum = reactive([
+        "/home",
+        "/school",
+        "/scoreSearch",
+        "/scorePrediction",
+        "/analyse",
+        "/recommend",
+        "/bigdata"
+    ])
+    watch(() => route.path, (newPath, oldPath) => {
+      console.log(newPath)
+      cssNameEnum.forEach((item, index) => {
+        if (item == route.path) {
           cssRouteForm[index] = "main-nav_navItem__3w2xP main-nav_active__2I_L3"
         } else {
           cssRouteForm[index] = "main-nav_navItem__3w2xP"
         }
       })
+    }, {immediate: true});
+
+    function changeRouter(routeTo) {
+
       switch (routeTo) {
 
         case 0: {

@@ -1,24 +1,27 @@
 <script lang="ts" setup>
 const props = defineProps({
-  url: String,
+  imgUrl: String,
   title: String,
   tags: {
     type: Array,
     default: () => [],
   },
-    extensions: Array,
+  extensions: Array,
+  sCity:String,
+  sRegion:String,
 })
 </script>
 <template>
   <div class="common-layout">
     <!--logo-->
     <div style="margin-right: 20px;">
-      <img class="img" :src="url">
+      <img class="img" :src="imgUrl">
     </div>
     <!--中间部分：标题等-->
     <div class="mid">
-      <div style="margin-bottom: 34px;">
-        <h3 class="title">{{title}}</h3>
+      <div class="line-school_schoolName__1Zk8b">
+        <em>{{title}}</em>
+        <span class="line-school_cityName__VnOjC">{{ sCity +  sRegion}}</span>
       </div>
       <div>
 <!--        <span class="content_1">理科</span>-->
@@ -64,7 +67,16 @@ const props = defineProps({
 .mid {
 
 }
-
+.line-school_cityName__VnOjC{
+  height: 26px;
+  line-height: 24px;
+  font-size: 12px;
+  border: 1px solid rgb(238, 238, 238);
+  color: rgb(85, 85, 85);
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 0px 20px 0px 15px;
+}
 .title {
   color: #333;
   font-size: 18px;
@@ -135,5 +147,16 @@ const props = defineProps({
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.line-school_schoolName__1Zk8b{
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0px 20px 0px 0px;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 </style>
