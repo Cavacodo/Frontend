@@ -827,7 +827,7 @@ input {
 }
 
 .school_content_left_1_4 {
-    width: 750px!important;
+    width: 100%;
     padding-right: 30px;
     position: relative;
     float: left;

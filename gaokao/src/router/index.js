@@ -59,7 +59,7 @@ const routes = [
         name: 'collegeAnalysis',
         component: () => import('../views/CollegeAnalysis.vue'),
         meta: {
-            title: '院校分析'
+            title: '院校统计'
         },
     },
     {

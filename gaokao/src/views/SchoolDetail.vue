@@ -9,25 +9,24 @@
           <div class="schoolLogo clearfix"><img src="https://static-data.gaokao.cn/upload/logo/140.jpg" width="120"
                                                 height="120" alt=".."></div>
           <div class="schoolName clearfix school_view_top">
-            <div class="line1"><span class="line1-schoolName">{{ schoolData.sName }}</span>
+            <div class="line1"><span class="line1-schoolName">{{ schoolData.value.sName }}</span>
             </div>
-            <div class="l-city"><span class="line1-province"><i></i>{{ schoolData.sProvince + schoolData.sRegion }}</span>
-              <p class="line1-rank p_before_style"><i class="line1-rank-img"></i><span><span class="line1-rank-title">人气值:</span><span>？？？</span><img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAp1JREFUWEfVl41NVUEQhc90oB1ABUIFSAVqBUIFagVgBWIFQgVqBdIBWIFYgXQw5Etmzdz9uXdRkxc3Ibzw7p05c+bMmcW042M7zq//D4C7P5F0IOmZpKeJwVtJt2Z29xhWpxlw9+eSziI5IEbnWtKlmV3NANkEEBV/kvQyBSTJd0n36W9HFTiYON5iZBWAu+9J+iaJ3yT7KOnCzHLiRaHufhJM8Q7nnZldjNgYAqiS099XW9XkJO5O0jdbILoAquRXZkZVdaVoorTlptdzdz8PNnj30MwoZHFGAC4lvZZ0Z2b7VWUI8LMkAOTT7XlioonFyw2AqP5HRN6vaXf3Aq5o4pekt6ETQFDpQiPuTjw00eihB6AkYJROq+oJ0oCLSUGs+MOpmRHj94kR5nt84jB/1wNQ0DY9c3d6Dv3XZnZcJYGFD0yKmfG51gxM0b5F3AUAd6eCm17viZYqZRQXRpMENwJQmF20oQYwrHA0xwEs+wXmg1HVDHQZqgEwbrhe0/8eAHdnzpkGfqC3aU15Lwyqif23AIpeyPMlBNh1yVkApQVfzSx7f7cDaby6JjMj0pqBMmb3ZpZX7RaAxi86GmB6KGoswhBUGZeumKqqCHhgZlju6hmx1fOB4t9TQtxKHEUVcTd2vGXFq711d4wH72BTrq3oItaT2j9Gy6is0q63p9HabFeAxAPmllFyPBwRUbJC0UNTYSyuvZ7xRByucEUfXaHOXkimrleJGUyJ5GUnNAuqPPuYKxnv4OfvRzej2BW4I4kBAWuM3WI7ZuHOXkrRBBeUcmgLrHAx5ZCMa3q+pLAPqHz1mr4JINGKHujni0g4mkASw1KzkHovTAOoDIhK8z8mTMPPWEbDcfxnAGbMZ/aZP2JgNvjMczsH8ACau1kwvYenWQAAAABJRU5ErkJggg=="
-                  style="width: 20px; height: 20px; vertical-align: top;"></span></p></div>
-            <div class="line2 clearfix" style="margin-bottom: 12px;">
+            <div class="l-city"><span class="line1-province"><i></i>{{ schoolData.value.sProvince + schoolData.value.sRegion }}</span>
+
+            </div>
+            <div class="line2 clearfix" style="margin-bottom: 12px;height: 34px">
               <div v-for="(tag,index) in tags" class="line2_item">{{tag}}</div>
             </div>
             <div class="line3">
               <div class="line3_item" style="white-space: nowrap;"><span class="website relative1"></span><span
-                  class="school-info-label">官方网址：<a class="marginRight25" :href="schoolData.sWeb"
-                                                        target="_blank">{{schoolData.sWeb}}</a><a
-                  :href="schoolData.sRecruitWeb" target="_blank">{{schoolData.sRecruitWeb}}</a></span></div>
-              <div class="line3_item"><span class="l-phone relative1"></span><span class="school-info-label">招生电话：{{schoolData.sContact}}</span>
+                  class="school-info-label">官方网址：<a class="marginRight25" :href="schoolData.value.sWeb"
+                                                        target="_blank">{{schoolData.value.sWeb}}</a><a
+                  :href="schoolData.value.sRecruitWeb" target="_blank">{{schoolData.value.sRecruitWeb}}</a></span></div>
+              <div class="line3_item"><span class="l-phone relative1"></span><span class="school-info-label">招生电话：{{schoolData.value.sContact}}</span>
               </div>
               <div class="mailAndqq">
                 <div class="line3_item" style="margin-right: 15px;"><span class="l-mail relative1"></span><span
-                    class="school-info-label">电子邮箱：{{schoolData.sRecruitMail}}</span></div>
+                    class="school-info-label">电子邮箱：{{schoolData.value.sRecruitMail}}</span></div>
               </div>
             </div>
           </div>
@@ -101,43 +100,47 @@ function routerToMajor() {
 }
 
 //查学校数据
-const schoolData = ref({
-  sId: "",
-  sName: "",
-  sBelong: "",
-  sOthername: "",
-  sRange: "",
-  sType: "",
-  sPrivate: "",
-  sDoubleFirst: "",
-  sProvince: "",
-  sCity: "",
-  sRegion: "",
-  sRecruitMail: "",
-  sAddress: "",
-  sMailcode: "",
-  sRecruitWeb: "",
-  sWeb: "",
-  sContact: "",
-  sIntroduction: "",
-  sMajor: "",
-  rkRank: "",
-  qsRank: "",
-  aInc: "",
-  a: "",
-  aDec: "",
-  bInc: "",
-  b: "",
-  bDec: "",
-  cInc: "",
-  c: "",
-  cDec: "",
+const schoolData = reactive({
+  value:{
+    sId: "",
+    sName: "",
+    sBelong: "",
+    sOthername: "",
+    sRange: "",
+    sType: "",
+    sPrivate: "",
+    sDoubleFirst: "",
+    sProvince: "",
+    sCity: "",
+    sRegion: "",
+    sRecruitMail: "",
+    sAddress: "",
+    sMailcode: "",
+    sRecruitWeb: "",
+    sWeb: "",
+    sContact: "",
+    sIntroduction: "",
+    sMajor: "",
+    rkRank: "",
+    qsRank: "",
+    aInc: "",
+    a: "",
+    aDec: "",
+    bInc: "",
+    b: "",
+    bDec: "",
+    cInc: "",
+    c: "",
+    cDec: "",
+  }
 })
 const tags = reactive<String[]>([])
 function getSchoolData(sId: Number) {
-  axios.get(`/mock/schoolInfo/getSchool/${sId}`)
+  axios.get(`http://localhost:8088/schoolInfo/getInfoById?sId=${sId}`)
       .then(response => {
-        schoolData.value = response.data.data
+        schoolData.value = response.data.data[0]
+        console.log("school:")
+        console.log(schoolData)
         if(schoolData.value.sRange.length !== 0){
           tags.push(schoolData.value.sRange)
         }

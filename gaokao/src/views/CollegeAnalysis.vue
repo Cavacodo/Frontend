@@ -26,151 +26,193 @@
           </span>
         </el-row>
       </div>
-      <el-button type="primary" @click="submitForm('ruleForm')" class="btn">提交</el-button>
+      <el-button type="primary" @click="submitForm()" class="btn">提交</el-button>
     </div>
-    <div class="img-content">
-      <img id='pics' alt="现在是幻想时刻" class="img-one"
-           src="https://p3.itc.cn/q_70/images03/20231228/3f754204387a4c59b39e9b1f11396a96.png">
+    <div class="echarts-div">
+      <school-analysis class="echarts-one"
+                       :data="echartData.data"
+                       :x-axis-data="echartData.xAxisData"
+      ></school-analysis>
     </div>
+
   </div>
 </template>
 
-<script setup lang="ts">
-import axios from 'axios'
-import {ref} from "vue";
+<script setup>
+import SchoolAnalysis from "../components/echarts/schoolAnalysis.vue";
+
+import {onMounted, reactive, ref, watch} from "vue";
+import axios from "axios";
 
 const provinceValue = ref('')
 const yearValue = ref('')
 const roundValue = ref('')
 const province = ref([
   {
-    value: '选项1',
+    value: '河北',
     label: '河北'
   }, {
-    value: '选项2',
+    value: '山西',
     label: '山西'
   }, {
-    value: '选项3',
+    value: '辽宁',
     label: '辽宁'
   }, {
-    value: '选项4',
+    value: '吉林',
     label: '吉林'
   }, {
-    value: '选项5',
+    value: '黑龙江',
     label: '黑龙江'
   }, {
-    value: '6',
+    value: '江苏',
     label: '江苏'
   }, {
-    value: '7',
+    value: '浙江',
     label: '浙江'
   }, {
-    value: '8',
+    value: '安徽',
     label: '安徽'
   }, {
-    value: '9',
+    value: '福建',
     label: '福建'
   }, {
-    value: '10',
+    value: '江西',
     label: '江西',
   }, {
-    value: '11',
+    value: '山东',
     label: '山东'
   }, {
-    value: '12',
+    value: '河南',
     label: '河南'
   }, {
-    value: '13',
+    value: '湖北',
     label: '湖北'
   }, {
-    value: '14',
+    value: '湖南',
     label: '湖南'
   }, {
-    value: '15',
+    value: '广东',
     label: '广东'
   }, {
-    value: '16',
+    value: '海南',
     label: '海南'
   }, {
-    value: '17',
+    value: '四川',
     label: '四川'
   }, {
-    value: '18',
+    value: '贵州',
     label: '贵州'
   }, {
-    value: '19',
+    value: '云南',
     label: '云南'
   }, {
-    value: '20',
+    value: '陕西',
     label: '陕西'
   }, {
-    value: '21',
+    value: '甘肃',
     label: '甘肃'
   }, {
-    value: '22',
+    value: '青海',
     label: '青海'
   }, {
-    value: '24',
+    value: '内蒙古',
     label: '内蒙古'
   }, {
-    value: '25',
+    value: '广西',
     label: '广西'
   }, {
-    value: '26',
+    value: '西藏',
     label: '西藏'
   }, {
-    value: '27',
+    value: '宁夏',
     label: '宁夏'
   }, {
-    value: '28',
+    value: '新疆',
     label: '新疆'
   }, {
-    value: '28',
+    value: '北京',
     label: '北京'
   }, {
-    value: '29',
+    value: '天津',
     label: '天津'
   }, {
-    value: '30',
+    value: '上海',
     label: '上海'
   }, {
-    value: '31',
+    value: '重庆',
     label: '重庆'
   }
 ])
 const year = ref([
   {
-    value: '1',
-    label: '2023'
-  },
-  {
-    value: '2',
+    value: '2022',
     label: '2022'
   },
   {
-    value: '3',
+    value: '2021',
     label: '2021'
   },
   {
-    value: '4',
+    value: '2020',
     label: '2020'
-  }
+  },
 ])
 const round = ref([
   {
-    value: '1',
-    label: '提前批'
+    value: '本科一批',
+    label: '本科一批'
   },
   {
-    value: '2',
-    label: '本科批'
+    value: '本科二批',
+    label: '本科二批'
   },
   {
-    value: '3',
+    value: '国家专项计划本科批',
+    label: '国家专项计划本科批'
+  },
+  {
+    value: '专科批',
     label: '专科批'
+  },
+  {
+    value: '专科提前批',
+    label: '专科提前批'
+  },
+  {
+    value: '本科提前批',
+    label: '本科提前批'
   }
 ])
-
+const echartData = reactive({
+  arr:[],
+  xAxisData:[],
+  data:[]
+})
+function getEcharData(province,year,range,subject){
+  //?province=山东&year=2022&range=本科一批
+  if (province == "" || year == "" || range == "" || subject == "") {
+    alert("请选择查询参数")
+    return
+  }
+  axios.get(`http://localhost:8088/recruit/provinceRange?province=${province}&year=${year}&range=${range}&subject=${subject}`).then(response=>{
+    echartData.arr = response.data.data
+    echartData.xAxisData = []
+    echartData.data = []
+    echartData.arr.forEach(item =>{
+      echartData.xAxisData.push(item.sName)
+      echartData.data.push(item.rRank)
+    })
+    console.log(echartData)
+  }).catch(error=>{
+    console.log(error)
+  });
+}
+onMounted(()=>{
+  // getEcharData()
+})
+function submitForm(){
+  getEcharData(provinceValue.value,yearValue.value,"文科",roundValue.value)
+}
 </script>
 <style scoped>
 .input-content {
@@ -191,9 +233,11 @@ const round = ref([
   margin-left: 20px;
   margin-right: 90px;
 }
+
 .input-two {
   margin-left: 20px;
 }
+
 .main-content {
   margin-left: 113px;
 }
@@ -203,12 +247,23 @@ const round = ref([
   margin-top: 30px;
   margin-bottom: 30px
 }
+
 .title1 {
   margin-left: 487px;
   margin-bottom: 40px;
   font-size: 2em;
 }
-.img-one{
+
+.img-one {
   width: 1200px;
+}
+
+.echarts-one {
+  width: 100%;
+  height: 100%;
+}
+.echarts-div{
+  width: 1200px;
+  height: 600px;
 }
 </style>

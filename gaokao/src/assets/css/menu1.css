@@ -880,7 +880,7 @@
 }
 
 .filter-compents_filterBox__3mqfw .filter-compents_filterTitle__2ZbYV:after {
-    content: "î˜§";
+    content: "  >";
     font-family: "iconfont";
     color: #999;
     margin-left: 5px
@@ -2477,7 +2477,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 0px;
     height: 60px
 }
 
