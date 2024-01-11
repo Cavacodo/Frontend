@@ -3,10 +3,14 @@
 </template>
 
 <script setup>
-import {onMounted,getCurrentInstance} from "vue";
-
+import {onMounted, getCurrentInstance, watch} from "vue";
+const props = defineProps({
+  data:[],
+  xAxis:[]
+})
 let internalInstance = getCurrentInstance();
 let echarts = internalInstance.appContext.config.globalProperties.$echarts;
+
 
 onMounted(()=>{
   var chartDom = document.getElementById('major');
@@ -32,4 +36,43 @@ onMounted(()=>{
 
   option && myChart.setOption(option);
 })
+watch(props,()=>{
+  var chartDom = document.getElementById('major');
+  var myChart = echarts.init(chartDom);
+  var option;
+
+  option = {
+    xAxis: {
+      type: 'category',
+      data: props.xAxis
+    },
+    yAxis: {
+      type: 'value',
+    },
+    series: [
+      {
+        data: props.data,
+        type: 'line',
+        smooth: true,
+        label: {
+          show: false,
+          position: 'inside',
+          formatter: '{b}: {c}热度',
+          textStyle: {
+            color: '#111e41',
+            fontSize: 12
+          }
+        },
+        emphasis: {
+          label: {
+            show: true
+          },
+        },
+      }
+    ]
+  };
+
+  option && myChart.setOption(option);
+})
+
 </script>

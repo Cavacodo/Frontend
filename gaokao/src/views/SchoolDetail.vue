@@ -1,12 +1,12 @@
 <template>
-  <div class="layoutWrap clearfix">
+  <div class="layoutWrap clearfix main-content">
     <div class="relative-for-liuyan"
          style="background: linear-gradient(131deg, rgb(255, 102, 0) 0%, rgb(255, 187, 72) 100%);">
       <div class="relative_box">
         <div class="left_circle"></div>
         <div class="right_circle"></div>
         <div class="school clearfix">
-          <div class="schoolLogo clearfix"><img src="https://static-data.gaokao.cn/upload/logo/140.jpg" width="120"
+          <div class="schoolLogo clearfix"><img :src="'https://static-data.gaokao.cn/upload/logo/' +  schoolData.value.sId + '.jpg'" width="120"
                                                 height="120" alt=".."></div>
           <div class="schoolName clearfix school_view_top">
             <div class="line1"><span class="line1-schoolName">{{ schoolData.value.sName }}</span>
@@ -161,4 +161,19 @@ function getSchoolData(sId: Number) {
 
 </script>
 <style scoped src="../assets/css/schoolDetail.css"></style>
+<style scoped>
+.main-content{
+  animation: slideRight 0.5s forwards;
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+</style>
 

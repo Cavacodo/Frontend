@@ -11,6 +11,7 @@ let echarts = internalInstance.appContext.config.globalProperties.$echarts;
 const props = defineProps({
   data:[],
   xAxisData:[],
+  subject:""
 })
 watch(props,()=>{
     var chartDom = document.getElementById('collegeAnalysis');
@@ -49,12 +50,18 @@ watch(props,()=>{
       },
       series: [
         {
-          name: '位次线',
+          name: `${props.subject}位次线`,
           type: 'line',
           data: props.data,
+          itemStyle: {
+            color: 'blue' // 设置线的颜色为红色
+          }
         },
       ]
     };
+    if (props.subject == "文科"){
+      option.series[0].itemStyle.color = "green"
+    }
     option && myChart.setOption(option);
 })
 onMounted(()=>{

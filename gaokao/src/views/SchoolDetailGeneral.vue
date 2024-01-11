@@ -78,7 +78,7 @@ const major = reactive({
 })
 
 function getMajor() {
-  axios.get(`http://localhost:8088/recruit/getMajor?sId=${store.state.showingSchoolId}&year=&subject=`).then(response => {
+  axios.get(`http://localhost:8088/recruit/getMajor?sId=${store.state.showingSchoolId}&year=&subject=&sName=`).then(response => {
     major.arr = response.data.data
   })
 }
@@ -182,11 +182,11 @@ function setActiveImg() {
               <div class="shcool-rank_introduceAndRank__2cPn2">
                 <div class="shcool-rank_rankWrap___S-SY">
                   <div  class="shcool-rank_item__XLAA1 cursor" style="width: 47%;cursor: default">
-                    <div class="shcool-rank_num__2vcEf"><span>1</span>名</div>
+                    <div class="shcool-rank_num__2vcEf"><span>{{ schoolData.data.rkRank !== 0 ? schoolData.data.rkRank : '无' }}</span></div>
                     <div class="shcool-rank_name__2sDYc">软科综合</div>
                   </div>
                   <div style="width: 47%;cursor: default" class="shcool-rank_item__XLAA1 cursor">
-                    <div class="shcool-rank_num__2vcEf"><span>2</span>名</div>
+                    <div class="shcool-rank_num__2vcEf"><span>{{ schoolData.data.qsRank !== 0 ? schoolData.data.qsRank : '无' }}</span></div>
                     <div class="shcool-rank_name__2sDYc">QS排名</div>
                   </div>
                 </div>

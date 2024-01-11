@@ -32,15 +32,15 @@ const props = defineProps({
         <span class="content_2">{{tags[tags.length-1]}}</span>
       </div>
       <!--拓展部份：按钮-->
-      <div class="extension">
-        <div class="content_0" style="color: rgb(245, 47, 62);">概率小</div>
-        <div class="content_2">
-          专业录取率
-        </div>
-        <div class="content_last">
-          <span>问招办</span>
-        </div>
-      </div>
+<!--      <div class="extension">-->
+<!--        <div class="content_0" style="color: rgb(245, 47, 62);">概率小</div>-->
+<!--        <div class="content_2">-->
+<!--          专业录取率-->
+<!--        </div>-->
+<!--        <div class="content_last">-->
+<!--          <span>问招办</span>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
 
   </div>
@@ -56,7 +56,17 @@ const props = defineProps({
   cursor: pointer;
   border-bottom: 1px solid #eee;
   position: relative;
-
+  animation: slideRight 0.5s forwards;
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .img {

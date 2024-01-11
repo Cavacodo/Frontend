@@ -14,8 +14,6 @@
               <span class="ml-3 w-35 text-gray-600 inline-flex items-center">年份</span>
               <el-select v-model="yearValue" placeholder="Select" class="w-50 m-2">
                       <el-option v-for="item in year.values()" :label="item.label" :value="item.value"/>
-                      <el-option label="本科二批" value="second"/>
-                      <el-option label="无" value="null"/>
               </el-select>
           </span>
           <span class="input-two">
@@ -26,12 +24,22 @@
           </span>
         </el-row>
       </div>
-      <el-button type="primary" @click="submitForm()" class="btn">提交</el-button>
+
+      <div class="mb-2 flex items-center text-sm">
+        <el-radio-group v-model="subjectSelect" class="ml-4" style="width: 200px;margin-left: 10px">
+          <el-radio label="理科" size="large">理科</el-radio>
+          <el-radio label="文科" size="large">文科</el-radio>
+        </el-radio-group>
+        <el-button type="primary" @click="submitForm()" class="btn">提交</el-button>
+
+      </div>
+
     </div>
     <div class="echarts-div">
       <school-analysis class="echarts-one"
                        :data="echartData.data"
                        :x-axis-data="echartData.xAxisData"
+                       :subject="subjectSelect"
       ></school-analysis>
     </div>
 
@@ -184,45 +192,84 @@ const round = ref([
   }
 ])
 const echartData = reactive({
-  arr:[],
-  xAxisData:[],
-  data:[]
+  arr: [],
+  xAxisData: [],
+  data: [],
 })
-function getEcharData(province,year,range,subject){
+
+function getEcharData(province, year, range, subject) {
   //?province=山东&year=2022&range=本科一批
   if (province == "" || year == "" || range == "" || subject == "") {
     alert("请选择查询参数")
     return
   }
-  axios.get(`http://localhost:8088/recruit/provinceRange?province=${province}&year=${year}&range=${range}&subject=${subject}`).then(response=>{
+  axios.get(`http://localhost:8088/recruit/provinceRange?province=${province}&year=${year}&range=${range}&subject=${subject}`).then(response => {
     echartData.arr = response.data.data
     echartData.xAxisData = []
     echartData.data = []
-    echartData.arr.forEach(item =>{
+    echartData.arr.forEach(item => {
       echartData.xAxisData.push(item.sName)
       echartData.data.push(item.rRank)
     })
     console.log(echartData)
-  }).catch(error=>{
+  }).catch(error => {
     console.log(error)
   });
 }
-onMounted(()=>{
+
+onMounted(() => {
   // getEcharData()
 })
-function submitForm(){
-  getEcharData(provinceValue.value,yearValue.value,"文科",roundValue.value)
+
+function submitForm() {
+  getEcharData(provinceValue.value, yearValue.value, roundValue.value, subjectSelect.value)
+
 }
+
+const subjectSelect = ref("理科");
+watch(subjectSelect,()=>{
+  getEcharData(provinceValue.value, yearValue.value, roundValue.value, subjectSelect.value)
+})
 </script>
 <style scoped>
 .input-content {
-  border: 2px solid #fc8a2f;
+  position: relative;
   margin-bottom: 30px;
   padding: 20px;
   width: 1160px;
   height: 170px;
+  box-shadow: 5px 5px 5px #888888; /* 添加初始阴影效果 */
+  border-radius: 10px; /* 添加圆角效果 */
+  background-color: #f9f9f9; /* 添加背景颜色 */
+  transition: box-shadow 0.3s ease; /* 添加过渡效果 */
+  overflow: hidden; /* 隐藏超出父元素的部分 */
+  animation: slideRight 0.5s forwards;
 
 }
+
+.input-content:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid transparent; /* 初始时透明的边框 */
+  transition: border-color 0.3s ease; /* 添加过渡效果 */
+  z-index: -1; /* 将伪元素放置于底部 */
+}
+
+.input-content:hover:before {
+  border-image: linear-gradient(to bottom right, #f37640, #ffffff); /* 添加渐变边框 */
+  border-image-slice: 1; /* 设置边框图片的填充方式 */
+  box-shadow: 5px 5px 10px #888888; /* 鼠标悬停时添加阴影效果 */
+}
+
+
+
+
+
+
 
 .w-50 {
   margin-left: 20px;
@@ -240,10 +287,12 @@ function submitForm(){
 
 .main-content {
   margin-left: 113px;
+  animation: slideRight 0.5s forwards;
+
 }
 
 .input-content .btn {
-  margin-left: 550px;
+  margin-left: 30%;
   margin-top: 30px;
   margin-bottom: 30px
 }
@@ -252,6 +301,23 @@ function submitForm(){
   margin-left: 487px;
   margin-bottom: 40px;
   font-size: 2em;
+  position: relative;
+  animation: slideRight 0.5s forwards;
+  transition: text-shadow 0.3s, color 0.3s; /* 添加过渡效果 */
+
+}
+
+
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .img-one {
@@ -262,7 +328,8 @@ function submitForm(){
   width: 100%;
   height: 100%;
 }
-.echarts-div{
+
+.echarts-div {
   width: 1200px;
   height: 600px;
 }

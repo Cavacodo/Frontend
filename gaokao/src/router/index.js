@@ -140,7 +140,11 @@ const routes = [
 const router = createRouter({
     history: createWebHashHistory(),
     //mode: 'history',
-    routes
+    routes,
+    scrollBehavior (to, from, savedPosition) {
+        // 滚动到顶部
+        return { top: 0 }
+    }
 })
 
 

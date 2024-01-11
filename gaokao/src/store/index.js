@@ -3,9 +3,11 @@ import {ref} from "vue";
 
 const state = {
     showingSchoolId: 1,
-    s:"tt",
-    test: 0,
-    count: 0,
+    scoreLow:"",
+    scoreHigh: "",
+    rankLow: "",
+    rankHigh: "",
+    subjectSelect: ""
 }
 const getters = {
 }

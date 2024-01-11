@@ -1,67 +1,83 @@
 <template>
-  <div class="container">
+  <div class="wholeAnime">
+    <div class="container">
 
-    <div class="bg" :style='backgroundStyle'></div>
-    <div class="input">
-      <el-text class="schoolNameLable">学校名称:</el-text>
-      <el-autocomplete v-model="input" :fetch-suggestions="querySearch" placeholder="请输入..." clearable class="inputBox"
-                       @select="handleSelect">
-        <template #default="{ item }">
-          <div>{{ item }}</div>
-        </template>
-      </el-autocomplete>
+      <div class="bg" :style='backgroundStyle'></div>
+      <div class="input">
+        <el-text class="schoolNameLable">学校名称:</el-text>
+        <el-autocomplete v-model="input" :fetch-suggestions="querySearch" placeholder="请输入..." clearable class="inputBox"
+                         @select="handleSelect">
+          <template #default="{ item }">
+            <div>{{ item }}</div>
+          </template>
+        </el-autocomplete>
 
-      <el-radio v-model="radio" label="理科" fill="#eaa64d">理科</el-radio>
-      <el-radio v-model="radio" label="文科" fill="#eaa64d">文科</el-radio>
-      <el-button type="warning" plain @click="getPrediction()">确认</el-button>
+        <el-radio v-model="radio" label="理科" fill="#eaa64d">理科</el-radio>
+        <el-radio v-model="radio" label="文科" fill="#eaa64d">文科</el-radio>
+        <el-button type="warning" plain @click="getPrediction()">确认</el-button>
+      </div>
     </div>
-  </div>
 
-  <div class="graph">
-    <div class="echartsGraph">
-      <!-- <test class="realGraph"></test> -->
-      <div id="NewTest" class="realGraph"></div>
-    </div>
-    <div class="echartsData">
-      <table class="beautiful-table">
-        <thead>
-        <tr>
-          <th>年份</th>
-          <th>最低分数</th>
-          <th>最低位次</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="year-2020">
-          <td>2020</td>
-          <td>{{ echartData.fourYearScoreData[0] }}</td>
-          <td>{{echartData.fourYearRankData[0]}}</td>
-        </tr>
-        <tr class="year-2021">
-          <td>2021</td>
-          <td>{{echartData.fourYearScoreData[1]}}</td>
-          <td>{{echartData.fourYearRankData[1]}}</td>
-        </tr>
-        <tr class="year-2022">
-          <td>2022</td>
-          <td>{{ echartData.fourYearScoreData[2] }}</td>
-          <td>{{ echartData.fourYearRankData[2] }}</td>
-        </tr>
-        </tbody>
+    <div class="graph">
+      <div class="echartsGraph">
+        <!-- <test class="realGraph"></test> -->
+        <div id="NewTest" class="realGraph"></div>
+      </div>
+      <div class="echartsData">
+        <table class="beautiful-table">
+          <thead>
+          <tr>
+            <th>年份</th>
+            <th>最低分数</th>
+            <th>最低位次</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="year-2020">
+            <td>2020</td>
+            <td>{{ echartData.fourYearScoreData[0] }}</td>
+            <td>{{echartData.fourYearRankData[0]}}</td>
+          </tr>
+          <tr class="year-2021">
+            <td>2021</td>
+            <td>{{echartData.fourYearScoreData[1]}}</td>
+            <td>{{echartData.fourYearRankData[1]}}</td>
+          </tr>
+          <tr class="year-2022">
+            <td>2022</td>
+            <td>{{ echartData.fourYearScoreData[2] }}</td>
+            <td>{{ echartData.fourYearRankData[2] }}</td>
+          </tr>
+          </tbody>
 
-        <tbody>
-        <tr class="year-2024">
-          <td class="new-year">2024</td>
-          <td>{{echartData.fourYearScoreData[3]}}</td>
-          <td>{{ echartData.fourYearRankData[3] }}</td>
-        </tr>
-        </tbody>
-      </table>
+          <tbody>
+          <tr class="year-2024">
+            <td class="new-year">2024</td>
+            <td>{{echartData.fourYearScoreData[3]}}</td>
+            <td>{{ echartData.fourYearRankData[3] }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </template>
 
 <style>
+.wholeAnime{
+  animation: slideRight 0.5s forwards;
+
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .container {
   display: flex;
   justify-content: center;

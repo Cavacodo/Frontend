@@ -69,6 +69,11 @@
                       :s-region="item.sRegion"
                       @click="redirectDetail(item.sId)"
           />
+          <el-pagination layout="prev, pager, next"
+                         :total="form.total"
+                         :page-size="tableData_size"
+                         v-model:current-page="tableData_page"
+                         style="margin-top: 25px;"/>
         </div>
       </el-main>
 
@@ -156,6 +161,7 @@ const form = reactive({
   schoolClass: '全部',
   page: ref(1),
   size: ref(20),
+  total:ref(0)
 
 });
 const provinceList = ['全部', '北京', '天津', '河北', '山西', '内蒙古',
@@ -166,13 +172,23 @@ const provinceList = ['全部', '北京', '天津', '河北', '山西', '内蒙�
 
 // 初始化
 // 表格数据
-const tableData = reactive([])
-
+const tableData = reactive({
+  value:[]
+})
 function getTableData() {
-  axios.get(`http://localhost:8088/schoolInfo/getByFive?page=${tableData_page.value}&size=${20}&province=${tableData_province.value}&range=${tableData_range.value}&vate=${tableData_vate.value}&doublefirst=${tableData_doublefirst.value}&type=${tableData_type.value}`)
+  axios.get(`http://localhost:8088/schoolInfo/getByFive?page=${tableData_page.value}&size=${tableData_size.value}&province=${tableData_province.value}&range=${tableData_range.value}&vate=${tableData_vate.value}&doublefirst=${tableData_doublefirst.value}&type=${tableData_type.value}`)
       .then(response => {
+        //如果列表为空，把数据删了
+        if (response.data.data.list.length == 0){
+          tableData.value = []
+          alert("无")
+          return
+        }
         // 请求成功后的处理
-        tableData.value = response.data.data
+        console.log(response)
+        form.page = response.data.data.pages
+        form.total = response.data.data.total
+        tableData.value = response.data.data.list
         tableData.value.forEach(item => {
           item.tags = []
           if (item.sRange.length !== 0) item.tags.push(item.sRange)
@@ -216,6 +232,7 @@ function handleMouseOver(hoverIndex) {
 watch(timer, () => {
   console.log(timer.value)
 })
+
 // 广告图片
 const ads = [
   'https://img6.eol.cn/e_images/gk/2023/ddpy.jpg',
@@ -314,14 +331,17 @@ function handleSchoolFirstDouble(index) {
 }
 
 //参数群
-const tableData_page = ref("1")
-const tableData_size = ref("全部")
+const tableData_page = ref(1)
+const tableData_size = ref(11)
 const tableData_province = ref("全部")
 const tableData_range = ref("全部")
 const tableData_vate = ref("全部")
 const tableData_doublefirst = ref("全部")
 const tableData_type = ref("全部")
 
+watch(tableData_page,()=>{
+  getTableData()
+})
 function handleSearch(){
   getTableData()
 }

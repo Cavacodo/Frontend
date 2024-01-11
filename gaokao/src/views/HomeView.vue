@@ -1,70 +1,26 @@
-<script setup>
-
-</script>
 <template>
   <div class="main" style="width: 1200px;">
     <div class="layoutWrap clearfix">
       <div class="main home_wrap">
         <div class="header_swiper">
-          <div id="certify">
-            <div class="swiper-container swiper-container-horizontal">
-              <div class="swiper-wrapper"
-                   style="transition-duration: 1000ms; transform: translate3d(-6000px, 0px, 0px);">
-                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 1200px;">
-                  <a href="https://gaokao.eol.cn/e_html/gk/2022/2023jpjst/index.html" target="_blank">
-                    <img src="https://img6.eol.cn/e_images/gk/2023/ddps.jpg" data-growing-title="首页-A2首屏轮播图-1"
-                         data-growing-container="">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1"
-                     style="width: 1200px;">
-                  <a href="https://gaokao.eol.cn/gaozhi/gzkx/202310/t20231008_2507028.shtml" target="_blank">
-                    <img src="https://img6.eol.cn/e_images/gk/2023/gzdz1200.png"
-                         data-growing-title="首页-A2首屏轮播图-2" data-growing-container="">
-                  </a>
-                </div>
-                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                     data-swiper-slide-index="2" style="width: 1200px;"><a href="https://pan.quark.cn/s/1412e2baebdf"
-                                                                           target="_blank"><img
-                    src="https://img7.eol.cn/e_images/gk/2023/sxznps.jpg" data-growing-title="首页-A2首屏轮播图-3"
-                    data-growing-container=""></a></div>
-                <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0"
-                     style="width: 1200px;"><a href="https://gaokao.eol.cn/e_html/gk/2022/2023jpjst/index.html"
-                                               target="_blank"><img src="https://img6.eol.cn/e_images/gk/2023/ddps.jpg"
-                                                                    data-growing-title="首页-A2首屏轮播图-1"
-                                                                    data-growing-container=""></a></div>
-                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 1200px;"><a
-                    href="https://gaokao.eol.cn/gaozhi/gzkx/202310/t20231008_2507028.shtml" target="_blank"><img
-                    src="https://img6.eol.cn/e_images/gk/2023/gzdz1200.png" data-growing-title="首页-A2首屏轮播图-2"
-                    data-growing-container=""></a></div>
-                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 1200px;"><a
-                    href="https://pan.quark.cn/s/1412e2baebdf" target="_blank"><img
-                    src="https://img7.eol.cn/e_images/gk/2023/sxznps.jpg" data-growing-title="首页-A2首屏轮播图-3"
-                    data-growing-container=""></a></div>
-                <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0"
-                     style="width: 1200px;"><a href="https://gaokao.eol.cn/e_html/gk/2022/2023jpjst/index.html"
-                                               target="_blank"><img src="https://img6.eol.cn/e_images/gk/2023/ddps.jpg"
-                                                                    data-growing-title="首页-A2首屏轮播图-1"
-                                                                    data-growing-container=""></a></div>
-                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1"
-                     style="width: 1200px;"><a href="https://gaokao.eol.cn/gaozhi/gzkx/202310/t20231008_2507028.shtml"
-                                               target="_blank"><img
-                    src="https://img6.eol.cn/e_images/gk/2023/gzdz1200.png" data-growing-title="首页-A2首屏轮播图-2"
-                    data-growing-container=""></a></div>
-                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                     data-swiper-slide-index="2" style="width: 1200px;"><a href="https://pan.quark.cn/s/1412e2baebdf"
-                                                                           target="_blank"><img
-                    src="https://img7.eol.cn/e_images/gk/2023/sxznps.jpg" data-growing-title="首页-A2首屏轮播图-3"
-                    data-growing-container=""></a></div>
-              </div>
-              <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
-                  class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span
-                  class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span
-                  class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-                  aria-label="Go to slide 3"></span></div>
-              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-            <div class="swiper-button-prev " tabindex="0" role="button" aria-label="Previous slide"></div>
-            <div class="swiper-button-next " tabindex="0" role="button" aria-label="Next slide"></div>
+          <div id="certify" style="position: absolute;width: 900px;height:460px">
+            <el-carousel style="width:900px;height: 460px;">
+              <el-carousel-item :key="item" style="width:900px;height: 460px">
+                <img src="../assets/img/bg/fdu.jpg" alt="" style="width:900px;height: 460px">
+              </el-carousel-item>
+              <el-carousel-item :key="item" style="width:900px;height: 460px">
+                <img src="../assets/img/bg/pku.jpg" alt="" style="width:900px;height: 460px">
+              </el-carousel-item>
+              <el-carousel-item :key="item" style="width:900px;height: 460px">
+                <img src="../assets/img/bg/sjtx.jpg" alt="" style="width:900px;height: 460px">
+              </el-carousel-item>
+              <el-carousel-item :key="item" style="width:900px;height: 460px">
+                <img src="../assets/img/bg/thu.jpg" alt="" style="width:900px;height: 460px">
+              </el-carousel-item>
+              <el-carousel-item :key="item" style="width:900px;height: 460px">
+                <img src="../assets/img/bg/zju.jpg" alt="" style="width:900px;height: 460px">
+              </el-carousel-item>
+            </el-carousel>
           </div>
           <div class="smart-recommend_smartRecommend__2Ktuo smartRecommend">
             <div class="ant-spin-nested-loading">
@@ -76,38 +32,56 @@
                     <div class="oldGaokao">
                       <div class="right-normal-mnzy_lable__1NJ-g">选科 <span>（2选1）</span></div>
                       <div class="right-normal-mnzy_radioOld__2-3vz">
-                        <div class="ant-radio-group ant-radio-group-outline"><label
-
-                            class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"><span
-                            class="ant-radio-button ant-radio-button-checked"><input type="radio"
-                                                                                     class="ant-radio-button-input"
-                                                                                     value="1"><span
-                            class="ant-radio-button-inner"></span></span><span>理科</span></label><label
-                            class="ant-radio-button-wrapper"><span class="ant-radio-button"><input type="radio"
-                                                                                                   class="ant-radio-button-input"
-                                                                                                   value="2"><span
-                            class="ant-radio-button-inner"></span></span><span>文科</span></label></div>
+                        <div class="ant-radio-group ant-radio-group-outline">
+                          <label :class="subjectSelectCss.css[0]"
+                                 @click="handleSelectSubjet(0)"><span class="ant-radio-button ant-radio-button-checked"><input
+                              type="radio" class="ant-radio-button-input" value="1"><span
+                              class="ant-radio-button-inner"></span></span><span>理科</span></label>
+                          <label :class="subjectSelectCss.css[1]" @click="handleSelectSubjet(1)"><span
+                              class="ant-radio-button"><input type="radio" class="ant-radio-button-input"
+                                                              value="2"><span
+                              class="ant-radio-button-inner"></span></span><span>文科</span></label>
+                        </div>
                       </div>
                     </div>
-                    <div class="right-normal-mnzy_lable__1NJ-g right-normal-mnzy_active__3J_HY">分数</div>
+                    <div class="right-normal-mnzy_lable__1NJ-g right-normal-mnzy_active__3J_HY">分数区间</div>
                     <div class="right-normal-mnzy_scoreRank__3IIib">
                       <div class="right-normal-mnzy_inpBox__3izuz right-normal-mnzy_active__3J_HY"><span
                           class="ant-input-affix-wrapper"><span class="ant-input-prefix"><i
-                          class="iconfont icon_edit"></i></span><input maxlength="3" placeholder="输入分数" type="text"
-                                                                       class="ant-input" value=""><span
+                          class="iconfont icon_edit"></i></span>
+                        <input maxlength="3" placeholder="最低分" type="text" class="ant-input" v-model="scoreLow"><span
                           class="ant-input-suffix"><span
                           style="font-size: 13px; color: rgb(102, 102, 102);">分</span></span></span></div>
                       <div class="right-normal-mnzy_inpBox__3izuz right-normal-mnzy_active__3J_HY"><span
                           class="ant-input-affix-wrapper"><span class="ant-input-prefix"><i
-                          class="iconfont icon_edit"></i></span><input placeholder="输入位次" type="text"
-                                                                       class="ant-input" value=""><span
+                          class="iconfont icon_edit"></i></span>
+                        <input placeholder="最高分" type="text" class="ant-input" v-model="scoreHigh"><span
+                          class="ant-input-suffix"><span
+                          style="font-size: 13px; color: rgb(51, 51, 51);">分</span></span></span></div>
+                    </div>
+                    <div style="width: 10px; height: 10px; display: block;"></div>
+                    <div style="width: 10px; height: 14px; display: block;"></div>
+                    <div class="right-normal-mnzy_lable__1NJ-g right-normal-mnzy_active__3J_HY">位次区间</div>
+                    <div class="right-normal-mnzy_scoreRank__3IIib">
+                      <div class="right-normal-mnzy_inpBox__3izuz right-normal-mnzy_active__3J_HY"><span
+                          class="ant-input-affix-wrapper"><span class="ant-input-prefix"><i
+                          class="iconfont icon_edit"></i></span>
+                        <input maxlength="3" placeholder="最低位次" type="text" class="ant-input" v-model="rankLow"><span
+                            class="ant-input-suffix"><span
+                            style="font-size: 13px; color: rgb(102, 102, 102);">位</span></span></span></div>
+                      <div class="right-normal-mnzy_inpBox__3izuz right-normal-mnzy_active__3J_HY"><span
+                          class="ant-input-affix-wrapper"><span class="ant-input-prefix"><i
+                          class="iconfont icon_edit"></i></span>
+                        <input placeholder="最高位次" type="text" class="ant-input" v-model="rankHigh"><span
                           class="ant-input-suffix"><span
                           style="font-size: 13px; color: rgb(51, 51, 51);">位</span></span></span></div>
                     </div>
                     <div style="width: 10px; height: 10px; display: block;"></div>
                     <div style="width: 10px; height: 14px; display: block;"></div>
                     <div class="right-normal-mnzy_recommend__1lJEb right-normal-mnzy_recommendShee__NV65Y"
-                         style="margin-top: 65%">
+                         style="margin-top: 33%"
+                         @click="handleScoreSearch"
+                    >
                       分数搜一搜
                     </div>
                   </div>
@@ -266,9 +240,24 @@
 <style src="../assets/css/home4.css"></style>
 <style scoped src="../assets/css/home5.css"></style>
 <style scoped src="../assets/css/home6.css"></style>
+<style scoped>
+.main{
+  animation: slideRight 0.5s forwards;
 
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+</style>
 <script setup>
-import {onMounted, reactive, ref} from "vue";
+import {computed, onMounted, reactive, ref} from "vue";
 import axios from "axios";
 import {useStore} from "vuex";
 import {useRouter} from "vue-router";
@@ -350,5 +339,47 @@ function getHotSchoolImgData() {
 function handleImgClick(sId) {
   store.state.showingSchoolId = sId;
   router.push("/schoolDetail/general")
+}
+
+const rollImg = reactive(["../assets/img/bg/fdu.jpg", "../assets/img/bg/pku.jpg", "../assets/img/bg/sjtx.jpg", "../assets/img/bg/thu.jpg", "../assets/img/bg/zju.jpg"])
+
+function handleSelectSubjet(index) {
+  if (index == 0) {
+    subjectSelectCss.css = [
+      "ant-radio-button-wrapper ant-radio-button-wrapper-checked",
+      "ant-radio-button-wrapper"
+    ]
+    subjectSelect.value = "理科"
+  }
+  if (index == 1) {
+    subjectSelectCss.css = [
+      "ant-radio-button-wrapper",
+      "ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+    ]
+  }
+  subjectSelect.value = "文科"
+}
+
+const subjectSelectCss = reactive({
+  css: [
+    "ant-radio-button-wrapper ant-radio-button-wrapper-checked",
+    "ant-radio-button-wrapper"
+  ]
+})
+
+//分数查询 条件集
+const subjectSelect = ref("理科")
+const scoreLow = ref('')
+const scoreHigh = ref('')
+const rankLow = ref('')
+const rankHigh = ref('')
+
+function handleScoreSearch(){
+  store.state.subjectSelect = subjectSelect.value
+  store.state.scoreLow = scoreLow.value
+  store.state.scoreHigh = scoreHigh.value
+  store.state.rankLow = rankLow.value
+  store.state.rankHigh = rankHigh.value
+  router.push("/scoreSearch")
 }
 </script>

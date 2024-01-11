@@ -1,10 +1,23 @@
 .data_content{
     /*overflow-x: hidden;*/
     min-width: 1366px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: url('../img/bg.jpg') no-repeat;
+    padding-top: 50px;
+    overflow: hidden;
+    background: url('../img/2.jpg') no-repeat;
+    background-size:100% 100%;
+    animation: slideRight 0.5s forwards;
 
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .data_content .data_time{
     width: 340px;
@@ -143,7 +156,7 @@
     font-size: 18px;
     font-weight: 600;
     box-sizing: border-box;
-    padding-left: 45px;
+    padding-left: 10px;
     z-index: 1000;
     text-align: center;
 }
@@ -241,8 +254,9 @@
     font-size: 18px;
     font-weight: 600;
     box-sizing: border-box;
-    padding-left: 45px;
+    padding-left: 35px;
     z-index: 1000;
+
 }
 .data_content .data_main .main_center .main_title img{
     position: absolute;
@@ -317,7 +331,7 @@
     font-size: 18px;
     font-weight: 600;
     box-sizing: border-box;
-    padding-left: 45px;
+    padding-left: 58px;
 }
 .data_content .data_main .main_right div .main_title img{
     position: absolute;
