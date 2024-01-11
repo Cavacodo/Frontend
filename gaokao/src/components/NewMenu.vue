@@ -101,7 +101,7 @@ export default {
       <div class="main-nav_left__3UKkT">
         <div class="main-nav_logoBox__1fEO4">
           <img class="main-nav_logo2__bmYaw" alt="" src="../assets/img/HomeLogo.png" style="width: 300px">
-          <img class="main-nav_logo2__bmYaw" alt="" src="../assets/img/横幅.gif" style="height: 80px;width: 350px;margin-left: 50px">
+<!--          <img class="main-nav_logo2__bmYaw" alt="" src="../assets/img/横幅.gif" style="height: 80px;width: 350px;margin-left: 50px">-->
         </div>
       </div>
     </div>
