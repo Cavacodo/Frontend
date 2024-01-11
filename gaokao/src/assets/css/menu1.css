@@ -2478,9 +2478,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 0px;
-    height: 60px
+    height: 60px;
+
+
+    position:relative;
+    overflow: hidden;
 }
 
+.main-nav_video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -999;
+}
 .main-nav_loginSearchArea__26KuI .main-nav_left__3UKkT {
     display: flex;
     align-items: center

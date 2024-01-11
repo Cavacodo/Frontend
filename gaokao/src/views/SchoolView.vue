@@ -80,8 +80,9 @@
       <el-aside width="300px">
         <!--广告位-->
         <div>
-          <div v-for="(ad,index) in ads" :key="index" class="block">
-            <el-image :src="ad" class="ads" :fit="'cover'"/>
+          <div class="block">
+            <img src="../assets/img/diaotu1.jpg" alt="" class="ads">
+            <img src="../assets/img/吊图2.jpg" alt="" class="ads" style="margin-top: 50px;;margin-bottom: 50px">
           </div>
         </div>
         <!--推荐院校-->
@@ -235,9 +236,9 @@ watch(timer, () => {
 
 // 广告图片
 const ads = [
-  'https://img6.eol.cn/e_images/gk/2023/ddpy.jpg',
+  "../assets/img/diaotu1.jpg",
+  '../assets/img/吊图2.jpg',
   'https://img7.eol.cn/e_images/gk/2023/pyfsx.jpg',
-  'https://img7.eol.cn/e_images/gk/2023/pyfsx.jpg'
 ]
 
 const province = reactive(['北京', '内蒙古', "辽宁", "黑龙江", "云南", "陕西", "天津", "湖北", "湖南", "四川", "河北", "山东", "河南", '安徽', '上海', "新疆", "江苏", "广西", '甘肃', '广东', '福建', '江西', '浙江', '重庆', '吉林', '山西', '西藏', '青海', '海南', '贵州', '宁夏', '香港', '澳门']);

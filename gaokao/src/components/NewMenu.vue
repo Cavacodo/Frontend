@@ -104,6 +104,10 @@ export default {
 <!--          <img class="main-nav_logo2__bmYaw" alt="" src="../assets/img/横幅.gif" style="height: 80px;width: 350px;margin-left: 50px">-->
         </div>
       </div>
+                <video playsinline="" class="main-nav_video" autoplay="" muted="" loop="" poster="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1465660/c20e6cd28c4850384c81d3ce5838e0de7e88176c.png">
+                  <source src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1465660/6f0c3c0d89b37e1d0fbdd805f114eb359dc0e539.webm" type="video/webm">
+                  <source src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1465660/7345fd62bd4d80da5a91586edc1373a1303662d4.mp4" type="video/mp4">
+                </video>
     </div>
     <div class="dialog_package" id="dialog_package">
       <div>
