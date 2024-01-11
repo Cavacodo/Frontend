@@ -121,11 +121,13 @@
         <el-table-column prop="rAverage" label="平均分" width="80"/>
         <el-table-column prop="rRank" label="位次" width="115"/>
       </el-table>
-      <el-pagination layout="prev, pager, next"
-                     :total="50"
-                     :page-size="20"
-                     v-model:current-page="currentPage"
-                     style="margin-left: 410px;margin-top: 25px;"/>
+        <el-pagination layout="prev, pager, next"
+                       :total="dataTotal"
+                       :page-size="20"
+                       v-model:current-page="currentPage"
+                       style="margin-left: 330px;"
+        />
+
     </div>
     <div class="left-nav-wrapper" style="height: 360px">
       <div class="position-box">
@@ -294,6 +296,7 @@ const provinceOptions = [
   }
 ]
 const currentPage = ref(1)
+const dataTotal = ref(1000)
 var tableData = ref([])
 onMounted(() => {
   initSelector()
@@ -371,7 +374,9 @@ function getTabelData() {
     rRound: roundSelect.value,
     rYear: yearSelect.value,
   }).then(response => {
-    tableData.value = response.data.data.list
+    tableData.value = response.data.data
+    dataTotal.value = response.data.total
+    console.log(response)
   }).catch(error => {
     console.log(error)
   })

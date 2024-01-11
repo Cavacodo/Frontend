@@ -27,7 +27,7 @@
             <img src="picture/t_1.png" alt="">
             专业热搜统计
           </div>
-          <major :data="data.majorData" :x-axis="data.majorXAxis"></major>
+          <major :data="data.majorData" :x-axis="data.majorXAxis" style="margin-left: 20px"></major>
         </div>
         <div class="left_2" style="cursor: pointer;">
           <div class="t_line_box">

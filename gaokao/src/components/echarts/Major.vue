@@ -44,10 +44,28 @@ watch(props,()=>{
   option = {
     xAxis: {
       type: 'category',
-      data: props.xAxis
+      data: props.xAxis,
+      axisLabel: {
+        textStyle: {
+          color: '#595050', // 设置字体颜色
+          fontSize: 12, // 设置字体大小
+          fontWeight: 'bold',// 设置字体粗细
+          interval: 1, // 强制显示所有标签
+          rotate: 45 // 旋转45度，防止文字重叠
+        }
+      }
     },
     yAxis: {
       type: 'value',
+      axisLabel: {
+        textStyle: {
+          color: '#595050', // 设置字体颜色
+          fontSize: 12, // 设置字体大小
+          fontWeight: 'bold',// 设置字体粗细
+          interval: 1, // 强制显示所有标签
+          rotate: 45 // 旋转45度，防止文字重叠
+        }
+      }
     },
     series: [
       {
